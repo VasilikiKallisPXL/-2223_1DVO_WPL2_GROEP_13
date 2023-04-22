@@ -1,9 +1,15 @@
 * {
-    background-color: #000000;
+
     
 }
 
 body {
     font-family: Aptly;
     font-size: 32px;
+}
+.navbar-brand{
+    width: 4rem;
+}
+.navbar-brand  img{
+    width: 100%;
 }
