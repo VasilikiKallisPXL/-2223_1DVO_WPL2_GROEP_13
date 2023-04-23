@@ -26,22 +26,26 @@
 </head>
 
 <body>
-<header>
+
+<header class="container py-4 align-items-stretch" >
 
     <!-- /NAVBAR -->
 
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/logo_ownit.jpg"/></a>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav  align-items-center">
+                    <li>
+                        <form class="d-flex" role="search" >
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">Dashboard</a>
@@ -73,11 +77,96 @@
 
         </div>
     </nav>
+
+
+<!-- HERO-->
+    <section class="hero align-items-stretch">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col text-center">
+                <h1 class="display-12 fw-bold">Charging Stations</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                <h2 class="display-5 fw-bold">New</h2>
+                <h3> Extended wall station </h3>
+                <p class="col-md-8 fs-4">
+                    Dit product kan in de muur geplaats worden zodat je laadpaal nergens zomaar rond ligt. Wil je geen kabel rond hebben liggen? Geen probleem. Wij lossen dit meteen op door een spoel te gebruiken.
+                </p>
+                <p class="col-md-2 fs-2 fw-bold">€215</p>
+
+                    </div>
+                    <div class="col">
+                        <img src="assets/Ownit-stations.png" class="img-fluid" alt="Product Ownit Station">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-primary btn-lg" type="button">Meer info</button>
+                            <button class="btn btn-primary btn-lg" type="button">
+                                <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+                            </button>
+                            <button class="btn btn-primary btn-lg" type="button">
+                                <a class="nav-link" href="#">Ga naar station</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+            </div>
+        </div>
+
+    </section>
 </header>
 
 <!--   MAIN-->
-<main>
+<main class="container py-4">
 
+   <!--   CARDS "WE OFFER"-->
+    <section class="justify-content-center">
+    <div class="container-fluid text-center">
+        <h1 class="fs-bold ">We offer</h1>
+
+        <div class="row">
+
+<!--            HIGH QUALITY-->
+            <div class="col-sm-6 col-md-4 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">High quality</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">Ownit biedt hoge kwaliteit aan. Wij zorgen dat de onderdelen duurzaam zijn gemaakt en van recyclage materiaal zijn gemaakt. Wij dragen ons steentje bij aan de toekomst. </p>
+
+                    </div>
+                </div>
+            </div>
+<!--            OPEN-SOURCE-->
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Open-source</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">Ons product is open-source, wij willen dat iedereen functies kan toevoegen en bijbouwen. Als je niks van coderen kent, geen zorgen. In de Bibliotheek staan allemaal functies die al gemaakt zijn door gebruikers.</p>
+
+                    </div>
+                </div>
+            </div>
+<!--            LOW-COST-->
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Low Cost</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">Wij snappen niet waarom laadpalen zo duur moeten zijn. Daarom bieden wij goedkope laadpalen aan van stevige kwaliteit. </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </section>
 </main>
 
 <!-- FOOTER -->
