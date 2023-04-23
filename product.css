@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Aptly;
+    font-family: Aptly, "sans-serif";
     font-size: 32px;
 }
 .navbar-brand{
@@ -12,4 +12,14 @@ body {
 }
 .navbar-brand  img{
     width: 100%;
+}
+/*FOOTER*/
+
+.social-media-footer a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    padding: 2px;
+    margin: 10px;
+    color: black;
 }
