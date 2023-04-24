@@ -1,5 +1,5 @@
 * {
-    background-color: #000000;
+    background-color: #f6f6f6;
     
 }
 
@@ -15,4 +15,28 @@ body {
     text-align: center;
     margin-top: 148px;
     margin-left: 54px;
+    display: inline-block;
+    
+}
+
+#button__start {
+    font-size: 32px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 54px;
+    margin-top: 107px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+#button__text {
+    font-size: 18px;
+    color: #000;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 0px;
+    display: inline-block;
 }
