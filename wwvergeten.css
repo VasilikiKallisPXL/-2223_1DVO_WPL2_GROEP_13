@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-/*img{*/
-/*    width: 200px;*/
-/*}*/
-
 body{
     background-color: #a8a8a8;
 }
@@ -21,33 +17,18 @@ main{
     border: 1px solid #ffffff;
     border-radius: 10px;
     margin: 50px auto;
-    max-width: 775px;
+    max-width: 450px;
     padding: 20px;
 }
 label {
-    width: 40%;
+    width: 200px;
 }
 
 input {
+    width: 95%;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 7px;
     border-radius: 10px;
     border: 1px solid #000;
-    width: 40%;
-    height: 35px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-a{
-    list-style-type: none;
-    text-decoration: none;
-    color: #a8a8a8;
-}
-
-
-.col, .col-sm-2, .col-sm-3 {
- border: 1px solid red;
-}
-@media screen and (max-width: 600px ) {
-    body {
-        background-color: #ffffff;
-    }
 }
