@@ -1,10 +1,94 @@
 * {
-    background-color: #000000;
+    background-color: #ffffff;
     
 }
 
 body {
-    font-family: Aptly;
+    font-family: 'New Order', 'Semibold';
     font-size: 32px;
     color: #000;
+}
+/* Titel */
+h1, #title__start {
+    font-size: 60px;
+    font-family: Aptly;
+    font-weight: bold;
+    color: #070707;
+    text-align: center;
+    margin-top: 148px;
+    margin-left: 54px;
+    display: inline-block;
+    
+}
+/* Container mail */
+#button__start {
+    font-size: 32px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 54px;
+    margin-top: 107px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+#row {
+    display: inline-block;
+}
+
+h2, #title__mail__start {
+    font-family: 'Aptly';
+    font-size: 52px;
+    margin-left: 43px;
+}
+/* Border */
+#input__mail__start {
+    height: 80px;
+    width: 489px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 43px;
+}
+
+/* Enter email for notifications */
+#input__text__start {
+    font-size: 20px;
+    color: #000;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: -468px;
+    display: inline-block;
+}
+
+/* Button notify */
+#button__notify {
+    font-weight: semibold;
+    height: 60px;
+    width: 115px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-top: 7px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/*  paragraph */
+#button__text {
+    font-size: 18px;
+    font-weight: regular;
+    color: #02010a;
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 54px;
+    display: inline-block;
+}
+
+/* img */
+#img__3d {
+    height: 378px;
+    width: 650px;
+    margin-left: 654px;
+    margin-top: -501px;
+    display: inline-block;
 }
