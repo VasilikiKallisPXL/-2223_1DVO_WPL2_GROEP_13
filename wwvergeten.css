@@ -2,33 +2,74 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #ffffff;
 }
 
-body{
-    background-color: #a8a8a8;
-}
-main h1 {
-    font-size: 26px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-main{
+body {
     background-color: #ffffff;
-    border: 1px solid #ffffff;
+}
+
+div {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+main {
+    background-color: #261F56;
     border-radius: 10px;
-    margin: 50px auto;
+    margin: 50px auto 0;
     max-width: 450px;
     padding: 20px;
 }
+
 label {
-    width: 200px;
+    font-size: 16px;
+    margin-left: 20px;
 }
 
-input {
-    width: 95%;
+::placeholder {
+    color: #ffffff;
+    padding-left: 10px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+input[type="email"] {
+    width: 90%;
     height: 35px;
-    margin-bottom: 15px;
-    margin-top: 7px;
+    margin: 0 auto;
+    display: block;
+    /*margin-bottom: 30px;*/
     border-radius: 10px;
-    border: 1px solid #000;
+    border: 1px solid #5EBCAF;
+    background-color: #261F56;
+}
+
+input[type="submit"] {
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #5EBCAF;
+    background: #5EBCAF;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+
+@media screen and (max-width: 820px ) {
+    body {
+        background-color: #261F56;
+    }
 }
