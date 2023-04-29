@@ -23,3 +23,7 @@ body {
     margin: 10px;
     color: black;
 }
+.footer__ ul li {
+    text-decoration: none;
+}
+
