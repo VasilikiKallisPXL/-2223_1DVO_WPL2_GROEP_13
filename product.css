@@ -1,5 +1,5 @@
 * {
-
+box-sizing: border-box;
     
 }
 
@@ -7,8 +7,14 @@ body {
     font-family: Aptly, "sans-serif";
     font-size: 32px;
 }
+/*NAVBAR*/
+
 .navbar-brand{
     width: 4rem;
+}
+.navbar ul li a{
+margin: 0 20px;
+
 }
 .navbar-brand  img{
     width: 100%;
