@@ -34,7 +34,6 @@ label{
 }
 input {
     border-radius: 10px;
-    border: 1px solid #000;
 }
 
 input[name="volledigenaam"], input[name="email"], input[name="pwd"], input[name="herhaalwachtwoord"]{
