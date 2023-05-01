@@ -1,27 +1,50 @@
+
 * {
-    background-color: #ffffff;
-    
+    margin: 0px;
 }
-/*test*/
+main
 body {
     font-family: 'New Order', 'Semibold';
-    font-size: 32px;
     color: #000;
 }
+
+/* navigatie */
+.navbar-brand{
+    width: 4rem;
+}
+.navbar-brand  img{
+    width: 100%;
+}
+
+/* main */
+main {
+margin-bottom: -150px;
+}
+
+/* Coming soon */
+#coming__soon {
+    font: New Order, Semibold, 27px;
+    margin-bottom: -145px;
+    margin-top: -20px;
+    text-align: left;
+    padding-left: 12.5px;
+
+}
+
 /* Titel */
 h1, #title__start {
     font-size: 60px;
     font-family: Aptly;
     font-weight: bold;
-    color: #070707;
-    text-align: center;
+    color:#261F56;
+    text-align: left;
     margin-top: 148px;
     margin-left: 54px;
     display: inline-block;
     
 }
 /* Container mail */
-#button__start {
+#intro__start {
     font-size: 32px;
     border: none;
     border-radius: 10px;
@@ -37,16 +60,20 @@ h1, #title__start {
 
 h2, #title__mail__start {
     font-family: 'Aptly';
-    font-size: 52px;
+    font-size: 32px;
     margin-left: 43px;
+    margin-top: -82px;
 }
 /* Border */
 #input__mail__start {
     height: 80px;
     width: 489px;
+    border: none;
     border-radius: 10px;
     font-size: 20px;
     margin-left: 43px;
+    box-shadow: 6px 1px 13px rgba(0, 0, 0, 0.11);
+    
 }
 
 /* Enter email for notifications */
@@ -54,8 +81,8 @@ h2, #title__mail__start {
     font-size: 20px;
     color: #000;
     text-align: start;
-    margin-top: 20px;
-    margin-left: -468px;
+    margin-top: -51px;
+    margin-left: 84px;
     display: inline-block;
 }
 
@@ -66,7 +93,7 @@ h2, #title__mail__start {
     width: 115px;
     border: none;
     border-radius: 10px;
-    margin-left: 120px;
+    margin-left: -140px;
     margin-top: 7px;
     display: inline-block;
     cursor: pointer;
@@ -79,16 +106,145 @@ h2, #title__mail__start {
     font-weight: regular;
     color: #02010a;
     text-align: start;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-left: 54px;
     display: inline-block;
+}
+#endpara__intro {
+    font: New Order, Semibold;
+    margin-top: 20px;
 }
 
 /* img */
 #img__3d {
-    height: 378px;
-    width: 650px;
-    margin-left: 654px;
-    margin-top: -501px;
+    height: 850px;
+    width: 780px;
+    margin-left: 628.5px;
+    padding: 0px;	
+    margin-top: -660px;
+    display: inline-block;
+    /* object-fit: none;
+    object-position: 50% 50%; */
+}
+
+/* button info */
+#button__info {
+    font-weight: semibold;
+    background-color: #5EBCAF;
+    color: #fff;
+    height: 60px;
+    width: 115px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 1218px;
+    margin-top: -190px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* countdown */
+/* #container {
+    margin-top: 100px;
+    margin-left: 54px;
+    display: inline-block;
+     justify-content: space-around;
+}
+
+#cd__time {
+    font-size: 78px;
+    font-family: New order;
+    font-weight: semibold;
+    color: #070707;
+    text-align: left;
+    margin-top: 148px;
+    margin-left: 54px;
+    display: inline-block;
+}
+
+#nr__1 {
+    margin-top: -300px;
+    margin-left: -94px;
+}
+
+#nr__2 {
+    margin-top: -133px;
+    margin-left: 16px;
+}
+
+#nr__3 {
+    margin-top: -132px;
+    margin-left: 99px;
+}
+#nr__4 {
+    margin-top: -134px;
+    margin-left: -94px;
+}
+#nr__5 {
+    margin-top: -300px;
+    margin-left: -94px;
+} */
+
+
+/* Onze missie */
+#top__scrollsection {
+    margin-top: 50px;
+    margin-left: 54px;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+#missie__title {
+    font-size: 60px;
+    font-family: Aptly;
+    font-weight: bold;
+    color: #261F56;
+    text-align: left;
+    margin-top: -485px;
+    margin-left: 900px;
+    display: inline-block;
+}
+
+#missie__p {
+    font: New Order, bold, 27px;
+    color: #261F56;
+    text-align: left;
+    margin-top: -375px;
+    margin-left: 905px;
+    display: inline-block;
+}
+
+#drive {
+    height: 550px;
+    width: 740px;
+    margin-left: 0px;
+    padding: 0px;	
+    margin-top: 5px;
+    display: inline;
+    border-radius: 10px;
+}
+
+
+#btn__drive {
+    font-weight: semibold;
+    background-color: #261F56;
+    color: #fff;
+    height: 45px;
+    width: 171px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 908px;
+    margin-top: -190px;
+    padding-right: 60px;
+    padding-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#img__arrow {
+    color: #000;
+    height: 15px;
+    width: 10px;
+    margin-left: 1020px;
+    margin-top: -173px;
     display: inline-block;
 }
