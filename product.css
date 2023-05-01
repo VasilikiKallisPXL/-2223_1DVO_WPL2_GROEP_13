@@ -106,7 +106,7 @@ background-color: #4F847A;
 .cards-eigenschappen {
     background-color: #4A4A82;
     color: #ffffff;
-
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
 }
 .cards-eigenschappen img{
     width: 100%;
@@ -131,6 +131,7 @@ background-color: #4F847A;
     color: #261F56;
 
 }
+
 .klein_card .btn_card_klein{
     background-color: rgba(94, 188, 175, 0.64);
     display: inline-flex;
@@ -142,9 +143,10 @@ background-color: #4F847A;
 .klein_card .btn_card_klein:hover{
     background-color: rgba(94, 188, 175, 0.64);
 }
-/*.main__ .k_body_card{*/
-/*    background-color: #000000;*/
 
+.card-product__:hover , .klein_card:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
+}
 
 /*}*/
 .card-product__ .card-text{
@@ -195,8 +197,40 @@ width: 80px;
 
 
 /*-----END CUSTOMIZE YOUR STATION*/
+/*MODAL*/
+.modal_layout .modal-content{
+    background-color: #261F56;
+}
+.modal_layout .modal-content h5, .modal_layout .modal-content h4{
+    color: #5EBCAF;
+}
+.modal_layout .modal-content p, .modal_layout .modal-content .btn-link,  button .btn-close, .modal_layout .modal-content label {
+    color: #ffffff;
+}
+.modal_layout .modal-content .btn-primary{
+    background-color: #5EBCAF;
+    color: #261F56;
+    border: none;
+}
+.modal_layout .modal-content .btn-primary:hover{
+    background-color: #5EBCAF;
 
-/*PAGINATION*/
+    font-weight: bold;
+}
+.modal_layout .modal-content span {
+    background-color: #5EBCAF;
+    color: #261F56;
+}
+.modal_layout .modal-content .card-body p{
+  color: rgba(10, 10, 24, 0.85);
+}
+.favorieten_toevoegen .modal-content{
+    text-align: center;
+    border: #261F56;
+}
+
+
+    /*PAGINATION*/
 .page-item a{
     background-color: #4F847A;
     color: #ffffff;
@@ -211,17 +245,22 @@ width: 80px;
 .footer__{
     background-color: #261F56;
     color: #ffffff;
-    max-height: 480px;
+    max-height: 450px;
 }
 
 .footer__ ul li {
     text-decoration: none;
     list-style: none;
 }
+.footer__ ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
 .footer__ span{
     color: #5EBCAF;
     font-size: 20px;
     font-weight: normal;
+    margin: 10px 30px ;
 }
 .social-media-footer a{
 

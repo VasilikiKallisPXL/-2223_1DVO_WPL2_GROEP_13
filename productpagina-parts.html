@@ -25,7 +25,7 @@
 </head>
 <body>
 <!--HEADER-->
-<div class="container-fluid  py-4 align-items-stretch">
+<div class="container-fluid  pb-4 align-items-stretch">
     <div class="row align-items-stretch">
         <div class="col">
             <!--    NAVBAR-->
@@ -62,9 +62,9 @@
                                     Products
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Station</a></li>
-                                    <li><a class="dropdown-item" href="#">DIY-kits</a></li>
-                                    <li><a class="dropdown-item" href="#">Parts</a></li>
+                                    <li><a class="dropdown-item" href="productpagina-station2.html">Station</a></li>
+                                    <li><a class="dropdown-item" href="diy-kits.html">DIY-kits</a></li>
+                                    <li><a class="dropdown-item" href="productpagina-parts.html">Parts</a></li>
                                 </ul>
                             </li>
 
@@ -103,8 +103,7 @@
 
                     Ontdek alle onderdelen hieronder. </p>
 
-
-                <button class="btn btn-outline-dark fw-bold" type="button">Ga naar DIY-kits</button>
+                <a href="diy-kits.html"><button class="btn btn-outline-dark fw-bold" type="button" > Ga naar DIY-kits</button></a>
             </div>
 
         </div>
@@ -112,9 +111,10 @@
         <div class="col-6 ">
             <div class="row ">
                 <div class="card text-bg-dark ">
-                    <img src="assets/hero_rechts_parts.png" class="card-img" alt="...">
+                    <img src="assets/hero_rechts_parts.png" class="card-img" alt="foto_hero_product"
+                         style="min-height: 600px">
                     <div class="card-img-overlay">
-                        <div class="card-body-rechts col-6 my-5 mx-4  align-items-center">
+                        <div class="card-body-rechts col-sm-8 col-md-6 my-5 mx-4  align-items-center">
                             <h2 class="display-10 fw-bold card-title">New</h2>
                             <h4>Power suply</h4>
                             <p class="card-text">Dit is een nieuwe variant van de Power suply A142.
@@ -126,7 +126,7 @@
                                 <li>Uitbreiden is mogelijk</li>
                             </ul>
                             <p><span class="fs-2 fw-bold ">€215</span></p>
-                            <button class="btn btn-outline-light mx-3" type="button">Meer info</button>
+                            <a href="product_detail_station.html"><button class="btn btn-outline-light mx-3" type="button">Meer info</button></a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
     <div class="row justify-content-center  py-4">
         <div class="col-xs-10 col-md-6 col-4 col-xl-4 ">
 
-            <h2 class="text-center">Customize your own station</h2>
+            <h2 class="text-center" id="diy">Customize your own station</h2>
             <div class="input-group mb-3 my-2 ">
                 <input type="text" class="form-control border border-end-0  " placeholder=""
                        aria-label="zoekbalk_parts"
@@ -163,7 +163,7 @@
             </div>
 
             <!--        FILTER        MODAL-->
-            <div class="modal fade" id="filter_parts" tabindex="-1" aria-hidden="true"
+            <div class="modal fade modal_layout" id="filter_parts" tabindex="-1" aria-hidden="true"
                  aria-labelledby="filter_parts_titel" data-bs-backdrop="static">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -364,31 +364,284 @@
 <div class="row  row-cols-1 row-cols-md-4 g-4 py-4 px-5 justify-content">
 
 
-    <div class="col-3">
+    <div class="col-md-3">
 
-        <div class="card card-product-onderdelen__" >
+        <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
-                <img src="assets/foto_klein_card.png"   alt="foto_card" class="img-fluid" />
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
                 <a href="#">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
                 </a>
             </div>
 
             <div class="card-img-overlay klein_card">
-                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein" data-bs-toggle="modal"  data-bs-target="#product_toegevoegd"><a
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
                         class="nav-link"
                         style="color: white"
                         href="#"><i
-                        class="bi bi-cart2 fs-2"></i></a></button>
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
                 <!--           FAVORIETE TOEGEVOEGD         MODAL-->
                 <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
                         data-bs-toggle="modal"
-                        data-bs-target="#favoriet_toegevoegd"><a
-                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                        data-bs-target="#favoriet_toegevoegd2"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
                 </button>
 
 
-                <div class="modal fade" id="favoriet_toegevoegd" tabindex="-1" aria-hidden="true"
+                <div class="modal fade modal_layout favorieten_toevoegen" id="favoriet_toegevoegd2" tabindex="-1"
+                     aria-hidden="true"
+                     aria-labelledby="favoriet_toegevoegd_titel2">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="width: 400px">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h5 class="text-center" id="favoriet_toegevoegd_titel2">U artikel
+                                            is
+                                            toegevoegd aan uw
+                                            Favorieten</h5>
+                                    </div>
+                                    <div class="col-md-2 ms-auto">
+                                        <button type="button" class="btn-close  ms-auto px3"
+                                                data-bs-dismiss="modal"
+                                                aria-label="close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>De Extended wall station A1254</p>
+                            </div>
+                            <div class="modal-footer">
+
+                                <div class="row ">
+                                    <div class="col justify-content-center">
+                                        <button class="btn btn-primary">Naar je winkelmantje <i
+                                                class="bi bi-chevron-right"></i></button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn  btn-link ms-auto"
+                                                data-bs-dismiss="modal">
+                                            Of verder winkelen
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--!END FAVORIETE TOEGEVOEGD /MODAL-->
+                <!--                MODAL PRODUCT TOEGEVOEGD-->
+
+
+                <div class="modal fade modal_layout" id="product_toegevoegd" tabindex="-1" aria-hidden="true"
+                     aria-labelledby="product_toegevoegd_titel" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-centered" style="min-width: 60vw">
+                        <div class="modal-content">
+
+
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-1 ms-auto">
+                                            <button type="button" class="btn-close  ms-auto px3"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 .ms-auto">
+                                            <h5 class="modal-title" id="product_toegevoegd_titel2">U artikel is
+                                                toegevoegd aan u winkelmantje</h5>
+                                        </div>
+                                        <div class="col-md-4 ms-auto">
+                                            <button class="btn btn-primary">Naar je winkelmantje <i
+                                                    class="bi bi-chevron-right"></i></button>
+
+                                            <button type="button" class="btn  btn-link" data-bs-dismiss="modal">Of
+                                                verder winkelen
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>De Extended wall station A1254</p>
+                                            <span class="badge rounded-pill">Op voorraad</span>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!--                  MODAL                    CARDS-->
+                                    <div class="row row-cols-1 row-cols-md-3 g-4 py-4">
+                                        <div class="col-2">
+
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0 ">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">€ 10</p>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">€ 10</p>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">€ 10</p>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--/END MODAL-->
+            </div>
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
+                    gebruik.</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--    END CARD PRODUCT -->
+
+    <div class="col-md-3">
+
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
+                </a>
+            </div>
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein "
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
+                </button>
+
+
+                <div class="modal fade modal_layout favorieten_toevoegen" id="favoriet_toegevoegd" tabindex="-1"
+                     aria-hidden="true"
                      aria-labelledby="favoriet_toegevoegd_titel">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content" style="width: 400px">
@@ -435,8 +688,8 @@
                 <!--                MODAL PRODUCT TOEGEVOEGD-->
 
 
-                <div class="modal fade" id="product_toegevoegd" tabindex="-1" aria-hidden="true"
-                     aria-labelledby="product_toegevoegd_titel" data-bs-backdrop="static">
+                <div class="modal fade modal_layout " id="product_toegevoegd2" tabindex="-1" aria-hidden="true"
+                     aria-labelledby="product_toegevoegd_titel2" data-bs-backdrop="static">
                     <div class="modal-dialog modal-dialog-centered" style="min-width: 60vw">
                         <div class="modal-content">
 
@@ -446,7 +699,6 @@
                                     <div class="row">
                                         <div class="col-md-1 ms-auto">
                                             <button type="button" class="btn-close  ms-auto px3"
-                                                    data-bs-dismiss="modal"
                                                     aria-label="close"></button>
                                         </div>
                                     </div>
@@ -472,14 +724,17 @@
                                         </div>
 
                                     </div>
-                                    <!--                                      CARDS-->
+
+
+                                    <!--                  MODAL                    CARDS-->
                                     <div class="row row-cols-1 row-cols-md-3 g-4 py-4">
                                         <div class="col-2">
 
                                             <div class="card">
                                                 <div class="bg-image hover-overlay ripple">
-                                                    <img src="assets/Ownit-stations.png" alt="foto_card" class="img-fluid"/>
-                                                    <a href="#!">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
                                                         <div class="mask"
                                                              style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                                     </a>
@@ -513,8 +768,9 @@
 
                                             <div class="card">
                                                 <div class="bg-image hover-overlay ripple">
-                                                    <img src="assets/Ownit-stations.png"  alt="foto_card" class="img-fluid"/>
-                                                    <a href="#!">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
                                                         <div class="mask"
                                                              style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                                     </a>
@@ -548,8 +804,9 @@
 
                                             <div class="card">
                                                 <div class="bg-image hover-overlay ripple">
-                                                    <img src="assets/Ownit-stations.png"   alt="foto_card" class="img-fluid"/>
-                                                    <a href="#!">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
                                                         <div class="mask"
                                                              style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                                     </a>
@@ -590,287 +847,895 @@
 
                 <!--/MODAL-->
             </div>
-            <div class="card-body text-bg-dark" style="background-color: rgba(74,74,130,0.88)">
-                <h5 class="card-title float-start">Adapter</h5>
-                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
                     gebruik.</p>
-                <p class="fs-6 float-end">10€</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
 
             </div>
 
 
         </div>
     </div>
-    <div class="col-2">
+    <!--    END CARD PRODUCT -->
 
-        <div class="card">
-            <div class="bg-image hover-overlay ripple">
-                <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+
+    <div class="col-md-3">
+
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
                 </a>
             </div>
-            <div class="card-img-overlay">
-                <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                        class="nav-link inline"
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
                         style="color: white"
                         href="#"><i
-                        class="bi bi-cart2 fs-3"></i></a></button>
-                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
                 </button>
+
+
+                <div class="modal fade modal_layout favorieten_toevoegen" id="favoriet_toegevoegd3" tabindex="-1"
+                     aria-hidden="true"
+                     aria-labelledby="favoriet_toegevoegd_titel2">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="width: 400px">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h5 class="text-center" id="favoriet_toegevoegd_titel3">U artikel
+                                            is
+                                            toegevoegd aan uw
+                                            Favorieten</h5>
+                                    </div>
+                                    <div class="col-md-2 ms-auto">
+                                        <button type="button" class="btn-close  ms-auto px3"
+                                                data-bs-dismiss="modal"
+                                                aria-label="close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>De Extended wall station A1254</p>
+                            </div>
+                            <div class="modal-footer">
+
+                                <div class="row ">
+                                    <div class="col justify-content-center">
+                                        <button class="btn btn-primary">Naar je winkelmantje <i
+                                                class="bi bi-chevron-right"></i></button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn  btn-link ms-auto"
+                                                data-bs-dismiss="modal">
+                                            Of verder winkelen
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--!END FAVORIETE TOEGEVOEGD /MODAL-->
+                <!--                MODAL PRODUCT TOEGEVOEGD-->
+
+
+                <div class="modal fade modal_layout" id="product_toegevoegd3" tabindex="-1" aria-hidden="true"
+                     aria-labelledby="product_toegevoegd_titel" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-centered" style="min-width: 60vw">
+                        <div class="modal-content">
+
+
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-1 ms-auto">
+                                            <button type="button" class="btn-close  ms-auto px3"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="close"></button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 .ms-auto">
+                                            <h5 class="modal-title" id="product_toegevoegd_titel3">U artikel is
+                                                toegevoegd aan u winkelmantje</h5>
+                                        </div>
+                                        <div class="col-md-4 ms-auto">
+                                            <button class="btn btn-primary">Naar je winkelmantje <i
+                                                    class="bi bi-chevron-right"></i></button>
+
+                                            <button type="button" class="btn  btn-link" data-bs-dismiss="modal">Of
+                                                verder winkelen
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>De Extended wall station A1254</p>
+                                            <span class="badge rounded-pill">Op voorraad</span>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!--                  MODAL                    CARDS-->
+                                    <div class="row row-cols-1 row-cols-md-3 g-4 py-4">
+                                        <div class="col-2">
+
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0 ">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">€ 10</p>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">€ 10</p>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card"
+                                                         class="img-fluid"/>
+                                                    <a href="product_detail_station.html">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">€ 10</p>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--/END MODAL-->
             </div>
-            <div class="card-body">
-                <h5 class="card-title float-start">Adapter</h5>
-                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
                     gebruik.</p>
-                <p class="fs-6 float-end">10€</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
 
             </div>
-
 
         </div>
-    </div>
-    <div class="col-2">
 
-        <div class="card">
-            <div class="bg-image hover-overlay ripple">
-                <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+    </div>
+    <!--    END CARD PRODUCT -->
+
+
+    <div class="col-md-3">
+
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
                 </a>
             </div>
-            <div class="card-img-overlay">
-                <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                        class="nav-link inline"
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
                         style="color: white"
                         href="#"><i
-                        class="bi bi-cart2 fs-3"></i></a></button>
-                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
                 </button>
+
+
+                <!--                <div class="modal fade modal_layout favorieten_toevoegen" id="favoriet_toegevoegd3" tabindex="-1"-->
+                <!--                     aria-hidden="true"-->
+                <!--                     aria-labelledby="favoriet_toegevoegd_titel2">-->
+                <!--                    <div class="modal-dialog modal-dialog-centered">-->
+                <!--                        <div class="modal-content" style="width: 400px">-->
+                <!--                            <div class="modal-header">-->
+                <!--                                <div class="row">-->
+                <!--                                    <div class="col ">-->
+                <!--                                        <h5 class="text-center" id="favoriet_toegevoegd_titel3">U artikel-->
+                <!--                                            is-->
+                <!--                                            toegevoegd aan uw-->
+                <!--                                            Favorieten</h5>-->
+                <!--                                    </div>-->
+                <!--                                    <div class="col-md-2 ms-auto">-->
+                <!--                                        <button type="button" class="btn-close  ms-auto px3"-->
+                <!--                                                data-bs-dismiss="modal"-->
+                <!--                                                aria-label="close"></button>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                            <div class="modal-body">-->
+
+                <!--                                <p>De Extended wall station A1254</p>-->
+                <!--                            </div>-->
+                <!--                            <div class="modal-footer">-->
+
+                <!--                                <div class="row ">-->
+                <!--                                    <div class="col justify-content-center">-->
+                <!--                                        <button class="btn btn-primary">Naar je winkelmantje <i-->
+                <!--                                                class="bi bi-chevron-right"></i></button>-->
+                <!--                                    </div>-->
+                <!--                                    <div>-->
+                <!--                                        <button type="button" class="btn  btn-link ms-auto"-->
+                <!--                                                data-bs-dismiss="modal">-->
+                <!--                                            Of verder winkelen-->
+                <!--                                        </button>-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+
+
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                &lt;!&ndash;!END FAVORIETE TOEGEVOEGD /MODAL&ndash;&gt;-->
+                <!--                &lt;!&ndash;                MODAL PRODUCT TOEGEVOEGD&ndash;&gt;-->
+
+
+                <!--                <div class="modal fade modal_layout" id="product_toegevoegd3" tabindex="-1" aria-hidden="true"-->
+                <!--                     aria-labelledby="product_toegevoegd_titel" data-bs-backdrop="static">-->
+                <!--                    <div class="modal-dialog modal-dialog-centered" style="min-width: 60vw">-->
+                <!--                        <div class="modal-content">-->
+
+
+                <!--                            <div class="modal-body">-->
+                <!--                                <div class="container-fluid">-->
+                <!--                                    <div class="row">-->
+                <!--                                        <div class="col-md-1 ms-auto">-->
+                <!--                                            <button type="button" class="btn-close  ms-auto px3"-->
+                <!--                                                    data-bs-dismiss="modal"-->
+                <!--                                                    aria-label="close"></button>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+                <!--                                    <div class="row">-->
+                <!--                                        <div class="col-md-6 .ms-auto">-->
+                <!--                                            <h5 class="modal-title" id="product_toegevoegd_titel3">U artikel is-->
+                <!--                                                toegevoegd aan u winkelmantje</h5>-->
+                <!--                                        </div>-->
+                <!--                                        <div class="col-md-4 ms-auto">-->
+                <!--                                            <button class="btn btn-primary">Naar je winkelmantje <i-->
+                <!--                                                    class="bi bi-chevron-right"></i></button>-->
+
+                <!--                                            <button type="button" class="btn  btn-link" data-bs-dismiss="modal">Of-->
+                <!--                                                verder winkelen-->
+                <!--                                            </button>-->
+                <!--                                        </div>-->
+
+                <!--                                    </div>-->
+                <!--                                    <div class="row">-->
+                <!--                                        <div class="col">-->
+                <!--                                            <p>De Extended wall station A1254</p>-->
+                <!--                                            <span class="badge rounded-pill">Op voorraad</span>-->
+                <!--                                        </div>-->
+
+                <!--                                    </div>-->
+
+
+                <!--                                    &lt;!&ndash;                  MODAL                    CARDS&ndash;&gt;-->
+                <!--                                    <div class="row row-cols-1 row-cols-md-3 g-4 py-4">-->
+                <!--                                        <div class="col-2">-->
+
+                <!--                                            <div class="card">-->
+                <!--                                                <div class="bg-image hover-overlay ripple">-->
+                <!--                                                    <img src="assets/Ownit-stations.png" alt="foto_card"-->
+                <!--                                                         class="img-fluid"/>-->
+                <!--                                                    <a href="product_detail_station.html">-->
+                <!--                                                        <div class="mask"-->
+                <!--                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>-->
+                <!--                                                    </a>-->
+                <!--                                                </div>-->
+                <!--                                                <div class="card-img-overlay">-->
+                <!--                                                    <button type="button"-->
+                <!--                                                            class="btn btn-outline-secondary border border-0 "><a-->
+                <!--                                                            class="nav-link inline"-->
+                <!--                                                            style="color: white"-->
+                <!--                                                            href="#"><i-->
+                <!--                                                            class="bi bi-cart2 fs-3"></i></a></button>-->
+                <!--                                                    <button type="button"-->
+                <!--                                                            class="btn btn-outline-secondary float-end border border-0 ">-->
+                <!--                                                        <a-->
+                <!--                                                                class="nav-link" style="color: white" href="#"><i-->
+                <!--                                                                class="bi bi-heart fs-3 "></i></a>-->
+                <!--                                                    </button>-->
+                <!--                                                </div>-->
+                <!--                                                <div class="card-body">-->
+                <!--                                                    <h5 class="card-title float-start">Adapter</h5>-->
+                <!--                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter-->
+                <!--                                                        voor universeel gebruik.</p>-->
+                <!--                                                    <p class="fs-6 float-end">€ 10</p>-->
+
+                <!--                                                </div>-->
+
+
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                        <div class="col-2">-->
+
+                <!--                                            <div class="card">-->
+                <!--                                                <div class="bg-image hover-overlay ripple">-->
+                <!--                                                    <img src="assets/Ownit-stations.png" alt="foto_card"-->
+                <!--                                                         class="img-fluid"/>-->
+                <!--                                                    <a href="product_detail_station.html">-->
+                <!--                                                        <div class="mask"-->
+                <!--                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>-->
+                <!--                                                    </a>-->
+                <!--                                                </div>-->
+                <!--                                                <div class="card-img-overlay">-->
+                <!--                                                    <button type="button"-->
+                <!--                                                            class="btn btn-outline-secondary border border-0 "><a-->
+                <!--                                                            class="nav-link inline"-->
+                <!--                                                            style="color: white"-->
+                <!--                                                            href="#"><i-->
+                <!--                                                            class="bi bi-cart2 fs-3"></i></a></button>-->
+                <!--                                                    <button type="button"-->
+                <!--                                                            class="btn btn-outline-secondary float-end border border-0">-->
+                <!--                                                        <a-->
+                <!--                                                                class="nav-link" style="color: white" href="#"><i-->
+                <!--                                                                class="bi bi-heart fs-3 "></i></a>-->
+                <!--                                                    </button>-->
+                <!--                                                </div>-->
+                <!--                                                <div class="card-body">-->
+                <!--                                                    <h5 class="card-title float-start">Adapter</h5>-->
+                <!--                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter-->
+                <!--                                                        voor universeel gebruik.</p>-->
+                <!--                                                    <p class="fs-6 float-end">€ 10</p>-->
+
+                <!--                                                </div>-->
+
+
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                        <div class="col-2">-->
+
+                <!--                                            <div class="card">-->
+                <!--                                                <div class="bg-image hover-overlay ripple">-->
+                <!--                                                    <img src="assets/Ownit-stations.png" alt="foto_card"-->
+                <!--                                                         class="img-fluid"/>-->
+                <!--                                                    <a href="product_detail_station.html">-->
+                <!--                                                        <div class="mask"-->
+                <!--                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>-->
+                <!--                                                    </a>-->
+                <!--                                                </div>-->
+                <!--                                                <div class="card-img-overlay">-->
+                <!--                                                    <button type="button"-->
+                <!--                                                            class="btn btn-outline-secondary border border-0 "><a-->
+                <!--                                                            class="nav-link inline"-->
+                <!--                                                            style="color: white"-->
+                <!--                                                            href="#"><i-->
+                <!--                                                            class="bi bi-cart2 fs-3"></i></a></button>-->
+                <!--                                                    <button type="button"-->
+                <!--                                                            class="btn btn-outline-secondary float-end border border-0">-->
+                <!--                                                        <a-->
+                <!--                                                                class="nav-link" style="color: white" href="#"><i-->
+                <!--                                                                class="bi bi-heart fs-3 "></i></a>-->
+                <!--                                                    </button>-->
+                <!--                                                </div>-->
+                <!--                                                <div class="card-body">-->
+                <!--                                                    <h5 class="card-title float-start">Adapter</h5>-->
+                <!--                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter-->
+                <!--                                                        voor universeel gebruik.</p>-->
+                <!--                                                    <p class="fs-6 float-end">€ 10</p>-->
+
+                <!--                                                </div>-->
+
+
+                <!--                                            </div>-->
+                <!--                                        </div>-->
+                <!--                                    </div>-->
+
+                <!--                                </div>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+
+                <!--                &lt;!&ndash;/END MODAL&ndash;&gt;-->
             </div>
-            <div class="card-body">
-                <h5 class="card-title float-start">Adapter</h5>
-                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
                     gebruik.</p>
-                <p class="fs-6 float-end">10€</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
 
             </div>
-
 
         </div>
-    </div>
-    <div class="col-2">
 
-        <div class="card">
-            <div class="bg-image hover-overlay ripple">
-                <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+
+    </div>
+    <div class="col-md-3">
+
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
                 </a>
             </div>
-            <div class="card-img-overlay">
-                <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                        class="nav-link inline"
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
                         style="color: white"
                         href="#"><i
-                        class="bi bi-cart2 fs-3"></i></a></button>
-                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
                 </button>
             </div>
-            <div class="card-body">
-                <h5 class="card-title float-start">Adapter</h5>
-                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
                     gebruik.</p>
-                <p class="fs-6 float-end">10€</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
 
             </div>
-
-
         </div>
     </div>
-    <div class="col-2">
+    <div class="col-md-3">
 
-        <div class="card">
-            <div class="bg-image hover-overlay ripple">
-                <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
                 </a>
             </div>
-            <div class="card-img-overlay">
-                <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                        class="nav-link inline"
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
                         style="color: white"
                         href="#"><i
-                        class="bi bi-cart2 fs-3"></i></a></button>
-                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
                 </button>
             </div>
-            <div class="card-body">
-                <h5 class="card-title float-start">Adapter</h5>
-                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
                     gebruik.</p>
-                <p class="fs-6 float-end">10€</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
 
             </div>
-
-
         </div>
     </div>
-    <div class="col-2">
+    <div class="col-md-3">
 
-        <div class="card">
-            <div class="bg-image hover-overlay ripple">
-                <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
                 </a>
             </div>
-            <div class="card-img-overlay">
-                <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                        class="nav-link inline"
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
                         style="color: white"
                         href="#"><i
-                        class="bi bi-cart2 fs-3"></i></a></button>
-                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
                 </button>
             </div>
-            <div class="card-body">
-                <h5 class="card-title float-start">Adapter</h5>
-                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
                     gebruik.</p>
-                <p class="fs-6 float-end">10€</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
 
             </div>
-
-
         </div>
     </div>
-    <div class="col-2">
+    <div class="col-md-3">
 
-        <div class="card">
-            <div class="bg-image hover-overlay ripple">
-                <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
                 </a>
             </div>
-            <div class="card-img-overlay">
-                <button type="button" class="btn btn-outline-secondary border border-0 "
-                        data-mdb-toggle="modal"
-                        data-bs-target="#paginering"><a class="nav-link inline"
-                                                        style="color: white"
-                                                        href="#"><i
-                        class="bi bi-cart2 fs-3"></i></a></button>
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-5"></i></a></button>
 
 
-                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
                 </button>
             </div>
-            <div class="card-body">
-                <h5 class="card-title float-start">Adapter</h5>
-                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
                     gebruik.</p>
-                <p class="fs-6 float-end">10€</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
 
             </div>
-
-
         </div>
     </div>
+    <div class="col-md-3">
 
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
+                </a>
+            </div>
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
+                </button>
+            </div>
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
+                    gebruik.</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
+                </a>
+            </div>
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
+                </button>
+            </div>
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
+                    gebruik.</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
+                </a>
+            </div>
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
+                </button>
+            </div>
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
+                    gebruik.</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+
+        <div class="card card-product-onderdelen__">
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png" alt="foto_card" class="img-fluid"/>
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(229,229,229,0.15);"></div>
+                </a>
+            </div>
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein"
+                        data-bs-toggle="modal" data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-5"></i></a></button>
+
+
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd3"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
+                </button>
+            </div>
+            <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
+                <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
+                <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
+                    universeel
+                    gebruik.</p>
+                <p class="fs-6 fw-bold  float-end " style="color:#ffffff">€ 10</p>
+
+            </div>
+        </div>
+    </div>
 
 </div>
-<div class="row">
-    <!--            PAGINATION-->
-    <div class="col">
+<!--    END CARD PRODUCT -->
+    <div class="row">
+        <!--            PAGINATION-->
+        <div class="col-12">
 
-        <nav aria-label="...">
-            <ul class="pagination pagination-sm justify-content-center">
-                <li class="page-item active" aria-current="page">
-                    <span class="page-link">1</span>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-            </ul>
-        </nav>
+            <nav aria-label="...">
+                <ul class="pagination pagination-sm justify-content-center">
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </div>
 
-</div>
-</div>
 <!-- FOOTER -->
 
 <!--    LINKS FOOTER-->
-<div class="container-fluid  py-4 footer__">
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
+<div class="container-fluid footer__  py-5 " >
+    <div class="row ">
+        <div class="col-sm-6 col-md-4 " >
             <!--        CONTACT-->
-            <p>Contact</p>
+            <p><span>Contact</span></p>
             <ul>
                 <li>Ownit</li>
                 <li> PXL - Kempische steenweg,</li>
                 <li> Corda campus, 3500</li>
-                <li><a>FAQ</a></li>
-                <li><a>Contact formulier</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="contact.html">Contact formulier</a></li>
             </ul>
         </div>
         <!--    OVER ONS-->
         <div class="col-sm-6 col-md-4">
-            <p>Over ons</p>
+            <p><span>Over ons</span></p>
             <ul>
 
-                <li><a>Misie en visie</a></li>
-                <li><a>Ons team</a></li>
-                <li><a>Road map</a></li>
-                <li><a>Ownit app</a></li>
+                <li><a href="#">Misie en visie</a></li>
+                <li><a href="#">Ons team</a></li>
+                <li><a href="#">Road map</a></li>
+                <li><a href="#">Ownit app</a></li>
 
             </ul>
         </div>
 
         <!--        COMMUNITY-->
         <div class="col-sm-6 col-md-4">
-            <p>Community</p>
+            <p><span>Community</span></p>
             <ul>
 
-                <li><a>Forum</a></li>
-                <li><a>Bibliotheek</a></li>
+                <li><a  href="#">Forum</a></li>
+                <li><a  href="#">Bibliotheek</a></li>
 
             </ul>
         </div>
 
     </div>
     <!--        SOCIAL MEDIA-->
-    <div class="row">
-        <p>Social media</p>
-        <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start">
-            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-facebook"></i></a>
-            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-instagram"></i></a>
-            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i></a>
-            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
-            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-youtube"></i></a>
+    <div class="row mx-5 my-5">
+        <div class="col">
+            <p><span>Social media</span></p>
+            <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start">
+                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-facebook fs-2"></i></a>
+                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-instagram fs-2"></i></a>
+                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-linkedin fs-2"></i></a>
+                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-github fs-2"></i></a>
+                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-youtube fs-2"></i></a>
+            </div>
         </div>
-        <!--            Copyright-->
-        <div>
 
-        </div>
-        <p class="text-center">Copyright &#169; Ownit, 2023 all right reserved </p>
+
     </div>
-
-
+    <!--            Copyright-->
+    <div>
+        <p class="text-center mt-auto">Copyright &#169; Ownit, 2023 all right reserved </p>
+    </div>
 </div>
 
 
 <!--BOOTSTRAP-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
