@@ -7,9 +7,23 @@ body {
     color: #000;
 }
 
-/* navigatie */
+/*___HEADER*/
+/*____________NAVBAR*/
+.navbar{
+    height: 100px;
+}
 .navbar-brand{
     width: 4rem;
+}
+
+.navbar ul li a {
+    margin: 0 10px;
+    font-size: 16px;
+
+}
+
+.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+    font-weight: bold;
 }
 .navbar-brand  img{
     width: 100%;
@@ -260,21 +274,37 @@ h5, .card-title {
     font: Aptly, regular, 28px;
     color: #261F56;
     margin-top: 20px;
+    text-align: center;
 }
-
+/* text */
 .card-text {
     font: Aptly, regular, 20px;
     color: #261F56;
     margin-top: 20px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #cards__middle {
     text-align: center;
     margin-top: 50px;
-    padding: 0px;
+    padding: 0px 20px 10px 20px;
+    display: flex;
 }
 
+#cards__middle2 {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0px 20px 10px 20px;
+    display: flex;
+}
+
+.col-md-4 {
+    margin-top: -300px;
+    padding: 0px 20px 10px 20px;
+    display: flex;
+}
+
+/* icons */
 #check__icon {
     height: 80px;
     width: 80px;
@@ -345,4 +375,125 @@ h5, .card-title {
     margin-top: 25px;
     margin-left: -20px;
     display: inline;
+}
+
+
+
+/* laadpaal features */
+#lp__title {
+    font: Aptly, regular, 46px;
+    color: #261F56;
+    margin-top: 130px;
+    margin-left: 480px;
+}
+
+#laadpaal__pic {
+    height: 1050px;
+    width: 1740px;
+    margin-left: -100px;
+    padding: 0px;	
+    margin-top: -5px;
+    display: inline;
+    border-radius: 10px;
+}
+
+
+/* features */
+/* titels */
+#home__feature{
+    font: Aptly, regular, 38px;
+    color: #261F56;
+    margin-left: -20px;
+    margin-top: 50px;
+}
+
+#give__feature{
+    font: Aptly, regular, 38px;
+    color: #261F56;
+    margin-left: 220px;
+}
+
+#stroom__feature{
+    font: Aptly, regular, 38px;
+    color: #261F56;
+    margin-left: -0px;
+}
+
+/* img */
+#ownit__single__charger {
+    height: 450px;
+    width: 700px;
+    margin-left: 708px;
+    padding: 0px;	
+    margin-top: -360px;
+    display: inline;
+    border-radius: 10px;
+}
+
+#hands__img {
+    height: 520px;
+    width: 700px;
+    margin-left: -110px;
+    padding: 0px;	
+    margin-top: 20px;
+    display: inline;
+    border-radius: 10px;
+}
+
+#car__ui_img {
+    height: 450px;
+    width: 700px;
+    margin-left: 708px;
+    padding: 0px;	
+    margin-top: -360px;
+    display: inline;
+    border-radius: 10px;
+}
+
+/*  text */
+#home__txt {
+    font: New order, regular, 20px;
+    color: #261F56;
+    margin-left: -20px;
+    margin-top: 20px;
+ }
+
+#give__text {
+    font: New order, regular, 20px;
+    color: #261F56;
+    margin-left: 227px;
+    margin-top: 20px;
+}	
+
+
+/*  cards review */
+
+
+ /*FOOTER*/
+
+.footer__{
+    background-color: #261F56;
+    color: #ffffff;
+    max-height: 480px;
+}
+
+.footer__ ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer__ span{
+    color: #5EBCAF;
+    font-size: 20px;
+    font-weight: normal;
+}
+.social-media-footer a{
+
+    display: flex;
+    padding: 2px;
+    margin: 20px 10px ;
+    color: #ffffff;
+}
+.footer__ p:last-child{
+    background-color: #ffffff;
+    color: #000000;
 }
