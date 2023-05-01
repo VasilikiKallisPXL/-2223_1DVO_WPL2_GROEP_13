@@ -239,11 +239,110 @@ h2, #title__mail__start {
     cursor: pointer;
 }
 
-#img__arrow {
-    color: #000;
+.bi {
+    color: #ffffff;
     height: 15px;
     width: 10px;
     margin-left: 1020px;
-    margin-top: -173px;
+    margin-top: -174px;
     display: inline-block;
+}
+
+/*  cards section middle */
+#extended__title {
+    font: Aptly, regular, 46px;
+    color: #261F56;
+    margin-top: 130px;
+    margin-left: 370px;
+}
+
+h5, .card-title {
+    font: Aptly, regular, 28px;
+    color: #261F56;
+    margin-top: 20px;
+}
+
+.card-text {
+    font: Aptly, regular, 20px;
+    color: #261F56;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+#cards__middle {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+#check__icon {
+    height: 80px;
+    width: 80px;
+    color: #5EBCAF;
+    margin-top: 5px;
+    margin-left: -20px;
+    display: inline;
+}
+
+#opensource_icon {
+    height: 80px;
+    width: 80px;
+    color: #5EBCAF;
+    margin-top: 25px;
+    margin-left: -20px;
+    display: inline;
+}
+
+#lowcost__icon {
+    height: 80px;
+    width: 80px;
+    color: #5EBCAF;
+    margin-top: 25px;
+    margin-left: -20px;
+    display: inline;
+}
+
+#easyuse__icon {
+    height: 80px;
+    width: 80px;
+    color: #5EBCAF;
+    margin-top: 25px;
+    margin-left: -20px;
+    display: inline;
+}
+
+#full__battery__icon {
+    height: 80px;
+    width: 80px;
+    color: #5EBCAF;
+    margin-top: 25px;
+    margin-left: -20px;
+    display: inline;
+}
+
+#bluetooth_icon {
+    height: 80px;
+    width: 80px;
+    color: #5EBCAF;
+    margin-top: 25px;
+    margin-left: -20px;
+    display: inline;
+}
+
+#dps__icon {
+    height: 80px;
+    width: 80px;
+    color: #5EBCAF;
+    margin-top: 25px;
+    margin-left: -20px;
+    display: inline;
+}
+
+#low__maintensance__icon {
+    height: 80px;
+    width: 80px;
+    color: #5EBCAF;
+    margin-top: 25px;
+    margin-left: -20px;
+    display: inline;
 }
