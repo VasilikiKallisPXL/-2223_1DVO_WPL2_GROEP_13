@@ -92,584 +92,775 @@
     </div>
     <!--        HERO-->
 
-    <div class="row hero-parts__ align-items-stretch py-5 ">
+    <div class="row hero-parts__ align-items-stretch pb-5 ">
 
-        <div class="col-6 text-">
-            <h1 class="display-12 fw-bold">Parts</h1>
-            <h2 class="display-10 fw-bold">Onderdelen</h2>
-            <p>Je kan aparte onderdelen kopen voor te vervangen of uitbreiden, jij kiest hoe jou laadpaal eruit ziet.
+        <div class="col-6 ">
+            <h1 class="display-12 fw-bold text-end">Parts</h1>
+            <div class="card-body-links col-8 my-5 mx-4  align-items-center">
+                <h2 class="display-10 fw-bold card-title">Onderdelen</h2>
+                <p class="card-text">Je kan aparte onderdelen kopen voor te vervangen of uitbreiden, jij kiest hoe jou
+                    laadpaal eruit ziet.
 
-                Ontdek alle onderdelen hieronder </p>
-            <div class="col-auto me-auto">
-                <button class="btn btn-primary btn-lg" type="button">Meer info</button>
+                    Ontdek alle onderdelen hieronder. </p>
+
+
+                <button class="btn btn-outline-dark fw-bold" type="button">Ga naar DIY-kits</button>
             </div>
 
         </div>
-
-        <div class="col-6">
+        <!--HERO_RECHTS DEEL-->
+        <div class="col-6 ">
             <div class="row ">
-                <div class="col-8">
-                    <h2 class="display-10 fw-bold">New</h2>
-                    <p class="col-md-8 fs-4 fw-bold">Power suply</p>
-                    <p class="col-md-8 fs-5 ">Dit is een nieuwe variant van de Power suply A142.
-                        Deze is duurzamer en heef een universele koppeling voor op elke auto te passen.</p>
-                    <p class="col-md-8 fs-4 fw-bold">Specs </p>
-                    <ul>
-                        <li>5cm x 11.3cm</li>
-                        <li>Bluetooth function</li>
-                        <li>Uitbreiden is mogelijk</li>
-                    </ul>
-                    <p class="col-md-2 fs-2 fw-bold">€215</p>
-                    <button class="btn btn-primary btn-lg" type="button">Meer info</button>
+                <div class="card text-bg-dark ">
+                    <img src="assets/hero_rechts_parts.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="card-body-rechts col-6 my-5 mx-4  align-items-center">
+                            <h2 class="display-10 fw-bold card-title">New</h2>
+                            <h4>Power suply</h4>
+                            <p class="card-text">Dit is een nieuwe variant van de Power suply A142.
+                                Deze is duurzamer en heef een universele koppeling voor op elke auto te passen.</p>
+                            <h4>Specs </h4>
+                            <ul>
+                                <li>5cm x 11.3cm</li>
+                                <li>Bluetooth function</li>
+                                <li>Uitbreiden is mogelijk</li>
+                            </ul>
+                            <p><span class="fs-2 fw-bold ">€215</span></p>
+                            <button class="btn btn-outline-light mx-3" type="button">Meer info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                    <!--                    MODAL-->
-                    <button class="btn btn-primary btn-lg " data-bs-toggle="modal"
-                            data-bs-target="#favoriet_toegevoegd" type="button">
-                        <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
-                    </button>
-                    <div class="modal fade" id="favoriet_toegevoegd" tabindex="-1" aria-hidden="true"
-                         aria-labelledby="favoriet_toegevoegd_titel">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content" style="width: 400px">
-                                <div class="modal-header">
-                                    <div class="row">
-                                        <div class="col ">
-                                            <h5 class="text-center" id="favoriet_toegevoegd_titel">U artikel is toegevoegd aan uw
-                                                Favorieten</h5>
+<!--        END HERO_RECHTS DEEL-->
+
+<!--END HEADER-->
+
+
+<!--MAIN-->
+
+<div class="container-fluid main__ py-4 px-5 ">
+
+    <div class="row justify-content-center  py-4">
+        <div class="col-xs-10 col-md-6 col-4 col-xl-4 ">
+
+            <h2 class="text-center">Customize your own station</h2>
+            <div class="input-group mb-3 my-2 ">
+                <input type="text" class="form-control border border-end-0  " placeholder=""
+                       aria-label="zoekbalk_parts"
+                       aria-describedby="basic-addon1">
+                <span class="input-group-text bg-white border border-start-0 " id="basic-addon1"><i
+                        class="bi bi-search "></i></span>
+                <!--            </div>-->
+
+
+                <button type="button" class="btn btn-primary btn-filter mx-3" data-bs-toggle="modal"
+                        data-bs-target="#filter_parts">
+                    <a><i class="bi bi-funnel-fill"></i></a></button>
+            </div>
+
+            <!--        FILTER        MODAL-->
+            <div class="modal fade" id="filter_parts" tabindex="-1" aria-hidden="true"
+                 aria-labelledby="filter_parts_titel" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <div class="modal-header container">
+                            <div class="row">
+                                <h4 class="modal-title col-md-6" id="filter_parts_titel">Filter je
+                                    resultaten</h4>
+                                <button type="button" class="btn-close col-md-2 ms-auto px3"
+                                        data-bs-dismiss="modal"
+                                        aria-label="close"></button>
+                                <p class="col-md-12">Filter je resultaten hier om een artikel naar jou keuze
+                                    te
+                                    vinden,</p>
+                            </div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <!--                        CATEGORIE-->
+                                        <h4>Categorie</h4>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="laadkabel"
+                                                   checked>
+                                            <label class="form-check-label" for="laadkabel">
+                                                Laadkabel
+                                            </label>
                                         </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="vervangingsonderdeel" checked>
+                                            <label class="form-check-label" for="vervangingsonderdeel">
+                                                Vervangingsonderdeel
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="accessoires" checked>
+                                            <label class="form-check-label" for="accessoires">
+                                                Accessoires</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--                TYPE STEKKER-->
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Type stekker autozijde</h4>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="type1_stekker" checked>
+                                            <label class="form-check-label" for="type1_stekker">
+                                                Type 1
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="type2_stekker" checked>
+                                            <label class="form-check-label" for="type2_stekker">
+                                                Type 2
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="ccs2"
+                                                   checked>
+                                            <label class="form-check-label" for="ccs2">
+                                                CCS2 </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="schuko"
+                                                   checked>
+                                            <label class="form-check-label" for="schuko">
+                                                Schuko </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--AANSLUITING MUURZIJDE-->
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Aansluiting muurzijde</h4>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="eu_stopcontact">
+                                            <label class="form-check-label" for="eu_stopcontact">
+                                                EU stopcontact
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="type2_eu_stopcontact">
+                                            <label class="form-check-label" for="type2_eu_stopcontact">
+                                                Type 2 EU stopcontact
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="rode_stopcontact">
+                                            <label class="form-check-label" for="rode_stopcontact">
+                                                Rode CEE16A stopcontact </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="schuko_muur" checked>
+                                            <label class="form-check-label" for="schuko_muur">
+                                                Schuko </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--LENGTE KABEL-->
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Lengte kabel</h4>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="halve_meter">
+                                            <label class="form-check-label" for="halve_meter">
+                                                0.5m
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="een_meter">
+                                            <label class="form-check-label" for="een_meter">
+                                                1m
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="anderhalf_m">
+                                            <label class="form-check-label" for="anderhalf_m">
+                                                1,5m</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                   id="vijf_m">
+                                            <label class="form-check-label" for="vijf_m">
+                                                5m</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8 ">
+                                        <label for="customRange2" class="form-label">Prijs</label>
+                                        <input type="range" class="form-range align-self-center" min="0"
+                                               max="680"
+                                               id="customRange2">
+                                        <p>0</p>
+                                        <p>680</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="modal-footer justify-content-center">
+
+
+                            <button type="button" class="btn btn-primary">Filter nu <i
+                                    class="bi bi-chevron-right"></i></button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="bi bi-trash3"></i></button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------------------END MODAL-->
+
+            <div class="bagge-group filter_bagge">
+                <span class="badge rounded-pill ">Power suply</span>
+                <span class="badge rounded-pill ">Cables</span>
+                <span class="badge rounded-pill ">Metal Enclosure</span>
+                <span class="badge rounded-pill ">Current Transformer</span>
+                <span class="badge rounded-pill ">Charging plug</span>
+                <span class="badge rounded-pill ">High-Speed fuses</span>
+                <span class="badge rounded-pill ">Display</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--CARDS ONDERDELEN-->
+
+
+<div class="row  row-cols-1 row-cols-md-4 g-4 py-4 px-5 justify-content">
+
+
+    <div class="col-3">
+
+        <div class="card card-product-onderdelen__" >
+            <div class="card text-bg-dark">
+                <img src="assets/foto_klein_card.png"   alt="foto_card" class="img-fluid" />
+                <a href="#">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+
+            <div class="card-img-overlay klein_card">
+                <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein" data-bs-toggle="modal"  data-bs-target="#product_toegevoegd"><a
+                        class="nav-link"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-2"></i></a></button>
+                <!--           FAVORIETE TOEGEVOEGD         MODAL-->
+                <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
+                        data-bs-toggle="modal"
+                        data-bs-target="#favoriet_toegevoegd"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                </button>
+
+
+                <div class="modal fade" id="favoriet_toegevoegd" tabindex="-1" aria-hidden="true"
+                     aria-labelledby="favoriet_toegevoegd_titel">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="width: 400px">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col ">
+                                        <h5 class="text-center" id="favoriet_toegevoegd_titel">U artikel
+                                            is
+                                            toegevoegd aan uw
+                                            Favorieten</h5>
+                                    </div>
                                     <div class="col-md-2 ms-auto">
                                         <button type="button" class="btn-close  ms-auto px3"
                                                 data-bs-dismiss="modal"
                                                 aria-label="close"></button>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+
+                                <p>De Extended wall station A1254</p>
+                            </div>
+                            <div class="modal-footer">
+
+                                <div class="row ">
+                                    <div class="col justify-content-center">
+                                        <button class="btn btn-primary">Naar je winkelmantje <i
+                                                class="bi bi-chevron-right"></i></button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn  btn-link ms-auto"
+                                                data-bs-dismiss="modal">
+                                            Of verder winkelen
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="modal-body">
-
-                                    <p>De Extended wall station A1254</p>
-                                </div>
-                                <div class="modal-footer">
-
-                                    <div class="row ">
-                                        <div class="col justify-content-center">
-                                            <button class="btn btn-primary">Naar je winkelmantje <i
-                                                    class="bi bi-chevron-right"></i></button>
-                                        </div>
-                                        <div>
-                                            <button type="button" class="btn  btn-link ms-auto" data-bs-dismiss="modal">
-                                                Of verder winkelen
-                                            </button>
-                                        </div>
-                                    </div>
 
 
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--!/MODAL-->
                 </div>
-                <div class="col-4">
-                    <img src="assets/image-wireframe.png" class="img-fluid" alt="algemeen">
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
+                <!--!END FAVORIETE TOEGEVOEGD /MODAL-->
+                <!--                MODAL PRODUCT TOEGEVOEGD-->
 
 
-<!--MAIN-->
-<div class="container-fluid  py-4 px-5">
-
-    <div class="row justify-content-center py-4">
-        <div class="col-xs-10 col-md-6 col-4 col-xl-4">
-
-            <h2>Customize your own station</h2>
-            <div class="input-group mb-3 ">
-                <input type="text" class="form-control border border-end-0 " placeholder="" aria-label="Username"
-                       aria-describedby="basic-addon1">
-                <span class="input-group-text bg-white border border-start-0 " id="basic-addon1"><i
-                        class="bi bi-search "></i></span>
-
-
-                <!--        FILTER        MODAL-->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#filter_parts">
-                    <a><i class="bi bi-funnel fs-5 mx-2"></i></a></button>
-
-                <div class="modal fade" id="filter_parts" tabindex="-1" aria-hidden="true"
-                     aria-labelledby="filter_parts_titel" data-bs-backdrop="static">
-                    <div class="modal-dialog modal-dialog-centered">
+                <div class="modal fade" id="product_toegevoegd" tabindex="-1" aria-hidden="true"
+                     aria-labelledby="product_toegevoegd_titel" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-centered" style="min-width: 60vw">
                         <div class="modal-content">
 
-                            <div class="modal-header container">
-                                <div class="row">
-                                    <h4 class="modal-title col-md-6" id="filter_parts_titel">Filter je resultaten</h4>
-                                    <button type="button" class="btn-close col-md-2 ms-auto px3" data-bs-dismiss="modal"
-                                            aria-label="close"></button>
-                                    <p class="col-md-12">Filter je resultaten hier om een artikel naar jou keuze te
-                                        vinden,</p>
-                                </div>
-                            </div>
 
                             <div class="modal-body">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-md-8">
-                                            <!--                        CATEGORIE-->
-                                            <h4>Categorie</h4>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="laadkabel"
-                                                       checked>
-                                                <label class="form-check-label" for="laadkabel">
-                                                    Laadkabel
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="vervangingsonderdeel" checked>
-                                                <label class="form-check-label" for="vervangingsonderdeel">
-                                                    Vervangingsonderdeel
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="accessoires" checked>
-                                                <label class="form-check-label" for="accessoires">
-                                                    Accessoires</label>
-                                            </div>
+                                        <div class="col-md-1 ms-auto">
+                                            <button type="button" class="btn-close  ms-auto px3"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="close"></button>
                                         </div>
                                     </div>
-
-                                    <!--                TYPE STEKKER-->
                                     <div class="row">
-                                        <div class="col-md-8">
-                                            <h4>Type stekker autozijde</h4>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="type1_stekker" checked>
-                                                <label class="form-check-label" for="type1_stekker">
-                                                    Type 1
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="type2_stekker" checked>
-                                                <label class="form-check-label" for="type2_stekker">
-                                                    Type 2
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ccs2"
-                                                       checked>
-                                                <label class="form-check-label" for="ccs2">
-                                                    CCS2 </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="schuko"
-                                                       checked>
-                                                <label class="form-check-label" for="schuko">
-                                                    Schuko </label>
-                                            </div>
-
+                                        <div class="col-md-6 .ms-auto">
+                                            <h5 class="modal-title" id="product_toegevoegd_titel">U artikel is
+                                                toegevoegd aan u winkelmantje</h5>
                                         </div>
-                                    </div>
-                                    <!--AANSLUITING MUURZIJDE-->
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h4>Aansluiting muurzijde</h4>
+                                        <div class="col-md-4 ms-auto">
+                                            <button class="btn btn-primary">Naar je winkelmantje <i
+                                                    class="bi bi-chevron-right"></i></button>
 
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="eu_stopcontact">
-                                                <label class="form-check-label" for="eu_stopcontact">
-                                                    EU stopcontact
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="type2_eu_stopcontact">
-                                                <label class="form-check-label" for="type2_eu_stopcontact">
-                                                    Type 2 EU stopcontact
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="rode_stopcontact">
-                                                <label class="form-check-label" for="rode_stopcontact">
-                                                    Rode CEE16A stopcontact </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="schuko_muur" checked>
-                                                <label class="form-check-label" for="schuko_muur">
-                                                    Schuko </label>
+                                            <button type="button" class="btn  btn-link" data-bs-dismiss="modal">Of
+                                                verder winkelen
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p>De Extended wall station A1254</p>
+                                            <span class="badge rounded-pill text-bg-primary">Op voorraad</span>
+                                        </div>
+
+                                    </div>
+                                    <!--                                      CARDS-->
+                                    <div class="row row-cols-1 row-cols-md-3 g-4 py-4">
+                                        <div class="col-2">
+
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png" alt="foto_card" class="img-fluid"/>
+                                                    <a href="#!">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0 ">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">10€</p>
+
+                                                </div>
+
+
                                             </div>
                                         </div>
-                                    </div>
-                                    <!--LENGTE KABEL-->
-                                    <div class="row">
-                                        <div class="col-md-8">
-                                            <h4>Lengte kabel</h4>
+                                        <div class="col-2">
 
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="halve_meter">
-                                                <label class="form-check-label" for="halve_meter">
-                                                    0.5m
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="een_meter">
-                                                <label class="form-check-label" for="een_meter">
-                                                    1m
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                       id="anderhalf_m">
-                                                <label class="form-check-label" for="anderhalf_m">
-                                                    1,5m</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="vijf_m">
-                                                <label class="form-check-label" for="vijf_m">
-                                                    5m</label>
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png"  alt="foto_card" class="img-fluid"/>
+                                                    <a href="#!">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">10€</p>
+
+                                                </div>
+
+
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="col-2">
 
-                                    <div class="row">
-                                        <div class="col-md-8 ">
-                                            <label for="customRange2" class="form-label">Prijs</label>
-                                            <input type="range" class="form-range align-self-center" min="0" max="680"
-                                                   id="customRange2">
-                                            <p>0</p>
-                                            <p>680</p>
+                                            <div class="card">
+                                                <div class="bg-image hover-overlay ripple">
+                                                    <img src="assets/Ownit-stations.png"   alt="foto_card" class="img-fluid"/>
+                                                    <a href="#!">
+                                                        <div class="mask"
+                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-img-overlay">
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary border border-0 "><a
+                                                            class="nav-link inline"
+                                                            style="color: white"
+                                                            href="#"><i
+                                                            class="bi bi-cart2 fs-3"></i></a></button>
+                                                    <button type="button"
+                                                            class="btn btn-outline-secondary float-end border border-0">
+                                                        <a
+                                                                class="nav-link" style="color: white" href="#"><i
+                                                                class="bi bi-heart fs-3 "></i></a>
+                                                    </button>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title float-start">Adapter</h5>
+                                                    <p class="card-text float-start">Een simpel maar makkelijke adapter
+                                                        voor universeel gebruik.</p>
+                                                    <p class="fs-6 float-end">10€</p>
+
+                                                </div>
+
+
+                                            </div>
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-
-                            <div class="modal-footer justify-content-center">
-
-
-                                <button type="button" class="btn btn-primary">Filter nu <i
-                                        class="bi bi-chevron-right"></i></button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
-                                        class="bi bi-trash3"></i></button>
-
-                            </div>
-
                         </div>
                     </div>
                 </div>
 
 
-                <div class="bagge-group">
-                    <span class="badge rounded-pill text-bg-primary">Power suply</span>
-                    <span class="badge rounded-pill text-bg-primary">Cables</span>
-                    <span class="badge rounded-pill text-bg-primary">Metal Enclosure</span>
-                    <span class="badge rounded-pill text-bg-primary">Current Transformer</span>
-                    <span class="badge rounded-pill text-bg-primary">Charging plug</span>
-                    <span class="badge rounded-pill text-bg-primary">High-Speed fuses</span>
-                    <span class="badge rounded-pill text-bg-primary">Display</span>
-                </div>
+                <!--/MODAL-->
             </div>
+            <div class="card-body text-bg-dark" style="background-color: rgba(74,74,130,0.88)">
+                <h5 class="card-title float-start">Adapter</h5>
+                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+                    gebruik.</p>
+                <p class="fs-6 float-end">10€</p>
 
-            <!--CARDS ONDERDELEN-->
-        </div>
-        <div class="row row-cols-1 row-cols-md-4 g-4 py-4">
-
-            <div class="col-2">
-
-                <div class="card">
-                    <div class="bg-image hover-overlay ripple">
-                        <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                    <div class="card-img-overlay">
-                        <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                                class="nav-link inline"
-                                style="color: white"
-                                href="#"><i
-                                class="bi bi-cart2 fs-3"></i></a></button>
-                        <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                                class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title float-start">Adapter</h5>
-                        <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel gebruik.</p>
-                        <p class="fs-6 float-end">10€</p>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-2">
-
-                <div class="card">
-                    <div class="bg-image hover-overlay ripple">
-                        <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                    <div class="card-img-overlay">
-                        <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                                class="nav-link inline"
-                                style="color: white"
-                                href="#"><i
-                                class="bi bi-cart2 fs-3"></i></a></button>
-                        <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                                class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title float-start">Adapter</h5>
-                        <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel gebruik.</p>
-                        <p class="fs-6 float-end">10€</p>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-2">
-
-                <div class="card">
-                    <div class="bg-image hover-overlay ripple">
-                        <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                    <div class="card-img-overlay">
-                        <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                                class="nav-link inline"
-                                style="color: white"
-                                href="#"><i
-                                class="bi bi-cart2 fs-3"></i></a></button>
-                        <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                                class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title float-start">Adapter</h5>
-                        <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel gebruik.</p>
-                        <p class="fs-6 float-end">10€</p>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-2">
-
-                <div class="card">
-                    <div class="bg-image hover-overlay ripple">
-                        <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                    <div class="card-img-overlay">
-                        <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                                class="nav-link inline"
-                                style="color: white"
-                                href="#"><i
-                                class="bi bi-cart2 fs-3"></i></a></button>
-                        <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                                class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title float-start">Adapter</h5>
-                        <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel gebruik.</p>
-                        <p class="fs-6 float-end">10€</p>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-2">
-
-                <div class="card">
-                    <div class="bg-image hover-overlay ripple">
-                        <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                    <div class="card-img-overlay">
-                        <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                                class="nav-link inline"
-                                style="color: white"
-                                href="#"><i
-                                class="bi bi-cart2 fs-3"></i></a></button>
-                        <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                                class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title float-start">Adapter</h5>
-                        <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel gebruik.</p>
-                        <p class="fs-6 float-end">10€</p>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-2">
-
-                <div class="card">
-                    <div class="bg-image hover-overlay ripple">
-                        <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                    <div class="card-img-overlay">
-                        <button type="button" class="btn btn-outline-secondary border border-0 "><a
-                                class="nav-link inline"
-                                style="color: white"
-                                href="#"><i
-                                class="bi bi-cart2 fs-3"></i></a></button>
-                        <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                                class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title float-start">Adapter</h5>
-                        <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel gebruik.</p>
-                        <p class="fs-6 float-end">10€</p>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col-2">
-
-                <div class="card">
-                    <div class="bg-image hover-overlay ripple">
-                        <img src="assets/Ownit-stations.png" class="img-fluid"/>
-                        <a href="#!">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </a>
-                    </div>
-                    <div class="card-img-overlay">
-                        <button type="button" class="btn btn-outline-secondary border border-0 " data-mdb-toggle="modal"
-                                data-bs-target="#paginering"><a class="nav-link inline"
-                                                                style="color: white"
-                                                                href="#"><i
-                                class="bi bi-cart2 fs-3"></i></a></button>
-
-
-                        <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
-                                class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
-                        </button>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title float-start">Adapter</h5>
-                        <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel gebruik.</p>
-                        <p class="fs-6 float-end">10€</p>
-
-                    </div>
-
-
-                </div>
             </div>
 
 
         </div>
-        <div class="row">
-            <!--            PAGINATION-->
-            <div class="col">
+    </div>
+    <div class="col-2">
 
-                <nav aria-label="...">
-                    <ul class="pagination pagination-sm justify-content-center">
-                        <li class="page-item active" aria-current="page">
-                            <span class="page-link">1</span>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    </ul>
-                </nav>
+        <div class="card">
+            <div class="bg-image hover-overlay ripple">
+                <img src="assets/Ownit-stations.png" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-img-overlay">
+                <button type="button" class="btn btn-outline-secondary border border-0 "><a
+                        class="nav-link inline"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-3"></i></a></button>
+                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                </button>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title float-start">Adapter</h5>
+                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+                    gebruik.</p>
+                <p class="fs-6 float-end">10€</p>
+
             </div>
 
 
+        </div>
+    </div>
+    <div class="col-2">
+
+        <div class="card">
+            <div class="bg-image hover-overlay ripple">
+                <img src="assets/Ownit-stations.png" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-img-overlay">
+                <button type="button" class="btn btn-outline-secondary border border-0 "><a
+                        class="nav-link inline"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-3"></i></a></button>
+                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                </button>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title float-start">Adapter</h5>
+                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+                    gebruik.</p>
+                <p class="fs-6 float-end">10€</p>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-2">
+
+        <div class="card">
+            <div class="bg-image hover-overlay ripple">
+                <img src="assets/Ownit-stations.png" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-img-overlay">
+                <button type="button" class="btn btn-outline-secondary border border-0 "><a
+                        class="nav-link inline"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-3"></i></a></button>
+                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                </button>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title float-start">Adapter</h5>
+                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+                    gebruik.</p>
+                <p class="fs-6 float-end">10€</p>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-2">
+
+        <div class="card">
+            <div class="bg-image hover-overlay ripple">
+                <img src="assets/Ownit-stations.png" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-img-overlay">
+                <button type="button" class="btn btn-outline-secondary border border-0 "><a
+                        class="nav-link inline"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-3"></i></a></button>
+                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                </button>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title float-start">Adapter</h5>
+                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+                    gebruik.</p>
+                <p class="fs-6 float-end">10€</p>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-2">
+
+        <div class="card">
+            <div class="bg-image hover-overlay ripple">
+                <img src="assets/Ownit-stations.png" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-img-overlay">
+                <button type="button" class="btn btn-outline-secondary border border-0 "><a
+                        class="nav-link inline"
+                        style="color: white"
+                        href="#"><i
+                        class="bi bi-cart2 fs-3"></i></a></button>
+                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                </button>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title float-start">Adapter</h5>
+                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+                    gebruik.</p>
+                <p class="fs-6 float-end">10€</p>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-2">
+
+        <div class="card">
+            <div class="bg-image hover-overlay ripple">
+                <img src="assets/Ownit-stations.png" class="img-fluid"/>
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+            </div>
+            <div class="card-img-overlay">
+                <button type="button" class="btn btn-outline-secondary border border-0 "
+                        data-mdb-toggle="modal"
+                        data-bs-target="#paginering"><a class="nav-link inline"
+                                                        style="color: white"
+                                                        href="#"><i
+                        class="bi bi-cart2 fs-3"></i></a></button>
+
+
+                <button type="button" class="btn btn-outline-secondary float-end border border-0"><a
+                        class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-3 "></i></a>
+                </button>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title float-start">Adapter</h5>
+                <p class="card-text float-start">Een simpel maar makkelijke adapter voor universeel
+                    gebruik.</p>
+                <p class="fs-6 float-end">10€</p>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+<div class="row">
+    <!--            PAGINATION-->
+    <div class="col">
+
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm justify-content-center">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+</div>
+<!-- FOOTER -->
+
+<!--    LINKS FOOTER-->
+<div class="container-fluid  py-4 footer__">
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <!--        CONTACT-->
+            <p>Contact</p>
+            <ul>
+                <li>Ownit</li>
+                <li> PXL - Kempische steenweg,</li>
+                <li> Corda campus, 3500</li>
+                <li><a>FAQ</a></li>
+                <li><a>Contact formulier</a></li>
+            </ul>
+        </div>
+        <!--    OVER ONS-->
+        <div class="col-sm-6 col-md-4">
+            <p>Over ons</p>
+            <ul>
+
+                <li><a>Misie en visie</a></li>
+                <li><a>Ons team</a></li>
+                <li><a>Road map</a></li>
+                <li><a>Ownit app</a></li>
+
+            </ul>
+        </div>
+
+        <!--        COMMUNITY-->
+        <div class="col-sm-6 col-md-4">
+            <p>Community</p>
+            <ul>
+
+                <li><a>Forum</a></li>
+                <li><a>Bibliotheek</a></li>
+
+            </ul>
         </div>
 
     </div>
-    <!-- FOOTER -->
-
-    <!--    LINKS FOOTER-->
-    <div class="container-fluid container py-4">
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <!--        CONTACT-->
-                <p>Contact</p>
-                <ul>
-                    <li>Ownit</li>
-                    <li> PXL - Kempische steenweg,</li>
-                    <li> Corda campus, 3500</li>
-                    <li><a>FAQ</a></li>
-                    <li><a>Contact formulier</a></li>
-                </ul>
-            </div>
-            <!--    OVER ONS-->
-            <div class="col-sm-6 col-md-4">
-                <p>Over ons</p>
-                <ul>
-
-                    <li><a>Misie en visie</a></li>
-                    <li><a>Ons team</a></li>
-                    <li><a>Road map</a></li>
-                    <li><a>Ownit app</a></li>
-
-                </ul>
-            </div>
-
-            <!--        COMMUNITY-->
-            <div class="col-sm-6 col-md-4">
-                <p>Community</p>
-                <ul>
-
-                    <li><a>Forum</a></li>
-                    <li><a>Bibliotheek</a></li>
-
-                </ul>
-            </div>
+    <!--        SOCIAL MEDIA-->
+    <div class="row">
+        <p>Social media</p>
+        <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start">
+            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
+            <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-youtube"></i></a>
+        </div>
+        <!--            Copyright-->
+        <div>
 
         </div>
-        <!--        SOCIAL MEDIA-->
-        <div class="row">
-            <p>Social media</p>
-            <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start">
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-facebook"></i></a>
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-instagram"></i></a>
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i></a>
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-github"></i></a>
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-youtube"></i></a>
-            </div>
-            <!--            Copyright-->
-            <div>
-
-            </div>
-            <p class="text-center">Copyright &#169; Ownit, 2023 all right reserved </p>
-        </div>
+        <p class="text-center">Copyright &#169; Ownit, 2023 all right reserved </p>
     </div>
 
 
