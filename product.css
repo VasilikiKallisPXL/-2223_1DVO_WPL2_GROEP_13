@@ -86,19 +86,84 @@ margin: 0 20px;
 
 .cards-eigenschappen img:hover{
     transform: scale(1.5);
+    transition: all 0.2s ease-in;
 }
+/*CARD_PRODUCT*/
+.card-product__ .bi-heart ,  .card-prijs__{
+
+
+    background-color: rgba(94, 188, 175, 0.64);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #261F56;
+
+}
+.card-product__ .card-text{
+    font-size: 15px;
+}
+.card-product__ .card-title{
+color: #5EBCAF;
+}
+.card-product__  .bi-heart{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+
+.card-product__ button{
+    background-color: #4F847A;
+    border: none;
+}
+.card-product__ button:hover{
+    background-color: #261F56;
+
+}
+.card-prijs__ {
+width: 80px;
+    height: 35px;
+    font-weight: bold;
+
+}
+
+/*PAGINATION*/
+.page-item a{
+    background-color: #4F847A;
+    color: #ffffff;
+}
+
+.active{
+    background-color: #261F56;
+}
+
 /*FOOTER*/
 
-.social-media-footer a{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    padding: 2px;
-    margin: 10px;
-    color: black;
+.footer__{
+    background-color: #261F56;
+    color: #ffffff;
+    max-height: 480px;
 }
+
 .footer__ ul li {
     text-decoration: none;
+    list-style: none;
+}
+.footer__ span{
+    color: #5EBCAF;
+    font-size: 20px;
+    font-weight: normal;
+}
+.social-media-footer a{
+
+    display: flex;
+    padding: 2px;
+    margin: 20px 10px ;
+    color: #ffffff;
+}
+.footer__ p:last-child{
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /*RESPONSIVE*/
