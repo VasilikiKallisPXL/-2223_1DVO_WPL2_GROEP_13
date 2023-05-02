@@ -92,8 +92,40 @@ background-color: #4F847A;
     color: #ffffff;
 }
 /*----------!/END HEADER*/
+/*HERO DETAIL*/
+.detail_pagina .btn-primary, .detail_pagina .btn-secondary{
+    background-color: #261F56;
+}
+.hero_detail span,  .hover_buttons button:hover {
+    background-color: #5EBCAF;
+    border: none;
+    color: #000000;
+}
+
+.hero_detail span{
+    color: #000000;
+}
+.hero_detail .dropdown-toggle{
+height: 70px;
+    width: 100px;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 10px;
+}
+/*.hero_detail  button:last-child{*/
+/*    height: 70px;*/
+/*    padding: 0 35px;*/
+/*}*/
+.hero_detail .bi-check-circle-fill{
+color: #22ab22;
+}
+
+
+
 
 /*MAIN*/
+
+
 
 .main__ h2{
     color: #261F56;
@@ -228,6 +260,7 @@ width: 80px;
     text-align: center;
     border: #261F56;
 }
+
 
 
     /*PAGINATION*/
