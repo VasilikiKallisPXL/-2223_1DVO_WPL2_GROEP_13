@@ -1,15 +1,328 @@
 * {
-
-    
+box-sizing: border-box;
+ margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: Aptly;
-    font-size: 32px;
+/*FONTS*/
+h1,h2,h3,h4,h5,h6, .navbar ul li a{
+    font-family: "Aptly", sans-serif;
+}
+
+p,span, li, a {
+    font-family: new-order, sans-serif;
+}
+/*___HEADER*/
+/*____________NAVBAR*/
+.navbar{
+    height: 100px;
 }
 .navbar-brand{
     width: 4rem;
 }
+
+.navbar ul li a {
+    margin: 0 10px;
+    font-size: 16px;
+
+}
+
+.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+    font-weight: bold;
+}
 .navbar-brand  img{
     width: 100%;
+}
+
+/*HERO STATION*/
+.hero-station__ h1, .hero-station__ h2, .hero-station__ h3, .hero-station__ p:last-child, .hero-station__ .btn:nth-child(2){
+    color: #5EBCAF;
+}
+.hero-station__ p{
+    font-size: 20px;
+}
+
+.overlay-body p:first-child{
+    background-color: rgba(0, 0, 0, 0.56);
+}
+.hero-station__ .btn-outline-light:hover{
+    background-color: #4F847A;
+    color: #ffffff;
+    border: none;
+}
+.hero-station__ .btn-primary:active, .hero-station__ .btn-primary {
+    background-color: #4F847A;
+    border:none;
+}
+/*HERO PARTS*/
+.hero-parts__ h1, .card-body-links h2{
+    color: #261F56;
+}
+
+/*HERO CARD LINKS*/
+.card-body-links h2, .card-body-links button {
+    margin: 20px 15px;
+
+}
+
+.card-body-links button{
+    border-color: #4F847A;
+    color: #4F847A;
+}
+.card-body-links button:hover{
+    background-color: #4F847A;
+    border: none;
+}
+.card-body-links p {
+    margin: 30px 15px;
+}
+
+/*HERO CARD RECHTS*/
+.card-body-rechts h2, .card-body-rechts h4, .card-body-rechts span{
+    color: #5EBCAF;
+    margin: 20px 15px;
+}
+.card-body-rechts p{
+    margin: 20px 15px;
+}
+
+.card-body-rechts button:hover{
+background-color: #4F847A;
+    border: none;
+    color: #ffffff;
+}
+/*----------!/END HEADER*/
+/*HERO DETAIL*/
+.detail_pagina .btn-primary, .detail_pagina .btn-secondary{
+    background-color: #261F56;
+}
+.hero_detail span,  .hover_buttons button:hover {
+    background-color: #5EBCAF;
+    border: none;
+    color: #000000;
+}
+
+.hero_detail span{
+    color: #000000;
+}
+.hero_detail .dropdown-toggle{
+height: 70px;
+    width: 100px;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 10px;
+}
+/*.hero_detail  button:last-child{*/
+/*    height: 70px;*/
+/*    padding: 0 35px;*/
+/*}*/
+.hero_detail .bi-check-circle-fill{
+color: #22ab22;
+}
+
+
+
+
+/*MAIN*/
+
+
+
+.main__ h2{
+    color: #261F56;
+    font-size: 35px;
+    margin-bottom: 5%;
+
+}
+/*CARD EIGENSCHAPPEN*/
+
+.cards-eigenschappen {
+    background-color: #4A4A82;
+    color: #ffffff;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
+}
+.cards-eigenschappen img{
+    width: 100%;
+    max-width: 25%;
+}
+.cards-eigenschappen .card-body{
+  height: 500px;
+}
+
+.cards-eigenschappen img:hover{
+    transform: scale(1.5);
+    transition: all 0.2s ease-in;
+}
+/*CARD_PRODUCT*/
+.card-product__ .bi-heart ,  .card-prijs__{
+
+
+    background-color: rgba(94, 188, 175, 0.64);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #261F56;
+
+}
+
+.klein_card .btn_card_klein{
+    background-color: rgba(94, 188, 175, 0.64);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #261F56;
+    border-radius: 50%;
+}
+.klein_card .btn_card_klein:hover{
+    background-color: rgba(94, 188, 175, 0.64);
+}
+
+.card-product__:hover , .klein_card:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
+}
+
+/*}*/
+.card-product__ .card-text{
+    font-size: 15px;
+}
+.card-product__ .card-title{
+color: #5EBCAF;
+}
+.card-product__  .bi-heart{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+
+.card-product__ button{
+    background-color: #4F847A;
+    border: none;
+}
+.card-product__ button:hover{
+    background-color: #261F56;
+
+}
+.card-prijs__ {
+width: 80px;
+    height: 35px;
+    font-weight: bold;
+
+}
+/*CUSTOMIZE YOUR STATION SECTIE*/
+.main__ .btn-filter{
+    background-color: #5EBCAF;
+    border: none;
+
+}
+.main__ .btn-filter:hover{
+    background-color: #5EBCAF;
+    color: #261F56;
+
+}
+
+ .filter_bagge span{
+    background-color: #261F56;
+}
+.filter_bagge span:hover{
+    background-color: #4A4A82;
+}
+
+
+/*-----END CUSTOMIZE YOUR STATION*/
+/*MODAL*/
+.modal_layout .modal-content{
+    background-color: #261F56;
+}
+.modal_layout .modal-content h5, .modal_layout .modal-content h4{
+    color: #5EBCAF;
+}
+.modal_layout .modal-content p, .modal_layout .modal-content .btn-link,  button .btn-close, .modal_layout .modal-content label {
+    color: #ffffff;
+}
+.modal_layout .modal-content .btn-primary{
+    background-color: #5EBCAF;
+    color: #261F56;
+    border: none;
+}
+.modal_layout .modal-content .btn-primary:hover{
+    background-color: #5EBCAF;
+
+    font-weight: bold;
+}
+.modal_layout .modal-content span {
+    background-color: #5EBCAF;
+    color: #261F56;
+}
+.modal_layout .modal-content .card-body p{
+  color: rgba(10, 10, 24, 0.85);
+}
+.favorieten_toevoegen .modal-content{
+    text-align: center;
+    border: #261F56;
+}
+
+
+
+    /*PAGINATION*/
+.page-item a{
+    background-color: #4F847A;
+    color: #ffffff;
+}
+
+.active{
+    background-color: #261F56;
+}
+
+/*FOOTER*/
+
+.footer__{
+    background-color: #261F56;
+    color: #ffffff;
+    max-height: 450px;
+}
+
+.footer__ ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer__ ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__ span{
+    color: #5EBCAF;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 30px ;
+}
+.social-media-footer a{
+
+    display: flex;
+    padding: 2px;
+    margin: 20px 10px ;
+    color: #ffffff;
+}
+.footer__ p:last-child{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:450px){
+    .hero-station__{
+        align-items: center;
+    }
+    .hero-station__ h1{
+        background-color: rgba(45, 37, 37, 0.66);
+        text-align: center;
+
+        font-size: 48px;
+
+        /*style="background-color: rgba(0, 0, 0, 0.56)" OVERLAY_HERO*/
+
+    }
+    .hero-station__ .overlay-body{
+        display: none;
+    }
 }
