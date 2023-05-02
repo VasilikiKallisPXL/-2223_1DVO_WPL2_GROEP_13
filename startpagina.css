@@ -293,6 +293,7 @@ h5, .card-title {
 #cards__middle {
     text-align: center;
     margin-top: 50px;
+    margin-left: 93px;
     padding: 0px 20px 10px 20px;
     display: flex;
 }
@@ -308,7 +309,7 @@ h5, .card-title {
     margin-top: -300px;
     padding: 0px 20px 10px 20px;
     display: inline-flex;
-}
+} 
 
 
 
@@ -318,7 +319,7 @@ h5, .card-title {
     width: 80px;
     color: #5EBCAF;
     margin-top: 5px;
-    margin-left: -20px;
+    margin-left: -5px;
     display: inline;
 }
 
@@ -326,8 +327,8 @@ h5, .card-title {
     height: 80px;
     width: 80px;
     color: #5EBCAF;
-    margin-top: 25px;
-    margin-left: -20px;
+    margin-top: 5px;
+    margin-left: -5px;
     display: inline;
 }
 
@@ -335,8 +336,8 @@ h5, .card-title {
     height: 80px;
     width: 80px;
     color: #5EBCAF;
-    margin-top: 12px;
-    margin-left: 75px;
+    margin-top: 5px;
+    margin-left: 5px;
     display: inline;
 }
 
@@ -344,8 +345,8 @@ h5, .card-title {
     height: 80px;
     width: 80px;
     color: #5EBCAF;
-    margin-top: 12px;
-    margin-right: -75px;
+    margin-top: 10px;
+    margin-left: 98px;
     display: flex;
 }
 
