@@ -470,22 +470,29 @@ h5, .card-title {
 /*  cards review */
 
 
- /*FOOTER*/
+ 
+
+/*FOOTER*/
 
 .footer__{
     background-color: #261F56;
     color: #ffffff;
-    max-height: 480px;
+    max-height: 450px;
 }
 
 .footer__ ul li {
     text-decoration: none;
     list-style: none;
 }
+.footer__ ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
 .footer__ span{
     color: #5EBCAF;
     font-size: 20px;
     font-weight: normal;
+    margin: 10px 30px ;
 }
 .social-media-footer a{
 
