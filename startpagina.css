@@ -467,6 +467,20 @@ h5, .card-title {
 }	
 
 
+
+/* Community */
+/* img */
+#community__img {
+    height: 450px;
+    width: 700px;
+    margin-left: 708px;
+    padding-bottom: -20px;	
+    margin-top: -360px;
+    display: inline;
+    border-radius: 10px;
+}
+
+
 /*  cards review */
 
 
