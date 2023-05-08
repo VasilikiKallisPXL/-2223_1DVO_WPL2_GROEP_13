@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="betaling.css">
+</head>
+<body>
+<header>
+    <h1>Verander je betaalmethode</h1>
+    <!--    <a>Icoon</a>-->
+    <p>Verander hier je betalingsmethode voor je bestelling.</p>
+</header>
+<main>
+    <div class="container-fluid-p-0">
+        <div class="row">
+            <div class="col-sm-4">
+                <label>Credit & debit kaart</label>
+                <p>Transactie is gratis</p>
+            </div>
+            <div class="col-sm-2 d-flex align-items-center">
+                <a href="#"><img src="assets/visa.png" alt="visa"></a>
+                <a href="#"><img src="assets/mastercard.png" alt="mastercard"></a>
+            </div>
+        </div>
+    </div>
+
+    <label for="knaam">Naam kaarthouder</label>
+    <input type="text" id="knaam" name="knaam" placeholder="/">
+
+    <label for="achternaam" class="leeglabel"></label>
+    <input type="text" id="achternaam" name="achternaam" placeholder="/"><br>
+
+
+    <label for="knummer">Kaarthouder nummer</label>
+    <input type="text" id="knummer" name="kaarthoudernummer" placeholder="14568 14828 26416 1726"><br>
+
+    <label for="eindd">Eind datum & cvv</label>
+    <input type="text" id="eindd" name="einddatum" placeholder="12/2025">
+
+    <label for="cvv" class="leeglabel"></label>
+    <input type="text" id="cvv" name="cvv" placeholder="746"><br>
+    <label></label>
+    <input id="" type="submit" value="Opslaan">
+
+</main>
+</body>
+</html>

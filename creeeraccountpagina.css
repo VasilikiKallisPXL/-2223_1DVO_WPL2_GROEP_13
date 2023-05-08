@@ -20,6 +20,9 @@ main h1 {
     margin-bottom: 10px;
     font-weight: 400;
 }
+main p{
+    font-size: 12px;
+}
 ::placeholder {
     color: #ffffff;
     padding-left: 10px;
@@ -31,7 +34,6 @@ label{
 }
 input {
     border-radius: 10px;
-    border: 1px solid #000;
 }
 
 input[name="volledigenaam"], input[name="email"], input[name="pwd"], input[name="herhaalwachtwoord"]{
@@ -81,3 +83,6 @@ a{
         background-color: #261F56;
     }
 }
+/*.container, .col, .row{*/
+/*    border: 1px solid red;*/
+/*}*/
