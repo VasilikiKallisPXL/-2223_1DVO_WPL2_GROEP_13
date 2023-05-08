@@ -14,9 +14,7 @@ p,span, li, a {
 }
 /*___HEADER*/
 /*____________NAVBAR*/
-.navbar{
-    height: 100px;
-}
+
 .navbar-brand{
     width: 4rem;
 }
@@ -35,6 +33,7 @@ p,span, li, a {
 }
 
 /*HERO STATION*/
+
 .hero-station__ h1, .hero-station__ h2, .hero-station__ h3, .hero-station__ p:last-child, .hero-station__ .btn:nth-child(2){
     color: #5EBCAF;
 }
@@ -312,9 +311,14 @@ width: 80px;
 @media screen and (max-width:450px){
     .hero-station__{
         align-items: center;
+
+        /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(87, 82, 82));*/
+
     }
+
+
     .hero-station__ h1{
-        background-color: rgba(45, 37, 37, 0.66);
+        /*background-color: rgba(45, 37, 37, 0.66);*/
         text-align: center;
 
         font-size: 48px;
@@ -322,7 +326,8 @@ width: 80px;
         /*style="background-color: rgba(0, 0, 0, 0.56)" OVERLAY_HERO*/
 
     }
-    .hero-station__ .overlay-body{
+
+    .hero-station__ .overlay-body, .card-product__ p, .card-product__ button{
         display: none;
     }
 }
