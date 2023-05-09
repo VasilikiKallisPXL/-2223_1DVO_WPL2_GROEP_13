@@ -32,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/PXL/Tweede jaar/Eerste semester/Werkplekleren/Ana_Yacarini_DVOd_Portfolio/portfolio_wpl1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -48,7 +48,8 @@
       <updated>1682593998817</updated>
       <workItem from="1682594000042" duration="66000" />
       <workItem from="1682594067886" duration="394000" />
-      <workItem from="1683622031832" duration="2746000" />
+      <workItem from="1683622031832" duration="3658000" />
+      <workItem from="1683633793009" duration="366000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1682594146449</created>
@@ -57,7 +58,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682594146449</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1683633010696</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683633010696</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
