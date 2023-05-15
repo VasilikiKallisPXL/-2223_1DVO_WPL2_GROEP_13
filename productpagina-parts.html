@@ -25,12 +25,13 @@
 </head>
 <body>
 <!--HEADER-->
-<div class="container-fluid  pb-4 align-items-stretch">
-    <div class="row align-items-stretch">
-        <div class="col">
+<div class="container-fluid   align-items-stretch m-0 pb-4">
+    <div class="row">
+        <div class="col-md-12">
             <!--    NAVBAR-->
-            <nav class="navbar fixed navbar-expand-lg bg-body-tertiary justify-content-space-between">
+            <nav class="navbar fixed navbar-expand-lg bg-body-tertiary ">
                 <div class="container-fluid ">
+
                     <a class="navbar-brand" href="index.html"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -38,15 +39,14 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav ">
-                            <li class="align-item-end">
-                                <div class="input-group mb-3 ">
+                    <div class="collapse navbar-collapse  justify-content-end " id="navbarNavDropdown">
+                        <ul class="navbar-nav  me-4 mb-2 mb-lg-0  ">
+                            <li>
+                                <div class="input-group mb-3 " style="max-width: 350px">
                                     <input type="text" class="form-control border border-end-0 " placeholder=""
                                            aria-label="Username" aria-describedby="basic-addon1">
                                     <span class="input-group-text bg-white border border-start-0 "
                                           id="basic-addon1-zoekbalk"><i class="bi bi-search "></i></span>
-
                                 </div>
                             </li>
 
@@ -68,7 +68,6 @@
                                 </ul>
                             </li>
 
-
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
                             </li>
@@ -76,7 +75,7 @@
                                 <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="loginpagina.html"><i class="bi bi-person"></i></a>
+                                <a class="nav-link" href="loginpagina.html"> <i class="bi bi-person"></i></a>
                             </li>
 
                             <li class="nav-item">
@@ -92,27 +91,30 @@
     </div>
     <!--        HERO-->
 
-    <div class="row hero-parts__ align-items-stretch pb-5 ">
+    <div class="row hero-parts__  pb-5 col-12 m-0">
 
-        <div class="col-6 ">
+        <div class="col-6  p-0 hero_parts_links">
             <h1 class="display-12 fw-bold text-end">Parts</h1>
             <div class="card-body-links col-8 my-5 mx-4  align-items-center">
                 <h2 class="display-10 fw-bold card-title">Onderdelen</h2>
-                <p class="card-text">Je kan aparte onderdelen kopen voor te vervangen of uitbreiden, jij kiest hoe jou
+                <p class="card-text">Je kan aparte onderdelen kopen voor te vervangen of uitbreiden, jij kiest hoe
+                    jou
                     laadpaal eruit ziet.
 
                     Ontdek alle onderdelen hieronder. </p>
 
-                <a href="diy-kits.html"><button class="btn btn-outline-dark fw-bold" type="button" > Ga naar DIY-kits</button></a>
+                <a href="diy-kits.html">
+                    <button class="btn btn-outline-dark fw-bold" type="button"> Ga naar DIY-kits</button>
+                </a>
             </div>
 
         </div>
         <!--HERO_RECHTS DEEL-->
-        <div class="col-6 ">
+        <div class="col-md-6 col-sm-12 m-0 hero_parts_rechts">
             <div class="row ">
                 <div class="card text-bg-dark ">
                     <img src="assets/hero_rechts_parts.png" class="card-img" alt="foto_hero_product"
-                         style="min-height: 600px">
+                         style="min-height: 700px">
                     <div class="card-img-overlay">
                         <div class="card-body-rechts col-sm-8 col-md-6 my-5 mx-4  align-items-center">
                             <h2 class="display-10 fw-bold card-title">New</h2>
@@ -126,15 +128,17 @@
                                 <li>Uitbreiden is mogelijk</li>
                             </ul>
                             <p><span class="fs-2 fw-bold ">€215</span></p>
-                            <a href="product_detail_station.html"><button class="btn btn-outline-light mx-3" type="button">Meer info</button></a>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-outline-light mx-3" type="button">Meer info</button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+</div>
 <!--        END HERO_RECHTS DEEL-->
 
 <!--END HEADER-->
@@ -142,10 +146,10 @@
 
 <!--MAIN-->
 
-<div class="container-fluid main__ py-4 px-5 ">
+<div class="container-fluid main__ py-4  ">
 
-    <div class="row justify-content-center  py-4">
-        <div class="col-xs-10 col-md-6 col-4 col-xl-4 ">
+    <div class="row justify-content-center  py-4 mx-3">
+        <div class=" col-md-10 col-lg-6">
 
             <h2 class="text-center" id="diy">Customize your own station</h2>
             <div class="input-group mb-3 my-2 ">
@@ -356,15 +360,15 @@
             </div>
         </div>
     </div>
-</div>
+
 
 <!--CARDS ONDERDELEN-->
 
 
-<div class="row  row-cols-1 row-cols-md-4 g-4 py-4 px-5 justify-content">
+<div class="row  row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 py-4 px-5 justify-content">
 
 
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -595,10 +599,10 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
 
                 <!--/END MODAL-->
-            </div>
+
             <div class="card-body" style="background-color: rgba(11,7,45,0.86)">
                 <h5 class="card-title float-start" style="color: #5EBCAF">Adapter</h5>
                 <p class="card-text float-start" style="color:#ffffff">Een simpel maar makkelijke adapter voor
@@ -613,7 +617,7 @@
     </div>
     <!--    END CARD PRODUCT -->
 
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -862,7 +866,7 @@
     <!--    END CARD PRODUCT -->
 
 
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1112,7 +1116,7 @@
     <!--    END CARD PRODUCT -->
 
 
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1360,7 +1364,7 @@
 
 
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1396,7 +1400,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1432,7 +1436,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1468,7 +1472,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1504,7 +1508,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1540,7 +1544,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1576,7 +1580,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1612,7 +1616,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 col-lg-3">
 
         <div class="card card-product-onderdelen__">
             <div class="card text-bg-dark">
@@ -1651,37 +1655,37 @@
 
 </div>
 <!--    END CARD PRODUCT -->
-    <div class="row">
-        <!--            PAGINATION-->
-        <div class="col-12">
+<div class="row">
+    <!--            PAGINATION-->
+    <div class="col-12">
 
-            <nav aria-label="...">
-                <ul class="pagination pagination-sm justify-content-center">
-                    <li class="page-item active" aria-current="page">
-                        <span class="page-link">1</span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                </ul>
-            </nav>
-        </div>
-
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm justify-content-center">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+            </ul>
+        </nav>
     </div>
 
+</div>
+</div>
 <!-- FOOTER -->
 
 <!--    LINKS FOOTER-->
-<div class="container-fluid footer__  py-5 " >
+<div class="container-fluid footer__  py-5 ">
     <div class="row ">
-        <div class="col-sm-6 col-md-4 " >
+        <div class="col-sm-6 col-md-4 ">
             <!--        CONTACT-->
             <p><span>Contact</span></p>
             <ul>
                 <li>Ownit</li>
                 <li> PXL - Kempische steenweg,</li>
                 <li> Corda campus, 3500</li>
-                <li><a  href="#">FAQ</a></li>
+                <li><a href="#">FAQ</a></li>
                 <li><a href="contact.html">Contact formulier</a></li>
             </ul>
         </div>
@@ -1703,8 +1707,8 @@
             <p><span>Community</span></p>
             <ul>
 
-                <li><a  href="#">Forum</a></li>
-                <li><a  href="#">Bibliotheek</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Bibliotheek</a></li>
 
             </ul>
         </div>
@@ -1732,9 +1736,9 @@
 </div>
 
 <!--BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

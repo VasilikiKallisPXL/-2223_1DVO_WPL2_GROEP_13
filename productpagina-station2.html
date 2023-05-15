@@ -30,7 +30,7 @@
 </head>
 <body>
 <!--HEADER-->
-<div class="container-fluid   align-items-stretch">
+<div class="container-fluid   align-items-stretch m-0">
     <div class="row ">
         <div class="col-md-12">
             <!--    NAVBAR-->
@@ -94,47 +94,46 @@
 
         </div>
     </div>
-</div>
-<!--        HERO-->
 
-<div class="row hero-station__ ">
-    <div class="col">
-        <!--        OVERLAY-->
-        <div class="card text-bg-dark">
-            <img src="assets/hero_foto_station.png" class="card-img " alt="foto_station" style="min-height: 700px">
-            <div class="card-img-overlay  mx-5 my-5">
-                <div class="row ">
-                    <div class="col text-start col-xm-3 ">
-                        <h1 class="display-5 fw-bold">Charging Stations</h1>
+    <!--        HERO-->
+
+    <div class="row hero-station__ ">
+        <div class="col-12 p-0 ">
+            <!--        OVERLAY-->
+            <div class="card text-bg-dark">
+                <img src="assets/hero_foto_station.png" class="card-img " alt="foto_station" style="min-height: 700px">
+                <div class="card-img-overlay  mx-5 my-5">
+                    <div class="row ">
+                        <div class="col text-start col-mx-3 ">
+                            <h1 class="display-5 fw-bold">Charging Stations</h1>
+                        </div>
                     </div>
-                </div>
-                <div class="row ">
+                    <div class="row align-content-between">
 
-                    <div class="col-md-6 col-sm-12 overlay-body my-4">
-                        <h2 class="display-6 fw-bold ">New</h2>
-                        <h3 class=""> Extended wall station </h3>
-                        <p class="my-2">
-                            Ben je iemand die thuis weinig of geen plaats heeft voor een laadpaal maar je toch een
-                            laadpaal wilt hebben? Geen nood, wij bieden de oplossing voor jou.
-                        </p>
+                        <div class="col-sm-10 col-md-7  col-lg-4 overlay-body my-5">
+                            <h2 class="display-6 fw-bold ">New</h2>
+                            <h3> Extended wall station </h3>
+                            <p class="my-4">
+                                Ben je iemand die thuis weinig of geen plaats heeft voor een laadpaal maar je toch een
+                                laadpaal wilt hebben? Geen nood, wij bieden de oplossing voor jou.
+                            </p>
 
-                        <button class="btn btn-outline-light btn-lg me-4 my-2" type="button">Meer info</button>
-                        <button class="btn btn-primary btn-lg my-2" type="button">
-                            <a class="nav-link" href="#">Ga naar station</a>
-                        </button>
+                            <button class="btn btn-outline-light btn-lg me-4 my-2" type="button">Meer info</button>
+                            <button class="btn btn-primary btn-lg my-2" type="button">
+                                <a class="nav-link" href="#">Ga naar station</a>
+                            </button>
 
+
+                        </div>
 
 
                     </div>
 
-
                 </div>
-
             </div>
         </div>
     </div>
 </div>
-
 <!--        OVERLAY END-->
 
 
@@ -202,214 +201,217 @@
             <a><i class="bi bi-funnel-fill"></i></a></button>
 
 
-    <!--  FILTER   MODAL-->
-    <div class="modal fade modal_layout" id="filter_parts" tabindex="-1" aria-hidden="true"
-         aria-labelledby="filter_parts_titel" data-bs-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+        <!--  FILTER   MODAL-->
+        <div class="modal fade modal_layout" id="filter_parts" tabindex="-1" aria-hidden="true"
+             aria-labelledby="filter_parts_titel" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
 
-                <div class="modal-header container">
-                    <div class="row">
-                        <h4 class="modal-title col-md-6" id="filter_parts_titel">Filter je
-                            resultaten</h4>
-                        <button type="button" class="btn-close col-md-2 ms-auto px3"
-                                data-bs-dismiss="modal"
-                                aria-label="close"></button>
-                        <p class="col-md-12">Filter je resultaten hier om een artikel naar jouw keuze te vinden</p>
+                    <div class="modal-header container">
+                        <div class="row">
+                            <h4 class="modal-title col-md-6" id="filter_parts_titel">Filter je
+                                resultaten</h4>
+                            <button type="button" class="btn-close col-md-2 ms-auto px3"
+                                    data-bs-dismiss="modal"
+                                    aria-label="close"></button>
+                            <p class="col-md-12">Filter je resultaten hier om een artikel naar jouw keuze te vinden</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <!--                        CATEGORIE-->
-                                <h4>Categorie</h4>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!--                        CATEGORIE-->
+                                    <h4>Categorie</h4>
 
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="laadkabel"
-                                           checked>
-                                    <label class="form-check-label" for="laadkabel">
-                                        Laadkabel
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="vervangingsonderdeel" checked>
-                                    <label class="form-check-label" for="vervangingsonderdeel">
-                                        Vervangingsonderdeel
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="accessoires" checked>
-                                    <label class="form-check-label" for="accessoires">
-                                        Accessoires</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="laadkabel"
+                                               checked>
+                                        <label class="form-check-label" for="laadkabel">
+                                            Laadkabel
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="vervangingsonderdeel" checked>
+                                        <label class="form-check-label" for="vervangingsonderdeel">
+                                            Vervangingsonderdeel
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="accessoires" checked>
+                                        <label class="form-check-label" for="accessoires">
+                                            Accessoires</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!--                TYPE STEKKER-->
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h4>Type stekker autozijde</h4>
+                            <!--                TYPE STEKKER-->
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4>Type stekker autozijde</h4>
 
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="type1_stekker" checked>
-                                    <label class="form-check-label" for="type1_stekker">
-                                        Type 1
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="type2_stekker" checked>
-                                    <label class="form-check-label" for="type2_stekker">
-                                        Type 2
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="ccs2"
-                                           checked>
-                                    <label class="form-check-label" for="ccs2">
-                                        CCS2 </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="schuko"
-                                           checked>
-                                    <label class="form-check-label" for="schuko">
-                                        Schuko </label>
-                                </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="type1_stekker" checked>
+                                        <label class="form-check-label" for="type1_stekker">
+                                            Type 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="type2_stekker" checked>
+                                        <label class="form-check-label" for="type2_stekker">
+                                            Type 2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="ccs2"
+                                               checked>
+                                        <label class="form-check-label" for="ccs2">
+                                            CCS2 </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="schuko"
+                                               checked>
+                                        <label class="form-check-label" for="schuko">
+                                            Schuko </label>
+                                    </div>
 
-                            </div>
-                        </div>
-                        <!--AANSLUITING MUURZIJDE-->
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h4>Aansluiting muurzijde</h4>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="eu_stopcontact">
-                                    <label class="form-check-label" for="eu_stopcontact">
-                                        EU stopcontact
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="type2_eu_stopcontact">
-                                    <label class="form-check-label" for="type2_eu_stopcontact">
-                                        Type 2 EU stopcontact
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="rode_stopcontact">
-                                    <label class="form-check-label" for="rode_stopcontact">
-                                        Rode CEE16A stopcontact </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="schuko_muur" checked>
-                                    <label class="form-check-label" for="schuko_muur">
-                                        Schuko </label>
                                 </div>
                             </div>
-                        </div>
-                        <!--LENGTE KABEL-->
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h4>Lengte kabel</h4>
+                            <!--AANSLUITING MUURZIJDE-->
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4>Aansluiting muurzijde</h4>
 
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="halve_meter">
-                                    <label class="form-check-label" for="halve_meter">
-                                        0.5m
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="een_meter">
-                                    <label class="form-check-label" for="een_meter">
-                                        1m
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="anderhalf_m">
-                                    <label class="form-check-label" for="anderhalf_m">
-                                        1,5m</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value=""
-                                           id="vijf_m">
-                                    <label class="form-check-label" for="vijf_m">
-                                        5m</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="eu_stopcontact">
+                                        <label class="form-check-label" for="eu_stopcontact">
+                                            EU stopcontact
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="type2_eu_stopcontact">
+                                        <label class="form-check-label" for="type2_eu_stopcontact">
+                                            Type 2 EU stopcontact
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="rode_stopcontact">
+                                        <label class="form-check-label" for="rode_stopcontact">
+                                            Rode CEE16A stopcontact </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="schuko_muur" checked>
+                                        <label class="form-check-label" for="schuko_muur">
+                                            Schuko </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <!--LENGTE KABEL-->
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4>Lengte kabel</h4>
 
-                        <div class="row">
-                            <div class="col-md-8 ">
-                                <label for="customRange2" class="form-label">Prijs</label>
-                                <input type="range" class="form-range align-self-center" min="0"
-                                       max="680"
-                                       id="customRange2">
-                                <p>0</p>
-                                <p>680</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="halve_meter">
+                                        <label class="form-check-label" for="halve_meter">
+                                            0.5m
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="een_meter">
+                                        <label class="form-check-label" for="een_meter">
+                                            1m
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="anderhalf_m">
+                                        <label class="form-check-label" for="anderhalf_m">
+                                            1,5m</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                               id="vijf_m">
+                                        <label class="form-check-label" for="vijf_m">
+                                            5m</label>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-8 ">
+                                    <label for="customRange2" class="form-label">Prijs</label>
+                                    <input type="range" class="form-range align-self-center" min="0"
+                                           max="680"
+                                           id="customRange2">
+                                    <p>0</p>
+                                    <p>680</p>
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+
+
+                        <button type="button" class="btn btn-primary">Filter nu <i
+                                class="bi bi-chevron-right"></i></button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
+                                class="bi bi-trash3"></i></button>
 
                     </div>
-                </div>
-
-                <div class="modal-footer justify-content-center">
-
-
-                    <button type="button" class="btn btn-primary">Filter nu <i
-                            class="bi bi-chevron-right"></i></button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i
-                            class="bi bi-trash3"></i></button>
 
                 </div>
-
             </div>
         </div>
-    </div>
 
-    <!----------------------------------END MODAL-->
+        <!----------------------------------END MODAL-->
 
 
         <h3>Charging station</h3>
 
         <!--            CARD PRODUCT 1-->
-        <div class=" col-sm-12 col-md-6  my-3" >
+        <div class=" col-sm-12 col-md-6  my-3">
 
             <div class="card text-bg-dark card-product__ ">
-                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product" >
+                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product">
                 <div class="card-img-overlay ">
                     <div class="row align-content-between justify-content-between">
-                        <div class="col-6  " >
+                        <div class="col-6  ">
                             <h5 class="card-title">Grond station</h5>
-                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel aanbod aan functies om te gebruiken</p>
-                            <a href="product_detail_station.html"><button class="btn btn-primary align-self-end">Meer info <i class="bi bi-chevron-right"></i></button></a>
+                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel
+                                aanbod aan functies om te gebruiken</p>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-primary align-self-end">Meer info <i
+                                        class="bi bi-chevron-right"></i></button>
+                            </a>
                         </div>
                         <div class=" col-5   d-flex  ms-auto ps-5 align-items-start flex-column-mb-3 ">
                             <span class="card-prijs__  p2 mt-1 me-1">235€</span>
-                            <a  class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
-                                data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
-
+                            <a class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
+                               data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
 
 
                             <!--           FAVORIETE TOEGEVOEGD         MODAL-->
 
 
-
-                            <div class="modal fade modal_layout favorieten_toevoegen" id="favoriet_toegevoegd2" tabindex="-1"
+                            <div class="modal fade modal_layout favorieten_toevoegen" id="favoriet_toegevoegd2"
+                                 tabindex="-1"
                                  aria-hidden="true"
                                  aria-labelledby="favoriet_toegevoegd_titel2">
                                 <div class="modal-dialog modal-dialog-centered">
@@ -464,21 +466,25 @@
 
 
         <!--                            CARD PRODUCT# 2-->
-        <div class=" col-sm-12 col-md-6  my-3" >
+        <div class=" col-sm-12 col-md-6  my-3">
 
             <div class="card text-bg-dark card-product__ ">
-                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product" >
+                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product">
                 <div class="card-img-overlay ">
                     <div class="row align-content-between justify-content-between">
-                        <div class="col-6  " >
+                        <div class="col-6  ">
                             <h5 class="card-title">Grond station</h5>
-                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel aanbod aan functies om te gebruiken</p>
-                            <a href="product_detail_station.html"><button class="btn btn-primary align-self-end">Meer info <i class="bi bi-chevron-right"></i></button></a>
+                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel
+                                aanbod aan functies om te gebruiken</p>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-primary align-self-end">Meer info <i
+                                        class="bi bi-chevron-right"></i></button>
+                            </a>
                         </div>
                         <div class=" col-5   d-flex  ms-auto ps-5 align-items-start flex-column-mb-3 ">
                             <span class="card-prijs__  p2 mt-1 me-1">235€</span>
-                            <a  class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
-                                data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
+                            <a class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
+                               data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
                         </div>
                     </div>
                 </div>
@@ -488,21 +494,25 @@
         <!--                 END CARD PRODUCT# 2-->
 
         <!--            CARD PRODUCT 3-->
-        <div class=" col-sm-12 col-md-6  my-3" >
+        <div class=" col-sm-12 col-md-6  my-3">
 
             <div class="card text-bg-dark card-product__ ">
-                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product" >
+                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product">
                 <div class="card-img-overlay ">
                     <div class="row align-content-between justify-content-between">
-                        <div class="col-6  " >
+                        <div class="col-6  ">
                             <h5 class="card-title">Grond station</h5>
-                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel aanbod aan functies om te gebruiken</p>
-                            <a href="product_detail_station.html"><button class="btn btn-primary align-self-end">Meer info <i class="bi bi-chevron-right"></i></button></a>
+                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel
+                                aanbod aan functies om te gebruiken</p>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-primary align-self-end">Meer info <i
+                                        class="bi bi-chevron-right"></i></button>
+                            </a>
                         </div>
                         <div class=" col-5   d-flex  ms-auto ps-5 align-items-start flex-column-mb-3 ">
                             <span class="card-prijs__  p2 mt-1 me-1">235€</span>
-                            <a  class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
-                                data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
+                            <a class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
+                               data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
                         </div>
                     </div>
                 </div>
@@ -513,21 +523,25 @@
 
 
         <!--                            CARD PRODUCT# 4-->
-        <div class=" col-sm-12 col-md-6  my-3" >
+        <div class=" col-sm-12 col-md-6  my-3">
 
             <div class="card text-bg-dark card-product__ ">
-                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product" >
+                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product">
                 <div class="card-img-overlay ">
                     <div class="row align-content-between justify-content-between">
-                        <div class="col-6  " >
+                        <div class="col-6  ">
                             <h5 class="card-title">Grond station</h5>
-                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel aanbod aan functies om te gebruiken</p>
-                            <a href="product_detail_station.html"><button class="btn btn-primary align-self-end">Meer info <i class="bi bi-chevron-right"></i></button></a>
+                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel
+                                aanbod aan functies om te gebruiken</p>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-primary align-self-end">Meer info <i
+                                        class="bi bi-chevron-right"></i></button>
+                            </a>
                         </div>
                         <div class=" col-5   d-flex  ms-auto ps-5 align-items-start flex-column-mb-3 ">
                             <span class="card-prijs__  p2 mt-1 me-1">235€</span>
-                            <a  class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
-                                data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
+                            <a class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
+                               data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
                         </div>
                     </div>
                 </div>
@@ -537,21 +551,25 @@
         <!--                 END CARD PRODUCT# 4-->
 
         <!--            CARD PRODUCT 5-->
-        <div class=" col-sm-12 col-md-6  my-3" >
+        <div class=" col-sm-12 col-md-6  my-3">
 
             <div class="card text-bg-dark card-product__ ">
-                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product" >
+                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product">
                 <div class="card-img-overlay ">
                     <div class="row align-content-between justify-content-between">
-                        <div class="col-6  " >
+                        <div class="col-6  ">
                             <h5 class="card-title">Grond station</h5>
-                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel aanbod aan functies om te gebruiken</p>
-                            <a href="product_detail_station.html"><button class="btn btn-primary align-self-end">Meer info <i class="bi bi-chevron-right"></i></button></a>
+                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel
+                                aanbod aan functies om te gebruiken</p>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-primary align-self-end">Meer info <i
+                                        class="bi bi-chevron-right"></i></button>
+                            </a>
                         </div>
                         <div class=" col-5   d-flex  ms-auto ps-5 align-items-start flex-column-mb-3 ">
                             <span class="card-prijs__  p2 mt-1 me-1">235€</span>
-                            <a  class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
-                                data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
+                            <a class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
+                               data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
                         </div>
                     </div>
                 </div>
@@ -562,21 +580,25 @@
 
 
         <!--                            CARD PRODUCT# 6-->
-        <div class=" col-sm-12 col-md-6  my-3" >
+        <div class=" col-sm-12 col-md-6  my-3">
 
             <div class="card text-bg-dark card-product__ ">
-                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product" >
+                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product">
                 <div class="card-img-overlay ">
                     <div class="row align-content-between justify-content-between">
-                        <div class="col-6  " >
+                        <div class="col-6  ">
                             <h5 class="card-title">Grond station</h5>
-                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel aanbod aan functies om te gebruiken</p>
-                            <a href="product_detail_station.html"><button class="btn btn-primary align-self-end">Meer info <i class="bi bi-chevron-right"></i></button></a>
+                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel
+                                aanbod aan functies om te gebruiken</p>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-primary align-self-end">Meer info <i
+                                        class="bi bi-chevron-right"></i></button>
+                            </a>
                         </div>
                         <div class=" col-5   d-flex  ms-auto ps-5 align-items-start flex-column-mb-3 ">
                             <span class="card-prijs__  p2 mt-1 me-1">235€</span>
-                            <a  class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
-                                data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
+                            <a class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
+                               data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
                         </div>
                     </div>
                 </div>
@@ -586,21 +608,25 @@
         <!--                 END CARD PRODUCT# 6-->
 
         <!--            CARD PRODUCT 7-->
-        <div class=" col-sm-12 col-md-6  my-3" >
+        <div class=" col-sm-12 col-md-6  my-3">
 
             <div class="card text-bg-dark card-product__ ">
-                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product" >
+                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product">
                 <div class="card-img-overlay ">
                     <div class="row align-content-between justify-content-between">
-                        <div class="col-6  " >
+                        <div class="col-6  ">
                             <h5 class="card-title">Grond station</h5>
-                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel aanbod aan functies om te gebruiken</p>
-                            <a href="product_detail_station.html"><button class="btn btn-primary align-self-end">Meer info <i class="bi bi-chevron-right"></i></button></a>
+                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel
+                                aanbod aan functies om te gebruiken</p>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-primary align-self-end">Meer info <i
+                                        class="bi bi-chevron-right"></i></button>
+                            </a>
                         </div>
                         <div class=" col-5   d-flex  ms-auto ps-5 align-items-start flex-column-mb-3 ">
                             <span class="card-prijs__  p2 mt-1 me-1">235€</span>
-                            <a  class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
-                                data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
+                            <a class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
+                               data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
                         </div>
                     </div>
                 </div>
@@ -611,21 +637,25 @@
 
 
         <!--                            CARD PRODUCT# 8-->
-        <div class=" col-sm-12 col-md-6  my-3" >
+        <div class=" col-sm-12 col-md-6  my-3">
 
             <div class="card text-bg-dark card-product__ ">
-                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product" >
+                <img src="assets/foto_cards.png" class="card-img " alt="foto_card_product">
                 <div class="card-img-overlay ">
                     <div class="row align-content-between justify-content-between">
-                        <div class="col-6  " >
+                        <div class="col-6  cuerpo_pagina">
                             <h5 class="card-title">Grond station</h5>
-                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel aanbod aan functies om te gebruiken</p>
-                            <a href="product_detail_station.html"><button class="btn btn-primary align-self-end">Meer info <i class="bi bi-chevron-right"></i></button></a>
+                            <p class="card-text ">Een simpel maar leuk design voor bij jou thuis, het heeft een heel
+                                aanbod aan functies om te gebruiken</p>
+                            <a href="product_detail_station.html">
+                                <button class="btn btn-primary align-self-end">Meer info <i
+                                        class="bi bi-chevron-right"></i></button>
+                            </a>
                         </div>
                         <div class=" col-5   d-flex  ms-auto ps-5 align-items-start flex-column-mb-3 ">
                             <span class="card-prijs__  p2 mt-1 me-1">235€</span>
-                            <a  class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
-                                data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
+                            <a class="ms-sm-auto heart_icoon" data-bs-toggle="modal"
+                               data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-5"></i></a>
                         </div>
                     </div>
                 </div>
@@ -657,16 +687,16 @@
 <!-- FOOTER -->
 
 <!--    LINKS FOOTER-->
-<div class="container-fluid footer__  py-5 " >
+<div class="container-fluid footer__  py-5 ">
     <div class="row ">
-        <div class="col-sm-6 col-md-4 " >
+        <div class="col-sm-6 col-md-4 ">
             <!--        CONTACT-->
             <p><span>Contact</span></p>
             <ul>
                 <li>Ownit</li>
                 <li> PXL - Kempische steenweg,</li>
                 <li> Corda campus, 3500</li>
-                <li><a  href="#">FAQ</a></li>
+                <li><a href="#">FAQ</a></li>
                 <li><a href="contact.html">Contact formulier</a></li>
             </ul>
         </div>
@@ -688,8 +718,8 @@
             <p><span>Community</span></p>
             <ul>
 
-                <li><a  href="#">Forum</a></li>
-                <li><a  href="#">Bibliotheek</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Bibliotheek</a></li>
 
             </ul>
         </div>

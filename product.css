@@ -61,7 +61,7 @@ p,span, li, a {
     color: #261F56;
 }
 
-/*HERO CARD LINKS*/
+
 .card-body-links h2, .card-body-links button {
     margin: 20px 15px;
 
@@ -337,10 +337,14 @@ width: 80px;
          width: 40%;
          font-size: 65%;
     }
-
+    .hero_parts_links div{
+        display: none;
+    }
 
 
 }
 @media screen and(max-width: 768px ){
-
+    .hero_parts_links div{
+        display: none;
+    }
 }
