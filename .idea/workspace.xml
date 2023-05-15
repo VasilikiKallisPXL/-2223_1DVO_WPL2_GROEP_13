@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="push contact pagina final version, html and css">
-      <change afterPath="$PROJECT_DIR$/faq.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/faq.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formulier.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/formulier.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2023_23_46_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2023_23_46__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2023_23_47_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2023_23_47__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-    </list>
+    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="push contact pagina final version, html and css" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +73,7 @@
       <workItem from="1683014462162" duration="12700000" />
       <workItem from="1683546775440" duration="10920000" />
       <workItem from="1683633079442" duration="3522000" />
-      <workItem from="1684151276950" duration="941000" />
+      <workItem from="1684151276950" duration="1291000" />
     </task>
     <task id="LOCAL-00002" summary="push contact pagina final version, html and css">
       <created>1683034483464</created>
@@ -100,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683034644036</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="push contact pagina final version, html and css">
+      <created>1684152262497</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684152262497</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
