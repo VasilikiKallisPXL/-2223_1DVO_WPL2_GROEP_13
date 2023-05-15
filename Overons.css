@@ -12,9 +12,9 @@ h1,h2,h3,h4,h5,h6, .navbar ul li a{
 p,span, li, a {
     font-family: new-order, sans-serif;
 }
-
-/*___HEADER*/
-/*____________NAVBAR*/
+/*
+___HEADER
+____________NAVBAR*/
 .navbar{
     height: 100px;
 }
@@ -38,28 +38,28 @@ p,span, li, a {
 
 
 /*MAIN*/
-.main__ h2{
-    color: #261F56;
-    font-size: 35px;
-    margin-bottom: 5%;
+/*.main__ h2{*/
+/*    color: #261F56;*/
+/*    font-size: 35px;*/
+/*    margin-bottom: 5%;*/
 
-}
+/*}*/
 /*CARD EIGENSCHAPPEN*/
 
-.cards-eigenschappen {
-    background-color: #4A4A82;
-    color: #ffffff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
-}
-.cards-eigenschappen img{
-    width: 100%;
-    max-width: 25%;
-}
-.cards-eigenschappen .card-body{
-    height: 500px;
-}
+/*.cards-eigenschappen {*/
+/*    background-color: #4A4A82;*/
+/*    color: #ffffff;*/
+/*    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);*/
+/*}*/
+/*.cards-eigenschappen img{*/
+/*    width: 100%;*/
+/*    max-width: 25%;*/
+/*}*/
+/*.cards-eigenschappen .card-body{*/
+/*    height: 500px;*/
+/*}*/
 
-.cards-eigenschappen img:hover{
-    transform: scale(1.5);
-    transition: all 0.2s ease-in;
-}
+/*.cards-eigenschappen img:hover{*/
+/*    transform: scale(1.5);*/
+/*    transition: all 0.2s ease-in;*/
+/*}*/
