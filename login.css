@@ -7,6 +7,8 @@
 
 img{
     width: 200px;
+    margin-top: 10px;
+
 }
 
 body{
@@ -25,7 +27,6 @@ main p{
 }
 main{
     background-color: #261F56;
-    border: 1px solid #ffffff;
     border-radius: 10px;
     margin: 50px auto;
     max-width: 715px;
@@ -52,7 +53,6 @@ input {
     font-size: 15px;
 }
 input[type="submit"] {
-    border: 1px solid #5EBCAF;
     background: #5EBCAF;
     color: #fff;
     border-radius: 10px;
@@ -64,13 +64,11 @@ a{
     text-decoration: none;
     color: #5EBCAF;
 }
-
-
-/*.col, .col-sm-2, .col-sm-3 {*/
-/* border: 1px solid red;*/
+/*.container, .col, .row{*/
+/*    border: 1px solid red;*/
 /*}*/
-@media screen and (max-width: 600px ) {
+@media screen and (max-width: 820px ) {
     body {
-        background-color: #ffffff;
+        background-color: #261F56;
     }
 }

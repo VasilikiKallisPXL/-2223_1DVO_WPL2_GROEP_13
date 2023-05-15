@@ -1,9 +1,8 @@
-*{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
 
+* {
+    margin: 0px;
+}
+main
 body {
     font-family: 'New Order', 'Semibold';
     color: #000;
@@ -11,10 +10,6 @@ body {
 
 /*___HEADER*/
 /*____________NAVBAR*/
-nav {
-    margin-bottom: 0px;
-}
-
 .navbar{
     height: 100px;
 }
@@ -293,25 +288,22 @@ h5, .card-title {
 #cards__middle {
     text-align: center;
     margin-top: 50px;
-    margin-left: 93px;
     padding: 0px 20px 10px 20px;
     display: flex;
 }
 
-/* #cards__middle2 {
+#cards__middle2 {
     text-align: center;
     margin-top: 50px;
     padding: 0px 20px 10px 20px;
     display: flex;
-} */
+}
 
 .col-md-4 {
     margin-top: -300px;
     padding: 0px 20px 10px 20px;
-    display: inline-flex;
-} 
-
-
+    display: flex;
+}
 
 /* icons */
 #check__icon {
@@ -319,7 +311,7 @@ h5, .card-title {
     width: 80px;
     color: #5EBCAF;
     margin-top: 5px;
-    margin-left: -5px;
+    margin-left: -20px;
     display: inline;
 }
 
@@ -327,8 +319,8 @@ h5, .card-title {
     height: 80px;
     width: 80px;
     color: #5EBCAF;
-    margin-top: 5px;
-    margin-left: -5px;
+    margin-top: 25px;
+    margin-left: -20px;
     display: inline;
 }
 
@@ -336,8 +328,8 @@ h5, .card-title {
     height: 80px;
     width: 80px;
     color: #5EBCAF;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 25px;
+    margin-left: -20px;
     display: inline;
 }
 
@@ -345,9 +337,9 @@ h5, .card-title {
     height: 80px;
     width: 80px;
     color: #5EBCAF;
-    margin-top: 10px;
-    margin-left: 98px;
-    display: flex;
+    margin-top: 25px;
+    margin-left: -20px;
+    display: inline;
 }
 
 #full__battery__icon {
@@ -356,7 +348,7 @@ h5, .card-title {
     color: #5EBCAF;
     margin-top: 25px;
     margin-left: -20px;
-
+    display: inline;
 }
 
 #bluetooth_icon {
@@ -365,7 +357,7 @@ h5, .card-title {
     color: #5EBCAF;
     margin-top: 25px;
     margin-left: -20px;
- 
+    display: inline;
 }
 
 #dps__icon {
@@ -374,7 +366,7 @@ h5, .card-title {
     color: #5EBCAF;
     margin-top: 25px;
     margin-left: -20px;
- 
+    display: inline;
 }
 
 #low__maintensance__icon {
@@ -383,7 +375,7 @@ h5, .card-title {
     color: #5EBCAF;
     margin-top: 25px;
     margin-left: -20px;
-  
+    display: inline;
 }
 
 
@@ -398,10 +390,11 @@ h5, .card-title {
 
 #laadpaal__pic {
     height: 1050px;
-    width: 740px;
-    margin-left: 400px;
+    width: 1740px;
+    margin-left: -100px;
     padding: 0px;	
-    margin-top: -10px;
+    margin-top: -5px;
+    display: inline;
     border-radius: 10px;
 }
 
@@ -434,6 +427,7 @@ h5, .card-title {
     margin-left: 708px;
     padding: 0px;	
     margin-top: -360px;
+    display: inline;
     border-radius: 10px;
 }
 
@@ -443,6 +437,7 @@ h5, .card-title {
     margin-left: -110px;
     padding: 0px;	
     margin-top: 20px;
+    display: inline;
     border-radius: 10px;
 }
 
@@ -452,7 +447,7 @@ h5, .card-title {
     margin-left: 708px;
     padding: 0px;	
     margin-top: -360px;
-
+    display: inline;
     border-radius: 10px;
 }
 
@@ -470,19 +465,6 @@ h5, .card-title {
     margin-left: 227px;
     margin-top: 20px;
 }	
-
-
-
-/* Community */
-/* img */
-#community__img {
-    height: 450px;
-    width: 700px;
-    margin-left: 708px;
-    padding-bottom: -20px;	
-    margin-top: -360px;
-    border-radius: 10px;
-}
 
 
 /*  cards review */
