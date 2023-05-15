@@ -319,15 +319,28 @@ width: 80px;
 
     .hero-station__ h1{
         /*background-color: rgba(45, 37, 37, 0.66);*/
-        text-align: center;
 
-        font-size: 48px;
+
+        font-size: 35px;
 
         /*style="background-color: rgba(0, 0, 0, 0.56)" OVERLAY_HERO*/
 
     }
+     .hero-station__ button{
+         width: 40%;
+         font-size: 65%;
+    }
 
-    .hero-station__ .overlay-body, .card-product__ p, .card-product__ button{
+    .card-product__ p{
+            display: none;
+        }
+.card-prijs__, #product_toegevoegd{
+    display: none;
+}
+
+}
+@media screen and(max-width: 768px ){
+    .card-product__ p{
         display: none;
     }
 }
