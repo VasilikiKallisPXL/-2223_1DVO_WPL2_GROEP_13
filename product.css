@@ -3,6 +3,9 @@ box-sizing: border-box;
  margin: 0;
     padding: 0;
 }
+body{
+    min-width: 440px;
+}
 
 /*FONTS*/
 h1,h2,h3,h4,h5,h6, .navbar ul li a{
@@ -28,7 +31,7 @@ p,span, li, a {
 .navbar .nav-link:hover, .nav-link .dropdown-toggle{
     font-weight: bold;
 }
-.navbar-brand  img{
+.navbar-brand img{
     width: 100%;
 }
 
@@ -111,10 +114,7 @@ height: 70px;
     color: #000000;
     margin: 0 10px;
 }
-/*.hero_detail  button:last-child{*/
-/*    height: 70px;*/
-/*    padding: 0 35px;*/
-/*}*/
+
 .hero_detail .bi-check-circle-fill{
 color: #22ab22;
 }
@@ -151,8 +151,8 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
     transform: scale(1.5);
     transition: all 0.2s ease-in;
 }
-/*CARD_PRODUCT*/
-.card-product__ .bi-heart ,  .card-prijs__{
+
+.card-product__ .bi-heart ,   .card-product__ .card-prijs__{
 
 
     background-color: rgba(94, 188, 175, 0.64);
@@ -174,22 +174,27 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
 .klein_card .btn_card_klein:hover{
     background-color: rgba(94, 188, 175, 0.64);
 }
+.card-img{
+    background-color: rgba(0,0,0,0.8);
+    filter:brightness(0.6);
+    min-height: 250px;
+}
+
+
 
 .card-product__:hover , .klein_card:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
 }
 
-/*}*/
-.card-product__ .card-text{
-    font-size: 15px;
-}
+
+
 .card-product__ .card-title{
 color: #5EBCAF;
 }
 .card-product__  .bi-heart{
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+   width: 40px;
+   height: 40px;
 
 }
 
@@ -205,6 +210,7 @@ color: #5EBCAF;
 width: 80px;
     height: 35px;
     font-weight: bold;
+    border-radius: 5px;
 
 }
 /*CUSTOMIZE YOUR STATION SECTIE*/
@@ -277,7 +283,8 @@ width: 80px;
 .footer__{
     background-color: #261F56;
     color: #ffffff;
-    max-height: 450px;
+  min-height: 450px;
+    max-height:750px;
 }
 
 .footer__ ul li {
@@ -302,8 +309,8 @@ width: 80px;
     color: #ffffff;
 }
 .footer__ p:last-child{
-    background-color: #ffffff;
-    color: #000000;
+    /*background-color: #ffffff;*/
+    color: #ffffff;
 }
 
 /*RESPONSIVE*/
@@ -331,16 +338,9 @@ width: 80px;
          font-size: 65%;
     }
 
-    .card-product__ p{
-            display: none;
-        }
-.card-prijs__, #product_toegevoegd{
-    display: none;
-}
+
 
 }
 @media screen and(max-width: 768px ){
-    .card-product__ p{
-        display: none;
-    }
+
 }
