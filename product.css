@@ -78,6 +78,9 @@ p,span, li, a {
 .card-body-links p {
     margin: 30px 15px;
 }
+.card-body-rechts .titel_visible_hidden{
+    visibility: hidden;
+}
 
 /*HERO CARD RECHTS*/
 .card-body-rechts h2, .card-body-rechts h4, .card-body-rechts span{
@@ -225,12 +228,17 @@ width: 80px;
 
 }
 
+
+
  .filter_bagge span{
     background-color: #261F56;
+     padding: 7px 12px ;
+     margin: 2px 3px;
 }
 .filter_bagge span:hover{
     background-color: #4A4A82;
 }
+
 
 
 /*-----END CUSTOMIZE YOUR STATION*/
@@ -318,33 +326,30 @@ width: 80px;
 @media screen and (max-width:450px){
     .hero-station__{
         align-items: center;
-
-        /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(87, 82, 82));*/
-
     }
 
 
     .hero-station__ h1{
-        /*background-color: rgba(45, 37, 37, 0.66);*/
-
-
         font-size: 35px;
-
-        /*style="background-color: rgba(0, 0, 0, 0.56)" OVERLAY_HERO*/
-
     }
      .hero-station__ button{
          width: 40%;
          font-size: 65%;
     }
-    .hero_parts_links div{
+    .hero_parts_links {
         display: none;
     }
 
-
+    .card-body-rechts .titel_visible_hidden{
+        visibility: visible;
+        color: #5EBCAF;
+    }
 }
 @media screen and(max-width: 768px ){
     .hero_parts_links div{
+        display: none;
+    }
+    .hero_parts_links {
         display: none;
     }
 }
