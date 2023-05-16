@@ -13,10 +13,10 @@ p,span, li, a {
     font-family: new-order, sans-serif;
 }
 /*
-___HEADER
-____________NAVBAR*/
+/*___HEADER*/
+/*____________NAVBAR*/
 .navbar{
-    height: 100px;
+    height: 60px;
 }
 .navbar-brand{
     width: 4rem;
@@ -33,33 +33,174 @@ ____________NAVBAR*/
 }
 .navbar-brand  img{
     width: 100%;
+    margin-left: 51px;
 }
 
 
 
-/*MAIN*/
-/*.main__ h2{*/
-/*    color: #261F56;*/
-/*    font-size: 35px;*/
-/*    margin-bottom: 5%;*/
 
-/*}*/
+/* main */
+main {
+    margin-bottom: -150px;
+}
+
+
+/* Titel */
+#intro__tekst h1{
+    font-size: 60px;
+    font-family: Aptly;
+    font-weight: bold;
+    display: inline-block;
+    color: #261F56;
+    padding-top: 147px;
+    text-align: center;
+}
+
+#intro__tekst #hoofd__titel h1 {
+    font-size:47px;
+    font-family: Aptly;
+    font-weight: bold;
+    display: inline-block;
+    color: #261F56;
+    padding: 5px;
+}
+
+#intro__tekst p {
+    width: 500px;
+}
+
+#row, #col {
+    display: inline-block;
+}
+
+/* img */
+#mensen_samen_laden {
+  width: 1049px;
+}
+
+
+
+
+
+/* Onze unieke waarden */
+#tekst_uniek h2 {
+    font-size:46px;
+    font-family: Aptly;
+    font-weight: bold;
+    color: #261F56;
+    padding: 5px;
+}
+
+#tekst_uniek {
+    color: #000;
+    margin-top: 88px;
+    margin-left: 100px;
+}
+
+#charge {
+    float: right;
+    width: 830px;
+    overflow: hidden;
+}
+
+
+
 /*CARD EIGENSCHAPPEN*/
+#titel__cards h2 {
+    font-family: aptly;
+    font-size: 46px;
+    font-weight: bold;
+    color: #261F56;
+}
 
-/*.cards-eigenschappen {*/
-/*    background-color: #4A4A82;*/
-/*    color: #ffffff;*/
-/*    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);*/
-/*}*/
-/*.cards-eigenschappen img{*/
-/*    width: 100%;*/
-/*    max-width: 25%;*/
-/*}*/
-/*.cards-eigenschappen .card-body{*/
-/*    height: 500px;*/
-/*}*/
 
-/*.cards-eigenschappen img:hover{*/
-/*    transform: scale(1.5);*/
-/*    transition: all 0.2s ease-in;*/
-/*}*/
+.cards-eigenschappen {
+    background-color: #4A4A82;
+    color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
+}
+.cards-eigenschappen img{
+    width: 100%;
+    max-width: 25%;
+}
+.cards-eigenschappen .card-body{
+    height: 500px;
+}
+
+.cards-eigenschappen img:hover{
+    transform: scale(1.5);
+    transition: all 0.2s ease-in;
+}
+
+
+/*missie + visie*/
+#missie__blok, #visie__blok {
+    text-align: center;
+    padding: 5px;
+    background-color: #261F56;
+}
+
+#missie__blok p, #visie__blok p {
+    color: #ffffff;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#missie__blok h1, #visie__blok h1 {
+    font-weight: bold;
+    font-size: 46px;
+    color: #5EBCAF;
+}
+
+
+
+/*werkende personeel*/
+#blokken__personeel h1 {
+    font-size: 46px;
+    color: #261F56;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#blok__1, #blok__2, #blok__3, #blok__4, #blok__5, #blok__6, #blok__7, #blok__8{
+    background-color: #4A4A82;
+    text-align: center;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+#bovenste__blokken, #onderste__blokken {
+    justify-content: center;
+}
+
+#bovenste__blokken p, #onderste__blokken p {
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#bovenste__blokken h2, #onderste__blokken h2 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+
+/*BRANDING*/
+#branding {
+    text-align: center;
+}
+
+#branding h1 {
+    font-size: 46px;
+    color: #261F56;
+}
+
+#branding p {
+
+}
+
+
+
+
+
