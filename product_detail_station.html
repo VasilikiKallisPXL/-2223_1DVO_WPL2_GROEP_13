@@ -94,7 +94,7 @@
 </div>
 
 <!--MAIN-->
-<div class="container-lg main__ detail_pagina">
+<div class="container-lg main__ detail_pagina ">
 
     <!--CARD PRODUCT-->
     <div class="row">
@@ -104,17 +104,19 @@
                 <i class="bi bi-star-fill" style="cursor: pointer"></i>
                 <i class="bi bi-star-fill" style="cursor: pointer"></i>
                 <i class="bi bi-star-fill" style="cursor: pointer"></i>
-                <i class="bi bi-star-fill" style="cursor: pointer"></i> | Schrijf een review | Delen</small></p></div>
+                <i class="bi bi-star-fill" style="cursor: pointer"></i> | Schrijf een review | Delen</small></p>
+        </div>
+
     </div>
 
     <div class="row">
-        <div class="col-sm-12 col-md-7 ">
+        <div class="col-sm-12 col-md-8 ">
             <img src="assets/Ownit-stations.png" alt="foto_ownit _station" class="img-fluid"/>
         </div>
-        <div class="col-sm-12 col-md-5 hero_detail">
+        <div class="col-sm-12 col-md-4 hero_detail">
             <div class="row">
                 <div class="col">
-                    <h3 class="display-3">€248,-</h3>
+                    <h3 class="display-4">€248,-</h3>
                     <span class="badge  rounded-pill">Op voorraad</span>
                     <p>Levering is binnen 2 a 3 weken.</p>
                 </div>
@@ -122,20 +124,19 @@
             <div class="row">
                 <div class="col">
                     <p>Kleur</p>
-                    <i class="bi bi-square-fill" style="color:#1c306b"></i>
-                    <i class="bi bi-square-fill" style="color:#196056"></i>
-                    <i class="bi bi-square-fill" style="color:rgba(136,130,130,0.86)"></i>
+                    <i class="bi bi-square-fill fs-1" style="color:#1c306b"></i>
+                    <i class="bi bi-square-fill fs-1" style="color:#196056"></i>
+                    <i class="bi bi-square-fill fs-1" style="color:rgba(136,130,130,0.86)"></i>
                 </div>
             </div>
-            <div class="row">
-                <div class="col hover_buttons d-flex justify-content-start align-items-center my-3">
-                    <button type="button" class="btn btn-outline-dark col-2 me-toggle btn-toggle" data-bs-toggle="modal"
-                            data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart fs-1"></i>
+            <div class="row justify-content-around">
+                <div class="col hover_buttons d-flex  align-items-center my-3">
+                    <button type="button" class="btn btn-outline-dark  me-toggle btn-toggle" data-bs-toggle="modal"
+                            data-bs-target="#favoriet_toegevoegd2"><i class="bi bi-heart "></i>
                     </button>
-                    <div class="dropdown col-4">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                            1
+                    <div class="dropdown ">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="max-height: 40px; width: 40px" >1
                         </button>
                         <ul class="dropdown-menu">
                             <li>
@@ -151,7 +152,7 @@
 
                     </div>
                     <button type="button" class="btn btn-outline-dark " data-bs-toggle="modal"
-                            data-bs-target="#product_toegevoegd"><i class="bi bi-cart2 fs-2 mx-3"></i> In
+                            data-bs-target="#product_toegevoegd"><i class="bi bi-cart2 "></i> In
                         winkelwagen
                     </button>
                 </div>
@@ -195,7 +196,7 @@
                         <div class="modal-footer">
 
                             <div class="row ">
-                                <div class="col justify-content-center">
+                                <div class="col col-sm-10 justify-content-center">
                                     <button class="btn btn-primary">Naar je winkelmantje <i
                                             class="bi bi-chevron-right"></i></button>
                                 </div>
@@ -219,7 +220,7 @@
 
 
             <div class="modal fade modal_layout" id="product_toegevoegd" tabindex="-1" aria-hidden="true"
-                 aria-labelledby="product_toegevoegd_titel" data-bs-backdrop="static">
+                 aria-labelledby="product_toegevoegd_titel" data-bs-backdrop="static" >
                 <div class="modal-dialog modal-dialog-centered" style="min-width: 60vw">
                     <div class="modal-content">
 
@@ -256,8 +257,8 @@
 
                                 </div>
                                 <!--                                      CARDS-->
-                                <div class="row row-cols-1 row-cols-md-3 g-4 py-4">
-                                    <div class="col-2">
+                                <div class="row my-3">
+                                    <div class="col-md-6 col-lg-4 cold-sm-12 my-3">
 
                                         <div class="card">
                                             <div class="bg-image hover-overlay ripple">
@@ -293,7 +294,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-md-6 col-lg-4 cold-sm-12 my-3">
 
                                         <div class="card">
                                             <div class="bg-image hover-overlay ripple">
@@ -329,7 +330,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-md-6 col-lg-4 cold-sm-12 my-3">
 
                                         <div class="card">
                                             <div class="bg-image hover-overlay ripple">
@@ -383,7 +384,7 @@
 
     <!--    PRODUCT OMSCHRIJVING-->
     <div class="row my-4 ">
-        <div class="col">
+        <div class="col-10 col-md-6 col-sm-10">
             <h2>Product omschrijving</h2>
             <h3>Het product</h3>
             <p>Heb je thuis weinig plaats en ook geen plaats op de grond? Dan is deze Extended wall
@@ -502,20 +503,20 @@
         <div class="col mt-5 ">
             <div class="row">
                 <h2>Reviews</h2>
-                <div class="col-md-6 ">
+                <div class="col-md-6  col-sm-6 col-xs-6">
 
                     <p><span class="display-2 ">+200</span></p>
                     <p>Since the lauch
                         of this product</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6  col-sm-6 col-xs-6">
                     <p><span class="display-2">4.9/5</span></p>
                     <p>Average rating </p>
 
                 </div>
             </div>
             <div class="row my-5">
-                <div class="col-md-6 d-flex ">
+                <div class="col-md-6 d-flex mb-5">
                     <p>Sorteer</p>
                     <div class="dropdown mx-3">
                         <button class="btn btn-secondary dropdown-toggle" type="button"
@@ -613,7 +614,6 @@
                                         </div>
 
 
-
                                     </div>
 
                                 </form>
@@ -634,167 +634,164 @@
         </div>
 
 
-
-
-
     </div>
 
 
-<!--                        !/MODAL REVIEW-->
+    <!--                        !/MODAL REVIEW-->
 
 
+    <!--   REVIEWS DEEL 2-->
+    <div class="row">
+        <div class="col-md-8 col-sm-10  border-bottom">
 
-<!--   REVIEWS DEEL 2-->
-<div class="row">
-    <div class="col-md-8 col-sm-10  border-bottom">
+            <h4>De aller beste wall station</h4>
+            <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
+                05/03/2023 | Brugge |
+                Gekocht op 21/01/05 | </p>
+            <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
+            <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
+                de app bedienen is
+                ook echt geweldig. Nog een extra plus punt is dat je op de website een community
+                hebt voor functies die
+                er niet standaard opstaan en nog een dashboard.</p>
 
-        <h4>De aller beste wall station</h4>
-        <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
-                class="bi bi-star"></i><i
-                class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
-            05/03/2023 | Brugge |
-            Gekocht op 21/01/05 | </p>
-        <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
-        <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
-            de app bedienen is
-            ook echt geweldig. Nog een extra plus punt is dat je op de website een community
-            hebt voor functies die
-            er niet standaard opstaan en nog een dashboard.</p>
+        </div>
+        <div class="col-md-8 col-sm-10  border-bottom">
 
-    </div>
-    <div class="col-md-8 col-sm-10  border-bottom">
+            <h4>De aller beste wall station</h4>
+            <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
+                05/03/2023 | Brugge |
+                Gekocht op 21/01/05 | </p>
+            <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
+            <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
+                de app bedienen is
+                ook echt geweldig. Nog een extra plus punt is dat je op de website een community
+                hebt voor functies die
+                er niet standaard opstaan en nog een dashboard.</p>
 
-        <h4>De aller beste wall station</h4>
-        <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
-                class="bi bi-star"></i><i
-                class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
-            05/03/2023 | Brugge |
-            Gekocht op 21/01/05 | </p>
-        <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
-        <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
-            de app bedienen is
-            ook echt geweldig. Nog een extra plus punt is dat je op de website een community
-            hebt voor functies die
-            er niet standaard opstaan en nog een dashboard.</p>
+        </div>
+        <div class="col-md-8 col-sm-10  border-bottom">
 
-    </div>
-    <div class="col-md-8 col-sm-10  border-bottom">
+            <h4>De aller beste wall station</h4>
+            <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
+                05/03/2023 | Brugge |
+                Gekocht op 21/01/05 | </p>
+            <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
+            <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
+                de app bedienen is
+                ook echt geweldig. Nog een extra plus punt is dat je op de website een community
+                hebt voor functies die
+                er niet standaard opstaan en nog een dashboard.</p>
 
-        <h4>De aller beste wall station</h4>
-        <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
-                class="bi bi-star"></i><i
-                class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
-            05/03/2023 | Brugge |
-            Gekocht op 21/01/05 | </p>
-        <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
-        <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
-            de app bedienen is
-            ook echt geweldig. Nog een extra plus punt is dat je op de website een community
-            hebt voor functies die
-            er niet standaard opstaan en nog een dashboard.</p>
+        </div>
+        <div class="col-md-8 col-sm-10  border-bottom">
 
-    </div>
-    <div class="col-md-8 col-sm-10  border-bottom">
+            <h4>De aller beste wall station</h4>
+            <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
+                05/03/2023 | Brugge |
+                Gekocht op 21/01/05 | </p>
+            <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
+            <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
+                de app bedienen is
+                ook echt geweldig. Nog een extra plus punt is dat je op de website een community
+                hebt voor functies die
+                er niet standaard opstaan en nog een dashboard.</p>
 
-        <h4>De aller beste wall station</h4>
-        <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
-                class="bi bi-star"></i><i
-                class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
-            05/03/2023 | Brugge |
-            Gekocht op 21/01/05 | </p>
-        <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
-        <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
-            de app bedienen is
-            ook echt geweldig. Nog een extra plus punt is dat je op de website een community
-            hebt voor functies die
-            er niet standaard opstaan en nog een dashboard.</p>
+        </div>
+        <div class="col-md-8 col-sm-10  border-bottom">
 
-    </div>
-    <div class="col-md-8 col-sm-10  border-bottom">
+            <h4>De aller beste wall station</h4>
+            <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
+                05/03/2023 | Brugge |
+                Gekocht op 21/01/05 | </p>
+            <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
+            <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
+                de app bedienen is
+                ook echt geweldig. Nog een extra plus punt is dat je op de website een community
+                hebt voor functies die
+                er niet standaard opstaan en nog een dashboard.</p>
 
-        <h4>De aller beste wall station</h4>
-        <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
-                class="bi bi-star"></i><i
-                class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
-            05/03/2023 | Brugge |
-            Gekocht op 21/01/05 | </p>
-        <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
-        <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
-            de app bedienen is
-            ook echt geweldig. Nog een extra plus punt is dat je op de website een community
-            hebt voor functies die
-            er niet standaard opstaan en nog een dashboard.</p>
+        </div>
+        <div class="col-md-8 col-sm-10  border-bottom">
 
-    </div>
-    <div class="col-md-8 col-sm-10  border-bottom">
+            <h4>De aller beste wall station</h4>
+            <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
+                05/03/2023 | Brugge |
+                Gekocht op 21/01/05 | </p>
+            <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
+            <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
+                de app bedienen is
+                ook echt geweldig. Nog een extra plus punt is dat je op de website een community
+                hebt voor functies die
+                er niet standaard opstaan en nog een dashboard.</p>
 
-        <h4>De aller beste wall station</h4>
-        <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
-                class="bi bi-star"></i><i
-                class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
-            05/03/2023 | Brugge |
-            Gekocht op 21/01/05 | </p>
-        <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
-        <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
-            de app bedienen is
-            ook echt geweldig. Nog een extra plus punt is dat je op de website een community
-            hebt voor functies die
-            er niet standaard opstaan en nog een dashboard.</p>
+        </div>
+        <div class="col-md-8 col-sm-10  border-bottom">
 
-    </div>
-    <div class="col-md-8 col-sm-10  border-bottom">
-
-        <h4>De aller beste wall station</h4>
-        <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
-                class="bi bi-star"></i><i
-                class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
-            05/03/2023 | Brugge |
-            Gekocht op 21/01/05 | </p>
-        <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
-        <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
-            de app bedienen is
-            ook echt geweldig. Nog een extra plus punt is dat je op de website een community
-            hebt voor functies die
-            er niet standaard opstaan en nog een dashboard.</p>
-        <button type="button" class="btn btn-primary ">Bekijk meer<i
-                class="bi bi-pencil-square"></i></button>
-    </div>
-
-
-    <!--        SOURCE CODE-->
-    <div class="row my-5">
-        <div class="col-md-8 col-sm-10 my-4 justify-content-around">
-            <h2>Source code </h2>
-            <p>Hier is een link naar Github, hier kan je de source code downloaden en eventueel
-                aanpassen naar jou
-                wensen. Ook vind je hier de instructies.</p>
-            <button type="button" class="btn btn-primary btn-lg ">Manuel Versie 1 <i
-                    class="bi bi-download mx-2"></i></button>
-            <button type="button" class="btn btn-primary mx-3 btn-lg ">Ga naar GitHub<i class="bi bi-github mx-2"></i>
-            </button>
-            <button type="button" class="btn btn-primary btn-lg">Bekijk de tutorial<i
-                    class="bi bi-play-circle-fill mx-2"></i>
-            </button>
+            <h4>De aller beste wall station</h4>
+            <p class=" text-body-secondary">Daniël | <i class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i
+                    class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> |
+                05/03/2023 | Brugge |
+                Gekocht op 21/01/05 | </p>
+            <i class="bi bi-hand-thumbs-up"></i>21 <i class="bi bi-hand-thumbs-down"></i> 2
+            <p>Dit is echt een goede charger, Het is zeer duurzaam en heeft echt geen nadelen. Met
+                de app bedienen is
+                ook echt geweldig. Nog een extra plus punt is dat je op de website een community
+                hebt voor functies die
+                er niet standaard opstaan en nog een dashboard.</p>
+            <button type="button" class="btn btn-primary ">Bekijk meer<i
+                    class="bi bi-pencil-square"></i></button>
         </div>
 
+
+        <!--        SOURCE CODE-->
+        <div class="row my-5">
+            <div class="col-md-8 col-sm-12 my-4 justify-content-around">
+                <h2>Source code </h2>
+                <p>Hier is een link naar Github, hier kan je de source code downloaden en eventueel
+                    aanpassen naar jou
+                    wensen. Ook vind je hier de instructies.</p>
+                <button type="button" class="btn btn-primary btn-lg mb-2 ">Manuel Versie 1 <i
+                        class="bi bi-download mx-2"></i></button>
+                <button type="button" class="btn btn-primary  btn-lg mb-2 ">Ga naar GitHub<i
+                        class="bi bi-github mx-2"></i>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg mb-2 ">Bekijk de tutorial<i
+                        class="bi bi-play-circle-fill mx-2"></i>
+                </button>
+            </div>
+
+        </div>
     </div>
-</div>
 </div>
 
 
 <!-- FOOTER -->
 
 <!--    LINKS FOOTER-->
-<div class="container-fluid footer__  py-5 " >
+<div class="container-fluid footer__  py-5 ">
     <div class="row ">
-        <div class="col-sm-6 col-md-4 " >
+        <div class="col-sm-6 col-md-4 ">
             <!--        CONTACT-->
             <p><span>Contact</span></p>
             <ul>
                 <li>Ownit</li>
                 <li> PXL - Kempische steenweg,</li>
                 <li> Corda campus, 3500</li>
-                <li><a  href="#">FAQ</a></li>
+                <li><a href="#">FAQ</a></li>
                 <li><a href="contact.html">Contact formulier</a></li>
             </ul>
         </div>
@@ -816,8 +813,8 @@
             <p><span>Community</span></p>
             <ul>
 
-                <li><a  href="#">Forum</a></li>
-                <li><a  href="#">Bibliotheek</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Bibliotheek</a></li>
 
             </ul>
         </div>

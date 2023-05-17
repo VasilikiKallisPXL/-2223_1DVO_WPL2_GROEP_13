@@ -100,6 +100,10 @@ background-color: #4F847A;
 /*HERO DETAIL*/
 .detail_pagina .btn-primary, .detail_pagina .btn-secondary{
     background-color: #261F56;
+
+}
+.detail_pagina .btn-primary{
+    border: none;
 }
 .hero_detail span,  .hover_buttons button:hover {
     background-color: #5EBCAF;
@@ -140,7 +144,7 @@ color: #22ab22;
 .cards-eigenschappen {
     background-color: #4A4A82;
     color: #ffffff;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
+box-shadow: 5px 5px 3px rgba(136, 130, 130, 0.86);
 }
 .cards-eigenschappen img{
     width: 100%;
@@ -185,8 +189,9 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
 
 
 
-.card-product__:hover , .klein_card:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
+.card-product__:hover , .card-product-onderdelen__:hover{
+
+    filter: drop-shadow(5px 5px 3px rgba(10, 10, 10, 0.53));
 }
 
 
@@ -249,7 +254,7 @@ width: 80px;
 .modal_layout .modal-content h5, .modal_layout .modal-content h4{
     color: #5EBCAF;
 }
-.modal_layout .modal-content p, .modal_layout .modal-content .btn-link,  button .btn-close, .modal_layout .modal-content label {
+.modal_layout .modal-content p, .modal_layout .modal-content .btn-link,  .btn-close, .modal_layout .modal-content label {
     color: #ffffff;
 }
 .modal_layout .modal-content .btn-primary{
@@ -344,6 +349,14 @@ width: 80px;
         visibility: visible;
         color: #5EBCAF;
     }
+/*    .btn-primary .source_code_knoppen {*/
+/*        background-color: white;*/
+/*    }*/
+    .detail_pagina .btn-primary{
+        background-color: #ffffff;
+        color: #261F56;
+
+    }
 }
 @media screen and(max-width: 768px ){
     .hero_parts_links div{
@@ -351,5 +364,8 @@ width: 80px;
     }
     .hero_parts_links {
         display: none;
+    }
+    .detail_pagina .btn-primary, .detail_pagina .btn-secondary{
+        background-color: #ffffff;
     }
 }
