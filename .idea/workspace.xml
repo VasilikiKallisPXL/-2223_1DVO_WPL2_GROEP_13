@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/assets/download_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/open.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overons.css" beforeDir="false" afterPath="$PROJECT_DIR$/Overons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overons.html" beforeDir="false" afterPath="$PROJECT_DIR$/Overons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overons.css" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overons.html" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,8 @@
       <workItem from="1684305402083" duration="594000" />
       <workItem from="1684308312500" duration="23000" />
       <workItem from="1684312993973" duration="1158000" />
-      <workItem from="1684390790169" duration="3495000" />
+      <workItem from="1684390790169" duration="3856000" />
+      <workItem from="1684395050452" duration="932000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1682594146449</created>
