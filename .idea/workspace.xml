@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/betaling.html" beforeDir="false" afterPath="$PROJECT_DIR$/betaling.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginpagina.html" beforeDir="false" afterPath="$PROJECT_DIR$/loginpagina.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +36,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mackj/Documents/Webstorm/Github",
+    "last_opened_file_path": "C:/GitHub/-2223_1DVO_WPL2_GROEP_13",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
@@ -48,6 +53,9 @@
       <updated>1682593998817</updated>
       <workItem from="1682594000042" duration="66000" />
       <workItem from="1682594067886" duration="394000" />
+      <workItem from="1684154587795" duration="1427000" />
+      <workItem from="1684226916986" duration="672000" />
+      <workItem from="1684677064419" duration="1794000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1682594146449</created>
