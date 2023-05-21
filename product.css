@@ -35,6 +35,40 @@ p,span, li, a {
     width: 100%;
 }
 
+
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+.hidden-mandje{
+    display: none;
+}
+
 /*HERO STATION*/
 
 .hero-station__ h1, .hero-station__ h2, .hero-station__ h3, .hero-station__ p:last-child, .hero-station__ .btn:nth-child(2){
@@ -80,6 +114,9 @@ p,span, li, a {
 }
 .card-body-rechts .titel_visible_hidden{
     visibility: hidden;
+}
+.navbar ul li .titel_visible_hidden{
+    display: none;
 }
 
 /*HERO CARD RECHTS*/
@@ -181,7 +218,7 @@ box-shadow: 5px 5px 3px rgba(136, 130, 130, 0.86);
 .klein_card .btn_card_klein:hover{
     background-color: rgba(94, 188, 175, 0.64);
 }
-.card-img{
+.card-img, .card-product-onderdelen__ .card img{
     background-color: rgba(0,0,0,0.8);
     filter:brightness(0.6);
     min-height: 250px;
@@ -194,6 +231,9 @@ box-shadow: 5px 5px 3px rgba(136, 130, 130, 0.86);
     filter: drop-shadow(5px 5px 3px rgba(10, 10, 10, 0.53));
 }
 
+.card-product-onderdelen__ .card img{
+    max-height:150px;
+}
 
 
 .card-product__ .card-title{
@@ -367,5 +407,8 @@ width: 80px;
     }
     .detail_pagina .btn-primary, .detail_pagina .btn-secondary{
         background-color: #ffffff;
+    }
+    .navbar ul li .titel_visible_hidden{
+        display: inline;
     }
 }

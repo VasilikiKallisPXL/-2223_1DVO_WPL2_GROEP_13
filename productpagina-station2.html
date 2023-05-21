@@ -35,7 +35,7 @@
         <div class="col-md-12">
             <!--    NAVBAR-->
             <nav class="navbar fixed navbar-expand-lg bg-body-white ">
-                <div class="container-fluid ">
+                <div class="container-fluid pt-1 pb-1 align-items-center">
 
                     <a class="navbar-brand" href="index.html"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,7 +44,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse  justify-content-end " id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarNavDropdown">
                         <ul class="navbar-nav  me-4 mb-2 mb-lg-0  ">
                             <li>
                                 <div class="input-group mb-3 " style="max-width: 350px">
@@ -55,9 +55,7 @@
                                 </div>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Dashboard</a>
-                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Community</a>
                             </li>
@@ -72,20 +70,40 @@
                                     <li><a class="dropdown-item" href="productpagina-parts.html">Parts</a></li>
                                 </ul>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="loginpagina.html"> <i class="bi bi-person"></i></a>
+                                <a class="nav-link" href="#">Inloggen</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-cart2"></i></a>
+                                <a class="nav-link" href="#"><span class="titel_visible_hidden">Notificaties</span><i class="bi bi-bell "> </i></a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="titel_visible_hidden">Favorieten</span><i class="bi bi-heart"></i></a>
+                            </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="loginpagina.html"> <i class="bi bi-person "></i></a>-->
+<!--                            </li>-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <div class="container-mandje">
+                                    <div class="container-mandje-icoon">
+                                    <button type="button" class="btn  btn-bg-dark position-relative">
+
+                                        <span class="titel_visible_hidden">Winkelwagentje</span>   <i class="bi bi-cart2 "></i>
+                                            <span class="position-absolute top-50  start-100 translate-middle badge rounded-pill bg-dark ">
+                                                0
+                                                <span class="visually-hidden">Je winkelwagentje is leeg</span>
+                                            </span>
+                                        </button>
+
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+
+
+
                         </ul>
                     </div>
 
