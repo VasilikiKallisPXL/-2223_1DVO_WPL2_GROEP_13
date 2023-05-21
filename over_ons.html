@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!--    TITEL  -->
+    <title>Ownit | Over ons</title>
+
+    <!--    FAVICON-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon_ownit.png">
+    <!-- CSS-->
+    <link rel="stylesheet" href="over_ons.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+
+    <!--ICONEN BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!--    METADATA-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana">
+    <meta name="description" content="productpagina-webshop parts-OWNIT">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!--!!!! Rules of code !!!! -->
+<!-- Gebruik Bootstrap -->
+<!-- Gebruik id's, classes (naamgeving: foto__profiel), 'alt' bij img,  -->
+<!-- Voorkom conflicten: communniceer duidelijk wanneer er gewerkt wordt aan een pagina en wanneer je eindigt met bewerken.
+!!! Vermeld wat gewijzigd is in de commit!!! -->
+<!-- Voeg commentaar toe bij elk onderdeel van code bv.: section, div, header -->
+<!-- Voeg een margin toe onder de navigatiebar -->
+
+<div class="container-fluid  py-4 align-items-stretch">
+    <div class="row align-items-stretch">
+        <div class="col">
+            <!--    NAVBAR-->
+            <nav class="navbar fixed navbar-expand-lg bg-body-white justify-content-space-between">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav ">
+                            <li class="align-item-end">
+                                <div class="input-group mb-3 ">
+                                    <input type="text" class="form-control border border-end-0 " placeholder=""
+                                           aria-label="Username" aria-describedby="basic-addon1">
+                                    <span class="input-group-text bg-white border border-start-0 "
+                                          id="basic-addon1-zoekbalk"><i class="bi bi-search "></i></span>
+
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Community</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="productpagina-station2.html">Station</a></li>
+                                    <li><a class="dropdown-item" href="diy-kits.html">DIY-kits</a></li>
+                                    <li><a class="dropdown-item" href="productpagina-parts.html">Parts</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loginpagina.html"><i class="bi bi-person"></i></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-cart2"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<!--MAIN-->
+<!--TITEL-->
+<main>
+    <div class="container" id="intro__tekst">
+        <div class="row" id="hoofd__titel">
+            <h1>Over ons</h1>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <h1>Wat is Ownit</h1>
+                <p>Wij bieden een website aan waar je onderdelen
+                zoals laadpalen, DIY-kits en parts kunt kopen.
+                Je vindt er ook veel informatie over het product zelf e
+                de optie om alles te downloaden en zelf te
+                installeren en/of bouwen. Hiernaast bieden we een
+                app aan waar je verschillende zaken kunt
+                terugvinden en besturen in de UI zoals: details van de
+                charger, laadtijd, stroom hoeveelheid, stroompieken,
+                het automatiseren van opladen door te kijken naar de
+                stroompieken en veel meer.</p>
+            </div>
+            <div class="col-12 col-md-7">
+                <img src="assets/over_ons.png" alt="samen_laden " class="rounded d-block" id="mensen_samen_laden">
+            </div>
+        </div>
+    </div>
+
+
+<!--WAT MAAKT OWNIT UNIEK-->
+    <div class="container" id="2de__blok">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <img src="assets/wat_maakt_ons_uniek.png" alt="wat_maakt_ons_uniek" id="charge">
+            </div>
+            <div class="col-12 col-md-6" id="tekst_uniek">
+                <h2 id="missie__title">Wat maakt Ownit uniek</h2>
+                <p id="missie__p">Ownit is de eerste in zijn soort dat open-source is.
+                    Je kan zelf je eigen laadpaal creëren en bouwen vanuit parts die te koop zijn.
+                    Laad je fantasie vrij op de laadpaal om het zelf te bouwen naar wat je nodig hebt of de plaats
+                    die je hebt thuis. Voor diegen die ervaren zijn kunnen instructies downloaden en een DIY-kit kopen.
+                    Voor de mensen die zeer ervaren zijn kunnen software schrijven om de huidige app voor hunzelf
+                    uit te breiden en functies toe te voegen aan de basis functies.
+                    Natuurlijk moet je geen expert zijn voor onze laadpaal te gebruiken of om deze op te zetten.
+                    We bieden natuurlijk ook de volledige laadpaal aan die je zelf kan opzetten of door anderen
+                    mensen kan laten opzetten.
+                    Ons product is natuurlijk voor iedereen bedoelt.
+
+                    De voornaamste redenen voor het open-source te maken is dat je jouw code kan delen in onze
+                    community tab en je met mensen kan samenwerken. Als je iemand bent die niet ervaren is met
+                    code te schrijven dan kan je ook gewoon deze gaan opzoeken. Anderen hebben deze functie
+                    misschien al gemaakt en dan kan je deze gewoon downloaden en installeren.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-lg  py-5 main__">
+
+        <!--   CARDS "WE OFFER"-->
+        <div class="row  text-center py-4 justify-content-center align-items-center" id="titel__cards">
+            <h2>We offer</h2>
+            <!--            HIGH QUALITY-->
+            <div class="col-sm-6 col-md-4  ">
+                <div class="cards-eigenschappen">
+                    <div class="card-body">
+                        <h5 class="card-title py-3 ">Creator -> Inventief</h5>
+                        <img src="assets/writing.png" alt="icoon_eigenschappen" class="my-5">
+
+                        <p class="card-text px-4 my-5">Een belangrijk aspect van ons product is dat de klant
+                            het product zelf kan aanpassen naar zijn/haar noden. Ook is het aspect van
+                            eigendom en personalisatie een belangrijk puntje.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--            OPEN-SOURCE-->
+            <div class="col-sm-6 col-md-4">
+                <div class="cards-eigenschappen">
+                    <div class="card-body">
+                        <h5 class="card-title py-3">Explorer -> Freedom</h5>
+                        <img src="assets/direction.png" alt="icoon_eigenschappen" class="my-5"/>
+                        <p class="card-text px-4 my-5">Vrijheid in de opties die mogelijk zijn met ons product
+                            is ook een groot punt. Onze klanten kunnen contact leggen met een grote
+                            community en kunnen zo samen ons product samenstellen naar ieder zijn
+                            persoonlijke preferenties.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="cards-eigenschappen">
+                    <div class="card-body">
+                        <h5 class="card-title py-3">Mastery</h5>
+                        <img src="assets/expertise.png" alt="icoon_eigenschappen" class="my-5"/>
+                        <p class="card-text px-4 my-5">Het attribuut dat wij hebben gekozen is mastery.
+                            Dit hebben we gekozen omdat ons product gekocht wordt door mensen die zelf
+                            de wereld van het elektrisch laden willen ontdekken en zo zelf de expert
+                            worden in hun eigen product.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--    MISSIE + VISIE-->
+    <div class="container-fluid" id="3e__blok">
+        <div class="row">
+            <div class="col-12 col-md-6" id="missie__blok">
+                <h1>Onze missie</h1>
+                <img src="assets/focus.png" alt="missie_img">
+                <p>Ownit brengen we tot leven om uw gebruiksgemak met laadpalen te optimaliseren.
+                    Met onze duurzame oplossingen, kan u zelf functionaliteiten toevoegen of aanpassen naar wens.
+                    Zo hoeft u zich niet meer te bekommeren over een defect in uw apparaat.<br><br>
+
+                    U wilt ownership over de- door u verwerkte -functies?
+                    Of course! 'Cuz you buy it, you Ownit!</p>
+            </div>
+            <div class="col-12 col-md-6" id="visie__blok">
+                <h1>Onze Visie</h1>
+                <img src="assets/goal-flag.png" alt="missie_img">
+                <p>Wij opteren om mensen met een EV (Electric Vehicle) een gunstig gebruik te bieden met laadpalen.
+                    Hoe doen we dit? Simpel, innovatie, dynamiek en connectie!<br><br>
+
+                    Geen ontwikkelaar? Geen nood!
+                    Sluit je aan bij onze community en ontdek de wondere wereld van Open-Source Tech.</p>
+            </div>
+        </div>
+    </div>
+
+
+<!--BLOKKEN - WERKEND PERSONEEL-->
+    <div class="container-fluid" id="blokken__personeel">
+        <h1>Ons team</h1>
+        <div class="row" id="bovenste__blokken">
+            <div class="col-6 col-md-2" id="blok__1">
+                <img src="assets/persoon__1.png" alt="persoon_1">
+                <h2>Maya Patel</h2>
+                <p>Grafisch ontwerper - Ze gebruikt haar creativiteit om ideeën visueel
+                    over te brengen die consumenten inspireren en boeien. Ze maakt unieke
+                    beelden op basis van de noden van de klant.</p>
+            </div>
+            <div class="col-6 col-md-2" id="blok__2">
+                <img src="assets/persoon__2.png" alt="persoon_2">
+                <h2>Ryan Lee</h2>
+                <p>UX Designer - Ryan verbetert de gebruikerservaring door intuïtieve en
+                    naadloze interacties tussen gebruikers en producten te creëren. Hij is ook
+                    de extrovert van de groep.</p>
+            </div>
+            <div class="col-6 col-md-2" id="blok__3">
+                <img src="assets/persoon__3.png" alt="persoon_3">
+                <h2>Emma Rodriguez</h2>
+                <p>UI Designer - Ze maakt visueel verbluffende en gebruiksvriendelijke
+                    digitale producten. Ze werkt samen met Ryan om de UI schermen te
+                    laten voldoen aan de noden van de klant.</p>
+            </div>
+            <div class="col-6 col-md-2" id="blok__4">
+                <img src="assets/persoon__4.png" alt="persoon_4">
+                <h2>Alexa Wong</h2>
+                <p>Full stack developer - Alexa schrijft hoogwaardige code die voldoet aan de
+                    behoeften van klanten of eindgebruikers. Ze creëert ook de volledige website
+                    met frond en back-end code.</p>
+            </div>
+        </div>
+        <div class="row" id="onderste__blokken">
+            <div class="col-6 col-md-2" id="blok__5">
+                <img src="assets/persoon__5.png" alt="persoon_5">
+                <h2>Jessica Kim</h2>
+                <p>Marketing Manager - Jessica ontwikkelt en implementeert
+                    succesvolle marketingcampagnes, gebruikmakend van marktonderzoek
+                    en klantdata. Ze werkt ook samen met Maya voor een optimale
+                    kwaliteit van posters.</p>
+            </div>
+            <div class="col-6 col-md-2" id="blok__6">
+                <img src="assets/persoon__6.png" alt="persoon_6">
+                <h2>Grace Chen</h2>
+                <p>Content Creator - Grace ontwikkelt boeiende en informatieve content
+                    voor digitale platforms, gebruikmakend van haar talent voor schrijven
+                    en multimedia creatie. Ze werk ook samen met Maya voor templates.</p>
+            </div>
+            <div class="col-6 col-md-2" id="blok__7">
+                <img src="assets/persoon__7.png" alt="persoon_7">
+                <h2>Oliver Johnson</h2>
+                <p>Branding/Project leider - Oliver leidt een volledig team aan van
+                    hardwerkende mensen om samen tot een mooi resultaat te geraken. Hier toosten
+                    ze natuurlijk ook op. Hij doet ook het volledige branding process van een project.  </p>
+            </div>
+            <div class="col-6 col-md-2" id="blok__8">
+                <img src="assets/persoon__8.png" alt="persoon_8">
+                <h2>Ethan Smith</h2>
+                <p>Data Scientist - Ethan verzamelt, analyseert en interpreteert grote hoeveelheden gegevens
+                    om de bedrijfsstrategie te onderbouwen, met behulp van statistische en machine
+                    learning-technieken om inzichten te ontdekken.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--namen aanpassen van de id-->
+<!--        KERNWAARDES TONEN-->
+    <div class="container-fluid" id="kernwaarden">
+        <h1>Onze 5 kernwaardes</h1>
+        <div class="row" id="kernwaarden_rij_1">
+            <div class="col-6 col-md-3">
+                <img src="assets/eco-battery.png" alt="eco_batterij" >
+                <h2>Duurzaamheid</h2>
+                <p>We zijn vastbesloten om bij te dragen aan een duurzame toekomst en we streven ernaar
+                    om onze impact op het milieu zo laag mogelijk te houden. We werken met duurzame
+                    materialen en streven naar een circulaire economie waarin afval wordt
+                    geminimaliseerd.</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="assets/rotation.png" alt="rotation" >
+                <h2>Inventief Perspectief</h2>
+                <p>We geloven dat ons richten op de toekomst, met oog op nieuwe creaties, de sleutel is
+                    om de overgang te versnellen naar duurzame mobiliteit. We blikken daarom voortdurend
+                    op vernieuwing en ontwikkeling, om de beste oplossingen te bieden aan onze klanten en bij te
+                    dragen aan een betere toekomst voor iedereen.</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="assets/open.png" alt="open" >
+                <h2>Openheid</h2>
+                <p>We zijn een open-source bedrijf en geloven sterk in openheid en samenwerking.
+                    We delen onze kennis en technologie met de wereldwijde gemeenschap van ontwikkelaars
+                    en gebruikers, en werken samen om duurzame oplossingen te creëren.</p>
+            </div>
+        </div>
+        <div class="row" id="kernwaarden_rij_2">
+            <div class="col-6 col-md-2" id="leeg__kernwaarden__1">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="assets/target.png" alt="target" >
+                <h2>Klantgericht</h2>
+                <p>Onze klanten staan centraal in alles wat we doen. We streven ernaar om
+                    de beste oplossingen te bieden aan onze klanten en werken samen met hen
+                    om hun behoeften en wensen te begrijpen en te vervullen.</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="assets/deal.png" alt="deal" >
+                <h2>Samenwerking</h2>
+                <p>We geloven dat samenwerking de sleutel is tot succes. We werken samen met onze
+                    klanten, partners en de bredere gemeenschap om onze missie en visie te realiseren.
+                    Zo dragen we bij aan een duurzame toekomst voor iedereen.</p>
+            </div>
+            <div class="col-6 col-md-2"  id="leeg__kernwaarden__2">
+            </div>
+        </div>
+    </div>
+
+
+<!--    BRAND GUIDE DOWNLOADEN-->
+    <div id="branding">
+        <h1>Wil je meer te weten komen over onze brand?</h1>
+        <p>Download dan onze brand guide hier.</p>
+        <button>Download de brandguide<img src="assets/download_icon.png" alt="download_icon"></button>
+    </div>
+</main>
+</body>
+</html>
