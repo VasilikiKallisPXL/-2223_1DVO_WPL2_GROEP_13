@@ -53,6 +53,8 @@ input[type="email"] {
     border-radius: 10px;
     border: 1px solid #5EBCAF;
     background-color: #261F56;
+    outline: none;
+
 }
 
 input[type="submit"] {

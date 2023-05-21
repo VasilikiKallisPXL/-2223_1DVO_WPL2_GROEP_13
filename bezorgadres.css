@@ -49,6 +49,7 @@ input[type="radio"] {
     height: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 label[for="heer"], label[for="mevrouw"], label[for="geen"]{
     font-size: 16px;
@@ -66,6 +67,7 @@ input[name="postcode"], input[name="gemeente"], input[name="huisnr"], input[name
     border: 1px solid #5EBCAF;
     border-radius: 10px;
     margin-right: 1.5%;
+    outline: none;
 
 }
 input[name="extraad"], input[name="straat"], input[name="voornaam"], input[name="achternaam"] {

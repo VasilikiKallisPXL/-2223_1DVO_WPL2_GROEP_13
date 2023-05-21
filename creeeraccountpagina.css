@@ -43,6 +43,7 @@ input[name="volledigenaam"], input[name="email"], input[name="pwd"], input[name=
     margin-bottom: 10px;
     background-color: #261F56;
     border: 1px solid #5EBCAF;
+    outline: none;
 
 }
 
