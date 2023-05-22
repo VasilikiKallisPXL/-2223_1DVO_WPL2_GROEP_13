@@ -75,29 +75,6 @@ main {
     width: 140%;
 }
 
-@media screen and (max-width: 1200px) {
-    #intro__tekst h1 {
-        padding-top: 0;
-    }
-
-}
-
-
-@media screen and (max-width: 1400px) {
-    #tekst_uniek {
-        padding-top: 10px;
-        padding-left: 10px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
 
 /* Onze unieke waarden */
 #tekst_uniek h1 {
@@ -161,8 +138,8 @@ main {
 
 #missie__blok p, #visie__blok p {
     color: #ffffff;
-    padding-left: 200px;
-    padding-right: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 #missie__blok h1, #visie__blok h1 {
@@ -205,6 +182,10 @@ main {
 #bovenste__blokken h2, #onderste__blokken h2 {
     font-size: 28px;
     color: #ffffff;
+}
+
+#blokken__personeel .img-fluid {
+    padding: 10px;
 }
 
 
@@ -277,4 +258,33 @@ main {
 
 
 
+@media screen and (max-width: 1400px) {
+    #tekst_uniek {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #missie__blok p, #visie__blok p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #intro__tekst h1 {
+        padding-top: 0;
+    }
+    #missie__blok p, #visie__blok p {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
 
