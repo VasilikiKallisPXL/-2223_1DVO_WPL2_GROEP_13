@@ -35,7 +35,9 @@ p,span, li, a {
     width: 100%;
 }
 
-
+.container_modal .btn-close{
+    background-color:#ffffff;
+}
 
 .container-cart-products{
     position: absolute;
@@ -115,9 +117,7 @@ p,span, li, a {
 .card-body-rechts .titel_visible_hidden{
     visibility: hidden;
 }
-.navbar ul li .titel_visible_hidden{
-    display: none;
-}
+
 
 /*HERO CARD RECHTS*/
 .card-body-rechts h2, .card-body-rechts h4, .card-body-rechts span{
@@ -226,7 +226,7 @@ box-shadow: 5px 5px 3px rgba(136, 130, 130, 0.86);
 
 
 
-.card-product__:hover , .card-product-onderdelen__:hover{
+ .card-product-onderdelen__:hover{
 
     filter: drop-shadow(5px 5px 3px rgba(10, 10, 10, 0.53));
 }
@@ -397,6 +397,9 @@ width: 80px;
         color: #261F56;
 
     }
+    .navbar ul{
+        margin: 20px;
+    }
 }
 @media screen and(max-width: 768px ){
     .hero_parts_links div{
@@ -411,4 +414,11 @@ width: 80px;
     .navbar ul li .titel_visible_hidden{
         display: inline;
     }
+
+    .navbar ul{
+        margin: 20px;
+
+    }
+
+
 }

@@ -29,8 +29,9 @@
     <div class="row">
         <div class="col-md-12">
             <!--    NAVBAR-->
+            <!--    NAVBAR-->
             <nav class="navbar fixed navbar-expand-lg bg-body-white ">
-                <div class="container-fluid ">
+                <div class="container-fluid pt-1 pb-1 align-items-center">
 
                     <a class="navbar-brand" href="index.html"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,20 +40,18 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse  justify-content-end " id="navbarNavDropdown">
-                        <ul class="navbar-nav  me-4 mb-2 mb-lg-0  ">
+                    <div class="collapse navbar-collapse justify-content-end align-items-end " id="navbarNavDropdown">
+                        <ul class="navbar-nav  me-3 mb-lg-2 mb-lg-0  my-md-4 my-sm-5 text-sm-center">
                             <li>
-                                <div class="input-group mb-3 " style="max-width: 350px">
+                                <div class="input-group mb-3 mt-sm-auto" style="min-width: 350px">
                                     <input type="text" class="form-control border border-end-0 " placeholder=""
                                            aria-label="Username" aria-describedby="basic-addon1">
                                     <span class="input-group-text bg-white border border-start-0 "
-                                          id="basic-addon1-zoekbalk"><i class="bi bi-search "></i></span>
+                                          id="basic-addon1"><i class="bi bi-search "></i></span>
                                 </div>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Dashboard</a>
-                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Community</a>
                             </li>
@@ -67,27 +66,28 @@
                                     <li><a class="dropdown-item" href="productpagina-parts.html">Parts</a></li>
                                 </ul>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Inloggen</a>
+                            </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                                <a class="nav-link" href="#"><span class="d-lg-none ">Notificaties</span><i class="bi bi-bell d-none d-lg-inline"> </i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+                                <a class="nav-link" href="#"><span class="d-lg-none">Favorieten</span><i class="bi bi-heart  d-none d-lg-inline"></i></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="loginpagina.html"> <i class="bi bi-person"></i></a>
-                            </li>
+
 
                             <li class="nav-item">
                                 <div class="container-mandje ">
                                     <div class="container-mandje-icoon">
-                                       <button type="button" class="btn btn-white">
-                                            <i class="bi bi-cart2"></i>
+                                        <button type="button" class="btn btn-white"><span class="d-lg-none ">Winkelwagentje</span>
+                                            <i class="bi bi-cart2 d-none d-lg-inline"></i>
                                             <span class="badge text-bg-dark producten_opteller" >0</span>
                                         </button>
 
                                     </div>
-                                    </div >
+                                </div >
                                 <div class="container-cart-products hidden-mandje">
                                     <div class="row-product">
                                         <div class="cart-product">
@@ -99,13 +99,15 @@
                                             <i class="bi bi-x fs-2"></i>
                                         </div>
                                     </div>
-                                        <div class="cart-total">
-                                            <h3>Total:</h3>
-                                            <span class="total-cost">200</span>
-                                        </div>
+                                    <div class="cart-total">
+                                        <h3>Total:</h3>
+                                        <span class="total-cost">200</span>
+                                    </div>
 
                                 </div>
                             </li>
+
+
                         </ul>
                     </div>
 
@@ -180,7 +182,7 @@
                 <input type="text" class="form-control border border-end-0  " placeholder=""
                        aria-label="zoekbalk_parts"
                        aria-describedby="basic-addon1">
-                <span class="input-group-text bg-white border border-start-0 " id="basic-addon1"><i
+                <span class="input-group-text bg-white border border-start-0 " id="basic-addon"><i
                         class="bi bi-search "></i></span>
 
 
@@ -1372,7 +1374,7 @@
 
     </div>
     <!--        SOCIAL MEDIA-->
-    <div class="row mx-5 my-5">
+    <div class="row mx-2 my-5">
         <div class="col">
             <p><span>Social media</span></p>
             <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start">
