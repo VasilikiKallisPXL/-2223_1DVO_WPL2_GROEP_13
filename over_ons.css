@@ -45,7 +45,6 @@ main {
     margin-bottom: -150px;
 }
 
-
 /* Titel */
 #intro__tekst h1{
     font-size: 60px;
@@ -96,6 +95,11 @@ main {
     float: right;
     width: 830px;
     overflow: hidden;
+}
+
+#charge_2 {
+    visibility: hidden;
+    display: none;
 }
 
 
@@ -186,6 +190,8 @@ main {
 
 #blokken__personeel .img-fluid {
     padding: 10px;
+    width: 65%;
+    height: auto;
 }
 
 
@@ -256,8 +262,6 @@ main {
 }
 
 
-
-
 @media screen and (max-width: 1400px) {
     #tekst_uniek {
         padding-top: 10px;
@@ -267,6 +271,10 @@ main {
         margin-left: 100px;
         margin-right: 100px;
     }
+    #blok__1, #blok__2, #blok__3, #blok__4, #blok__5, #blok__6, #blok__7, #blok__8{
+        padding: 4px;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -279,22 +287,46 @@ main {
     }
 }
 
-
-@media screen and (max-width: 450px) {
-    body h1 {
-        font-size: 24px;
+@media screen and (max-width: 992px) {
+    #charge_2 {
+        visibility: visible;
+        float: right;
+        overflow: hidden;
+        display: inline-block;
     }
-    body h2 {
-        font-size: 22px;
+    #charge {
+        display: none;
+    }
+    #tekst_uniek {
+        padding-top: 50px;
+        padding-right: 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    body h1 {
-        font-size: 28px;
+    #intro__tekst h1 {
+        font-size: 26px;
     }
-    body h2 {
-        font-size:26px;
+
+    #intro__tekst #hoofd__titel h1, #tekst_uniek h1, #titel__cards h2, #missie__blok h1, #visie__blok h1,
+    #blokken__personeel h1, #kernwaarden h1, #branding h1{
+        font-size: 30px;
+    }
+
+    #intro__tekst #hoofd__titel p, #missie__blok p, #visie__blok, #titel__cards p{
+        font-size: 18px;
+    }
+
+    #missie__blok img, #visie__blok img {
+        width: 7%;
+        height: 15%;
+    }
+
+    #blokken__personeel img{
+        width: 30%;
+        height: auto;
+    }
+    #kernwaarden #kernwaarden_rij_1, #kernwaarden #kernwaarden_rij_2 {
+        margin: 20px;
     }
 }
-
