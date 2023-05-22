@@ -5,6 +5,7 @@ box-sizing: border-box;
 }
 body{
     min-width: 440px;
+    position: relative;
 }
 
 /*FONTS*/
@@ -18,6 +19,10 @@ p,span, li, a {
 /*___HEADER*/
 /*____________NAVBAR*/
 
+.navbar{
+    background-color: #ffffff;
+
+}
 .navbar-brand{
     width: 4rem;
 }
@@ -371,6 +376,7 @@ width: 80px;
 /*RESPONSIVE*/
 
 @media screen and (max-width:450px){
+
     .hero-station__{
         align-items: center;
     }
