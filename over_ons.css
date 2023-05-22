@@ -66,33 +66,53 @@ main {
     padding: 5px;
 }
 
-#intro__tekst p {
-    width: 500px;
-}
-
 #row, #col {
     display: inline-block;
 }
 
 /* img */
-#mensen_samen_laden {
-  width: 1049px;
+.img-fluid {
+    width: 140%;
+}
+
+@media screen and (max-width: 1200px) {
+    #intro__tekst h1 {
+        padding-top: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 1400px) {
+    #tekst_uniek {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
 }
 
 
 /* Onze unieke waarden */
-#tekst_uniek h2 {
+#tekst_uniek h1 {
     font-size:46px;
     font-family: Aptly;
     font-weight: bold;
     color: #261F56;
     padding: 5px;
+    display: inline-block;
 }
 
 #tekst_uniek {
     color: #000;
-    margin-top: 88px;
-    margin-left: 100px;
+    padding-top: 88px;
+    padding-left: 100px;
 }
 
 #charge {
