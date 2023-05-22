@@ -1,57 +1,16 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: #fff;
-}
-.winkelmandje{
+.gradient-custom {
     background-image: url("achtergrondwinkelmandje.png");
+}
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.winkelmandje-container {
+    background-image: url("achtergrondwinkelmandje.png");
     background-size: cover;
-}
-.product{
-    border: solid 1px #fff;
-    border-radius: 10px ;
-    margin: 15px;
-}
-.item-quantity{
-    color: #3a3939;
-
-    padding: 0 0 5px 5px;
-    border-radius: 5px;
-    width: 40px;
-    height: 35px;
-    background-color: #5EBCAF;
-    border: none;
-
-}
-.trashcan{
-    background-color: #5EBCAF;
-    border: none;
-}
-
-.checkout-summary{
-    background-color: #fff;
-    height: 100%;
-    margin-top: 20px;
-    align-self: center;
     border-radius: 15px;
-    color: #261F56;
-
+    padding: 10px;
 }
-
-.checkout-summary h4{
-    margin-left: 25px;
-    padding-top: 5px;
-    color: #261F56;
-
-}
-
-.winkelmandje{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 750px;
-    color: black
-    ;
-}
-
