@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/bezorgadres.css" beforeDir="false" afterPath="$PROJECT_DIR$/bezorgadres.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/creeeraccountpagina.css" beforeDir="false" afterPath="$PROJECT_DIR$/creeeraccountpagina.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwvergeten.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwvergeten.css" afterDir="false" />
+    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="betaling en">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betaling.css" beforeDir="false" afterPath="$PROJECT_DIR$/betaling.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/betaling.html" beforeDir="false" afterPath="$PROJECT_DIR$/betaling.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
       <workItem from="1682594067886" duration="394000" />
       <workItem from="1684154587795" duration="1427000" />
       <workItem from="1684226916986" duration="672000" />
-      <workItem from="1684677064419" duration="3215000" />
+      <workItem from="1684677064419" duration="11450000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1682594146449</created>
@@ -78,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684680119115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="creeraccount, login en wwvergeten responsief design klaar">
+      <created>1684680326997</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684680326998</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

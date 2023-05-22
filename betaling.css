@@ -11,16 +11,22 @@ img{
     width: 60px;
     padding-right: 10px;
 }
+header{
+    max-width: 900px;
+    margin: 0 auto;
+}
 header h1{
-    margin-top: 50px;
     color: #261F56;
     text-align: center;
-    font-size: 46px;
+    font-size: 25px;
 }
 header p{
     color: #261F56;
     text-align: center;
     font-size: 21px;
+}
+#betaling_kruisje img{
+    width: 40px;
 }
 main{
     background-color: #261F56;
@@ -56,7 +62,7 @@ input[name="knaam"], input[name="achternaam"], input[name="einddatum"], input[na
     border: 1px solid #5EBCAF;
     border-radius: 10px;
     margin-right: 1.5%;
-
+    outline: none
 
 }
 input[name="kaarthoudernummer"] {
@@ -67,6 +73,7 @@ input[name="kaarthoudernummer"] {
     background-color: #261F56;
     border: 1px solid #5EBCAF;
     border-radius: 10px;
+    outline: none;
 }
 
 input[type="submit"] {
@@ -78,4 +85,3 @@ input[type="submit"] {
     background-color: #5EBCAF;
     border-radius: 10px;
 }
-
