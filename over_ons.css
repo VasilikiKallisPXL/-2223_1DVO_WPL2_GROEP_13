@@ -48,7 +48,7 @@ main {
 /* Titel */
 #intro__tekst h1{
     font-size: 60px;
-    font-family: Aptly;
+    font-family: Aptly, sans-serif;
     font-weight: bold;
     display: inline-block;
     color: #261F56;
@@ -58,7 +58,7 @@ main {
 
 #intro__tekst #hoofd__titel h1 {
     font-size:47px;
-    font-family: Aptly;
+    font-family: Aptly, sans-serif;
     font-weight: bold;
     display: inline-block;
     color: #261F56;
@@ -78,7 +78,7 @@ main {
 /* Onze unieke waarden */
 #tekst_uniek h1 {
     font-size:46px;
-    font-family: Aptly;
+    font-family: Aptly, sans-serif;
     font-weight: bold;
     color: #261F56;
     padding: 5px;
@@ -106,7 +106,7 @@ main {
 
 /*CARD EIGENSCHAPPEN*/
 #titel__cards h2 {
-    font-family: aptly;
+    font-family: aptly, sans-serif;
     font-size: 46px;
     font-weight: bold;
     color: #261F56;
