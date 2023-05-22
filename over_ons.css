@@ -281,10 +281,20 @@ main {
 
 
 @media screen and (max-width: 450px) {
-
+    body h1 {
+        font-size: 24px;
+    }
+    body h2 {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    body h1 {
+        font-size: 28px;
+    }
+    body h2 {
+        font-size:26px;
+    }
 }
 
