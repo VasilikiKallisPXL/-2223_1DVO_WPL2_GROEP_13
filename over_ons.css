@@ -13,43 +13,18 @@ p,span, li, a {
     font-family: new-order, sans-serif;
 }
 
-/*
 /*___HEADER*/
 /*____________NAVBAR*/
-.navbar{
-    height: 60px;
-}
-.navbar-brand{
-    width: 4rem;
-}
-
-.navbar ul li a {
-    margin: 0 10px;
-    font-size: 16px;
-
-}
-
-.navbar .nav-link:hover, .nav-link .dropdown-toggle{
-    font-weight: bold;
-}
-.navbar-brand  img{
-    width: 100%;
-    margin-left: 51px;
-}
-
-
-
 
 /* main */
 main {
     margin-bottom: -150px;
 }
 
-
 /* Titel */
 #intro__tekst h1{
     font-size: 60px;
-    font-family: Aptly;
+    font-family: Aptly, sans-serif;
     font-weight: bold;
     display: inline-block;
     color: #261F56;
@@ -59,15 +34,11 @@ main {
 
 #intro__tekst #hoofd__titel h1 {
     font-size:47px;
-    font-family: Aptly;
+    font-family: Aptly, sans-serif;
     font-weight: bold;
     display: inline-block;
     color: #261F56;
     padding: 5px;
-}
-
-#intro__tekst p {
-    width: 500px;
 }
 
 #row, #col {
@@ -75,24 +46,25 @@ main {
 }
 
 /* img */
-#mensen_samen_laden {
-  width: 1049px;
+.img-fluid {
+    width: 140%;
 }
 
 
 /* Onze unieke waarden */
-#tekst_uniek h2 {
+#tekst_uniek h1 {
     font-size:46px;
-    font-family: Aptly;
+    font-family: Aptly, sans-serif;
     font-weight: bold;
     color: #261F56;
     padding: 5px;
+    display: inline-block;
 }
 
 #tekst_uniek {
     color: #000;
-    margin-top: 88px;
-    margin-left: 100px;
+    padding-top: 88px;
+    padding-left: 100px;
 }
 
 #charge {
@@ -101,11 +73,16 @@ main {
     overflow: hidden;
 }
 
+#charge_2 {
+    visibility: hidden;
+    display: none;
+}
+
 
 
 /*CARD EIGENSCHAPPEN*/
 #titel__cards h2 {
-    font-family: aptly;
+    font-family: aptly, sans-serif;
     font-size: 46px;
     font-weight: bold;
     color: #261F56;
@@ -141,8 +118,8 @@ main {
 
 #missie__blok p, #visie__blok p {
     color: #ffffff;
-    padding-left: 200px;
-    padding-right: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 #missie__blok h1, #visie__blok h1 {
@@ -172,10 +149,6 @@ main {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.36);
 }
 
-#bovenste__blokken, #onderste__blokken {
-    justify-content: center;
-}
-
 #bovenste__blokken p, #onderste__blokken p {
     color: #ffffff;
     padding-left: 20px;
@@ -185,6 +158,12 @@ main {
 #bovenste__blokken h2, #onderste__blokken h2 {
     font-size: 28px;
     color: #ffffff;
+}
+
+#blokken__personeel .img-fluid {
+    padding: 10px;
+    width: 65%;
+    height: auto;
 }
 
 
@@ -204,10 +183,6 @@ main {
     margin: 25px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.36);
-}
-
-#kernwaarden_rij_1, #kernwaarden_rij_2 {
-    justify-content: center;
 }
 
 #kernwaarden_rij_1 p, #kernwaarden_rij_2 p {
@@ -255,6 +230,109 @@ main {
 }
 
 
+@media screen and (max-width: 1400px) {
+    #tekst_uniek {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #missie__blok p, #visie__blok p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    #blok__1, #blok__2, #blok__3, #blok__4, #blok__5, #blok__6, #blok__7, #blok__8{
+        padding: 4px;
+    }
 
+}
 
+@media screen and (max-width: 1200px) {
+    #intro__tekst h1 {
+        padding-top: 0;
+    }
+    #missie__blok p, #visie__blok p {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
 
+@media screen and (max-width: 992px) {
+    #charge_2 {
+        visibility: visible;
+        float: right;
+        overflow: hidden;
+        display: inline-block;
+    }
+    #charge {
+        display: none;
+    }
+    #tekst_uniek {
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #intro__tekst h1 {
+        font-size: 26px;
+    }
+
+    #intro__tekst #hoofd__titel h1, #tekst_uniek h1, #titel__cards h2, #missie__blok h1, #visie__blok h1,
+    #blokken__personeel h1, #kernwaarden h1, #branding h1{
+        font-size: 30px;
+    }
+
+    #intro__tekst #hoofd__titel p, #missie__blok p, #visie__blok, #titel__cards p{
+        font-size: 18px;
+    }
+
+    #missie__blok img, #visie__blok img {
+        width: 7%;
+        height: 15%;
+    }
+
+    #blokken__personeel img{
+        width: 30%;
+        height: auto;
+    }
+    #kernwaarden #kernwaarden_rij_1, #kernwaarden #kernwaarden_rij_2 {
+        margin: 20px;
+    }
+}
+
+/*FOOTER*/
+
+.footer__{
+    background-color: #261F56;
+    color: #ffffff;
+    min-height: 500px;
+    max-height:800px;
+}
+
+.footer__ ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer__ ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__ span{
+    color: #5EBCAF;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 30px ;
+}
+.social-media-footer a{
+
+    display: flex;
+    padding: 2px;
+    margin: 20px 10px ;
+    color: #ffffff;
+}
+.footer__ p:last-child{
+    color: #000000;
+}
+.footer__ iframe{
+    width: 100%;
+    height: 400px;
+}
