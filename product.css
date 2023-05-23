@@ -3,6 +3,9 @@ box-sizing: border-box;
  margin: 0;
     padding: 0;
 }
+body{
+    min-width: 440px;
+}
 
 /*FONTS*/
 h1,h2,h3,h4,h5,h6, .navbar ul li a{
@@ -14,9 +17,7 @@ p,span, li, a {
 }
 /*___HEADER*/
 /*____________NAVBAR*/
-.navbar{
-    height: 100px;
-}
+
 .navbar-brand{
     width: 4rem;
 }
@@ -30,11 +31,12 @@ p,span, li, a {
 .navbar .nav-link:hover, .nav-link .dropdown-toggle{
     font-weight: bold;
 }
-.navbar-brand  img{
+.navbar-brand img{
     width: 100%;
 }
 
 /*HERO STATION*/
+
 .hero-station__ h1, .hero-station__ h2, .hero-station__ h3, .hero-station__ p:last-child, .hero-station__ .btn:nth-child(2){
     color: #5EBCAF;
 }
@@ -59,7 +61,7 @@ p,span, li, a {
     color: #261F56;
 }
 
-/*HERO CARD LINKS*/
+
 .card-body-links h2, .card-body-links button {
     margin: 20px 15px;
 
@@ -75,6 +77,9 @@ p,span, li, a {
 }
 .card-body-links p {
     margin: 30px 15px;
+}
+.card-body-rechts .titel_visible_hidden{
+    visibility: hidden;
 }
 
 /*HERO CARD RECHTS*/
@@ -95,6 +100,10 @@ background-color: #4F847A;
 /*HERO DETAIL*/
 .detail_pagina .btn-primary, .detail_pagina .btn-secondary{
     background-color: #261F56;
+
+}
+.detail_pagina .btn-primary{
+    border: none;
 }
 .hero_detail span,  .hover_buttons button:hover {
     background-color: #5EBCAF;
@@ -112,10 +121,7 @@ height: 70px;
     color: #000000;
     margin: 0 10px;
 }
-/*.hero_detail  button:last-child{*/
-/*    height: 70px;*/
-/*    padding: 0 35px;*/
-/*}*/
+
 .hero_detail .bi-check-circle-fill{
 color: #22ab22;
 }
@@ -138,7 +144,7 @@ color: #22ab22;
 .cards-eigenschappen {
     background-color: #4A4A82;
     color: #ffffff;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
+box-shadow: 5px 5px 3px rgba(136, 130, 130, 0.86);
 }
 .cards-eigenschappen img{
     width: 100%;
@@ -152,8 +158,8 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
     transform: scale(1.5);
     transition: all 0.2s ease-in;
 }
-/*CARD_PRODUCT*/
-.card-product__ .bi-heart ,  .card-prijs__{
+
+.card-product__ .bi-heart ,   .card-product__ .card-prijs__{
 
 
     background-color: rgba(94, 188, 175, 0.64);
@@ -175,22 +181,28 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
 .klein_card .btn_card_klein:hover{
     background-color: rgba(94, 188, 175, 0.64);
 }
-
-.card-product__:hover , .klein_card:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.96);
+.card-img{
+    background-color: rgba(0,0,0,0.8);
+    filter:brightness(0.6);
+    min-height: 250px;
 }
 
-/*}*/
-.card-product__ .card-text{
-    font-size: 15px;
+
+
+.card-product__:hover , .card-product-onderdelen__:hover{
+
+    filter: drop-shadow(5px 5px 3px rgba(10, 10, 10, 0.53));
 }
+
+
+
 .card-product__ .card-title{
 color: #5EBCAF;
 }
 .card-product__  .bi-heart{
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+   width: 40px;
+   height: 40px;
 
 }
 
@@ -206,6 +218,7 @@ color: #5EBCAF;
 width: 80px;
     height: 35px;
     font-weight: bold;
+    border-radius: 5px;
 
 }
 /*CUSTOMIZE YOUR STATION SECTIE*/
@@ -220,12 +233,17 @@ width: 80px;
 
 }
 
+
+
  .filter_bagge span{
     background-color: #261F56;
+     padding: 7px 12px ;
+     margin: 2px 3px;
 }
 .filter_bagge span:hover{
     background-color: #4A4A82;
 }
+
 
 
 /*-----END CUSTOMIZE YOUR STATION*/
@@ -236,7 +254,7 @@ width: 80px;
 .modal_layout .modal-content h5, .modal_layout .modal-content h4{
     color: #5EBCAF;
 }
-.modal_layout .modal-content p, .modal_layout .modal-content .btn-link,  button .btn-close, .modal_layout .modal-content label {
+.modal_layout .modal-content p, .modal_layout .modal-content .btn-link,  .btn-close, .modal_layout .modal-content label {
     color: #ffffff;
 }
 .modal_layout .modal-content .btn-primary{
@@ -278,7 +296,8 @@ width: 80px;
 .footer__{
     background-color: #261F56;
     color: #ffffff;
-    max-height: 450px;
+  min-height: 450px;
+    max-height:750px;
 }
 
 .footer__ ul li {
@@ -303,8 +322,8 @@ width: 80px;
     color: #ffffff;
 }
 .footer__ p:last-child{
-    background-color: #ffffff;
-    color: #000000;
+    /*background-color: #ffffff;*/
+    color: #ffffff;
 }
 
 /*RESPONSIVE*/
@@ -313,16 +332,40 @@ width: 80px;
     .hero-station__{
         align-items: center;
     }
+
+
     .hero-station__ h1{
-        background-color: rgba(45, 37, 37, 0.66);
-        text-align: center;
+        font-size: 35px;
+    }
+     .hero-station__ button{
+         width: 40%;
+         font-size: 65%;
+    }
+    .hero_parts_links {
+        display: none;
+    }
 
-        font-size: 48px;
-
-        /*style="background-color: rgba(0, 0, 0, 0.56)" OVERLAY_HERO*/
+    .card-body-rechts .titel_visible_hidden{
+        visibility: visible;
+        color: #5EBCAF;
+    }
+/*    .btn-primary .source_code_knoppen {*/
+/*        background-color: white;*/
+/*    }*/
+    .detail_pagina .btn-primary{
+        background-color: #ffffff;
+        color: #261F56;
 
     }
-    .hero-station__ .overlay-body{
+}
+@media screen and(max-width: 768px ){
+    .hero_parts_links div{
         display: none;
+    }
+    .hero_parts_links {
+        display: none;
+    }
+    .detail_pagina .btn-primary, .detail_pagina .btn-secondary{
+        background-color: #ffffff;
     }
 }
