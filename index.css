@@ -28,34 +28,63 @@ a {
 /*
     ___HEADER
     ____________NAVBAR*/
-.navbar {
-    height: 60px;
-}
-
-.navbar-brand {
-    width: 4rem;
-}
-
-.search__input {
-    max-width: 150px;
-    height: 40px;
-}
-
-.navbar ul li a {
-    margin: 0 10px;
-    font-size: 16px;
-
-}
-
-.navbar .nav-link:hover,
-.nav-link .dropdown-toggle {
-    font-weight: bold;
-}
-
-.navbar-brand img {
-    width: 100%;
-    margin-left: 51px;
-}
+    .navbar{
+        background-color: #ffffff;
+    
+    }
+    .navbar-brand{
+        width: 4rem;
+    }
+    
+    .navbar ul li a {
+        margin: 0 10px;
+        font-size: 16px;
+    
+    }
+    
+    .navbar .nav-link:hover, .nav-link .dropdown-toggle{
+        font-weight: bold;
+    }
+    .navbar-brand img{
+        width: 100%;
+    }
+    
+    .container_modal .btn-close{
+        background-color:#ffffff;
+    }
+    
+    .container-cart-products{
+        position: absolute;
+        top: 100px;
+        right: 0;
+    
+        background-color: #fff;
+        width: 400px;
+        z-index: 1;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+        border-radius: 10px;
+    
+    }
+    
+    .cart-product{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+    
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    
+    }
+    
+    .info-cart-product{
+        display: flex;
+        justify-content: space-between;
+        flex: 0.8;
+    }
+    .hidden-mandje{
+        display: none;
+    }
+    
 
 /* main */
 /* intro */
@@ -768,33 +797,38 @@ span {
 
 
 /*FOOTER*/
-
-.footer__ {
+.footer__{
     background-color: #261F56;
     color: #ffffff;
-    max-height: 480px;
+    min-height: 500px;
+    max-height:800px;
 }
 
 .footer__ ul li {
     text-decoration: none;
     list-style: none;
 }
-
-.footer__ span {
+.footer__ ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__ span{
     color: #5EBCAF;
     font-size: 20px;
     font-weight: normal;
+    margin: 10px 30px ;
 }
-
-.social-media-footer a {
+.social-media-footer a{
 
     display: flex;
     padding: 2px;
-    margin: 20px 10px;
+    margin: 20px 10px ;
     color: #ffffff;
 }
-
-.footer__ p:last-child {
-    background-color: #ffffff;
+.footer__ p:last-child{
     color: #000000;
+}
+.footer__ iframe{
+    width: 100%;
+    height: 400px;
 }
