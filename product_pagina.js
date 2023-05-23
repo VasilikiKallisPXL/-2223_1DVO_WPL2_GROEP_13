@@ -127,17 +127,11 @@ function productToevoegen(id, naam, prijs, hoeveelheid){
     winkelmandje.push(product);
     localStorage.setItem('winkelmandje',JSON.stringify(winkelmandje));
 
-    // if(product.id ===product.id){
-    //     product.hoeveelheid++
-    // }
-
 
     const productZichtbaarWinkelmandje = document.createElement('div');
     productZichtbaarWinkelmandje.classList.add('product_zichtbaar_winkelmandje');
     const costTotalZichtbaar= document.createElement('div');
     costTotalZichtbaar.classList.add('cost-total-zichtbaar');
-
-
 
 
     containerMandjeProduct.appendChild(productZichtbaarWinkelmandje);
@@ -152,7 +146,7 @@ function productToevoegen(id, naam, prijs, hoeveelheid){
                                                 <p class="naam_product">${product.naam}</p>
                                                 <span class="prijs_product">${product.prijs}</span>
                                             </div>
-                                           <button class="btn btn-close btn-light"></button>
+<!--                                           <button class="btn btn-close btn-light"></button>-->
                                         </div>
                      
 `;
@@ -174,7 +168,7 @@ totalTeBetalen.innerHTML =  `
  
                         <div class="cart-total">
                                         <h3>Total:</h3>
-                                        <span class="total-cost">${totalBedrag}</span>
+                                        <span class="total-cost">€ ${totalBedrag}</span>
                                     </div>          
 
 `;
@@ -214,8 +208,6 @@ function totalCost(productParts){
     } else{
         localStorage.setItem('totalCost', productParts.prijs.toString());
     }
-
-
 }
 
 
