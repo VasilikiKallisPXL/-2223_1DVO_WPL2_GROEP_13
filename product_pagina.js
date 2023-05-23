@@ -165,14 +165,15 @@ let totalBedrag= localStorage.getItem('totalCost');
 const totalTeBetalen= document.createElement('div');
 totalTeBetalen.classList.add('total_te_betalen');
 totalTeBetalen.innerHTML =  `
- 
                         <div class="cart-total">
                                         <h3>Total:</h3>
                                         <span class="total-cost">€ ${totalBedrag}</span>
                                     </div>          
 
 `;
-
+document.getElementById("btn_mandje_pagina").addEventListener("click", function() {
+    window.location.href = "https://www.winkel"; // Reemplaza esta URL por la que deseas utilizar
+});
 
 /////////////////
 const productenLijstJson= JSON.stringify(productenParts);

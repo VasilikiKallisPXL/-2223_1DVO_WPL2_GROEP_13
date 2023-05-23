@@ -77,10 +77,10 @@ p,span, li, a {
 }
 
 /*HERO STATION*/
-.hero-station__, .hero_detail {
+.hero-station__  {
     margin-top: 100px ;
 }
-.hero-parts__{
+.hero-parts__, .hero_detail{
     margin-top: 200px;
 }
 .hero-station__ h1, .hero-station__ h2, .hero-station__ h3, .hero-station__ p:last-child, .hero-station__ .btn:nth-child(2){
