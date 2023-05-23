@@ -91,6 +91,9 @@ a {
 
 
 /* main */
+main {
+margin-top: 85px;
+}
 /* intro */
 .intro {
     margin-top: -80px;
@@ -221,12 +224,12 @@ h2,
 }
 
 /* countdown */
-/* #container {
-    margin-top: 100px;
+#container {
+    margin-top: 0px;
     margin-left: 54px;
     display: inline-block;
      justify-content: space-around;
-} */
+}
 
 #countdown-container {
     position: relative;
