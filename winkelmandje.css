@@ -420,3 +420,44 @@ main {
         display: none;
     }
 }
+.gradient-custom {
+    background-image: url("achtergrondwinkelmandje.png");
+}
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.winkelmandje-container {
+    background-image: url("achtergrondwinkelmandje.png");
+    background-size: cover;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.quantity{
+    max-width: 100px;
+    max-height: 40px;
+
+}
+.trashcan{
+    margin: 5px;
+    background-color: #5EBCAF;
+    color: black;
+    border: #5EBCAF;
+}
+.trashcan:hover{
+    background-color: #8b0000;
+    border-color: #8b0000;
+    color: #fff;
+}
+.checkout{
+    background-color: #261F56;
+    border: none;
+}
+.checkout:hover{
+    border: none;
+    background-color: #3d347c;
+}

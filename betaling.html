@@ -10,12 +10,26 @@
             crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="betaling.css">
+    <script defer src="betaling.js"></script>
 </head>
 <body>
 <header>
-    <h1>Verander je betaalmethode</h1>
-    <!--    <a>Icoon</a>-->
-    <p>Verander hier je betalingsmethode voor je bestelling.</p>
+    <div class="container-fluid-p-0" id="header_container"></div>
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10">
+            <h1>Verander je betaalmethode</h1>
+        </div>
+        <div class="col-sm-1 justify-content-evenly  text-end p-0" id="betaling_kruisje">
+            <a href="#"><img src="assets/kruisgroen.png" alt="kruis"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+        <p id="header_paragraaf">Verander hier je betalingsmethode voor je bestelling.</p>
+    </div>
+    </div>
 </header>
 <main>
     <div class="container-fluid-p-0">
@@ -23,6 +37,7 @@
             <div class="col-sm-4">
                 <label>Credit & debit kaart</label>
                 <p>Transactie is gratis</p>
+                <!-- testinfo -->
             </div>
             <div class="col-sm-2 d-flex align-items-center">
                 <a href="#"><img src="assets/visa.png" alt="visa"></a>
@@ -31,24 +46,23 @@
         </div>
     </div>
 
-    <label for="knaam">Naam kaarthouder</label>
-    <input type="text" id="knaam" name="knaam" placeholder="/">
+    <form onsubmit="return validateCard();" action="#" method="post">
+        <label for="knaam">Naam kaarthouder</label>
+        <input type="text" id="knaam" name="knaam" placeholder="Daniel" required>
 
-    <label for="achternaam" class="leeglabel"></label>
-    <input type="text" id="achternaam" name="achternaam" placeholder="/"><br>
+        <label for="achternaam" class="leeglabel"></label>
+        <input type="text" id="achternaam" name="achternaam" placeholder="Bosmans" required><br>
 
+        <label for="knummer">Kaarthouder nummer</label>
+        <input type="text" id="knummer" name="kaarthoudernummer" placeholder="BEXX XXXX XXXX XXXX" maxlength="16" required><br>
 
-    <label for="knummer">Kaarthouder nummer</label>
-    <input type="text" id="knummer" name="kaarthoudernummer" placeholder="14568 14828 26416 1726"><br>
+        <label for="eindd">Eind datum & cvv</label>
+        <input type="text" id="eindd" name="einddatum" placeholder="MM/JJJJ" required>
 
-    <label for="eindd">Eind datum & cvv</label>
-    <input type="text" id="eindd" name="einddatum" placeholder="12/2025">
-
-    <label for="cvv" class="leeglabel"></label>
-    <input type="text" id="cvv" name="cvv" placeholder="746"><br>
-    <label></label>
-    <input id="" type="submit" value="Opslaan">
-
+        <label for="cvv" class="leeglabel"></label>
+        <input type="text" id="cvv" name="cvv" placeholder="746" required><br>
+        <input id="" type="submit" value="Opslaan">
+    </form>
 </main>
 </body>
 </html>
