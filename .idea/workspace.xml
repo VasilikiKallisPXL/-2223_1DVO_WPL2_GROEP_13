@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/counterprice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pricecalc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tester.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trashcan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="winkelmandje final js werkt">
       <change beforePath="$PROJECT_DIR$/winkelmandje.css" beforeDir="false" afterPath="$PROJECT_DIR$/winkelmandje.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/winkelmandje.html" beforeDir="false" afterPath="$PROJECT_DIR$/winkelmandje.html" afterDir="false" />
     </list>
@@ -105,7 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684152262497</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="winkelmandje final js werkt">
+      <created>1684836072638</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684836072638</updated>
+    </task>
+    <task id="LOCAL-00006" summary="winkelmandje final js werkt">
+      <created>1684836080725</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684836080725</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test 2" />
     <MESSAGE value="push contact pagina final version, html and css" />
-    <option name="LAST_COMMIT_MESSAGE" value="push contact pagina final version, html and css" />
+    <MESSAGE value="winkelmandje final js werkt" />
+    <option name="LAST_COMMIT_MESSAGE" value="winkelmandje final js werkt" />
   </component>
 </project>
