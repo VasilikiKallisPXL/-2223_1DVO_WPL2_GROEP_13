@@ -714,12 +714,39 @@ span {
 /*  cards review */
 /*werkende */
 #reviews h1 {
+    display: flex;
     font-size: 46px;
     color: #261F56;
     text-align: center;
     padding-top: 40px;
     font-weight: bold;
 }
+
+.p__img {
+    height: 200px;
+    width: 65%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#second__cards h2
+ {
+    font-family: aptly, sans serif;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+
+}
+
+#second__cards p {
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
 
 #persoon_1,
 #persoon_2,
@@ -733,20 +760,8 @@ span {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.36);
 }
 
-#second__cards p {
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
-#second__cards h2
- {
-    font-size: 28px;
-    color: #fff;
-
-}
-
-#reviews .img-fluid {
+#reviews .card-img-top {
     padding: 10px;
     width: 65%;
     height: 50px;
