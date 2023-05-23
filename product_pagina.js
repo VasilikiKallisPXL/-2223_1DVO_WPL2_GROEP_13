@@ -1,7 +1,6 @@
 
 
 let kopen = document.querySelectorAll(".btn-item_toevoegen");
-const  productenLijstParts = document.querySelector("#producten_container_parts");
 const btnWinkelmandje = document.querySelector('.container-mandje-icoon');
 const containerMandjeProduct= document.querySelector('.container-cart-products');
 
@@ -19,7 +18,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"High-Speed fuses",
         prijs: 66,
-        inWinkelmandje:0
+        hoeveelheid:0
 
     },
     {
@@ -29,7 +28,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Charging plug",
         prijs: 120,
-        inWinkelmandje:0
+        hoeveelheid:0
 
     },
     {
@@ -39,7 +38,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Display",
         prijs: 76.50,
-        inWinkelmandje:0
+        hoeveelheid:0
 
     },
     {
@@ -49,7 +48,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Current Transformer",
         prijs: 32.20,
-        inWinkelmandje:0
+        hoeveelheid:0
 
     },
     {
@@ -59,7 +58,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Cables",
         prijs: 53.95,
-        inWinkelmandje:0
+        hoeveelheid:0
 
     },
     {
@@ -69,7 +68,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Power suply",
         prijs: 35.80,
-        inWinkelmandje:0
+        hoeveelheid:0
 
     },
     {
@@ -79,7 +78,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Display",
         prijs: 62.95,
-        inWinkelmandje:0
+        hoeveelheid:0
     },
     {
         id: 8,
@@ -88,103 +87,88 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Display",
         prijs: 26.50,
-        inWinkelmandje:0
+        hoeveelheid:0
 
     }
 ];
 
 
-
-/////////////Render werkt niet met de teller/////////
-
-
-// function productenRenderen(){
-//
-//     productenParts.forEach((product) => {
-//         const cardsParts = document.createElement('div');
-//         cardsParts.classList.add('card_parts', 'col-md-4', 'col-lg-3')
-//
-//         cardsParts.innerHTML = ` <div class="card card-product-onderdelen__">
-//                 <div class="card text-bg-dark">
-//                     <img src="${product.afbeelding}" alt="foto_card" class="img-fluid"/>
-//                     <a href="product_detail_station.html">
-//
-//                     </a>
-//                 </div>
-//
-//                 <div class="card-img-overlay klein_card">
-//                     <button type="button" class="btn btn-link-secondary border border-0 btn_card_klein btn-item_toevoegen"
-//                             data-bs-toggle="modal" data-bs-target="#product_toegevoegd " id=" ${product.id}"  ><a
-//                             class="nav-link"
-//                             style="color: white"
-//                             href="#"><i
-//                             class="bi bi-cart2 fs-5"></i></a></button>
-//                     <button type="button" class="btn btn-link-secondary float-end border border-0 btn_card_klein"
-//                             data-bs-toggle="modal"
-//                             data-bs-target="#favoriet_toegevoegd2"><a
-//                             class="nav-link" style="color: white" href="#"><i class="bi bi-heart fs-5 "></i></a>
-//                     </button>
-//
-//
-//                 </div>
-//                 <div class="card-body" style="background-color: rgba(11,7,45,0.86)" >
-//                 <h5 class="card-title float-start" style="color: #5EBCAF">${product.naam}</h5>
-//                     <p class="card-text float-start" style="color:#ffffff">${product.beschrijving}</p>
-//                     <p class="fs-6 fw-bold  float-end prijs" style="color:#ffffff">€ ${product.prijs}</p>
-//
-//                 </div>
-//
-//             </div>
-//  `;
-//
-//
-//         productenLijstParts.appendChild(cardsParts);
-//
-//     })
-// }
-// productenRenderen();
-
-
-document.addEventListener('ContentLoaded', iTemsToevoegenWinkelmandje);
+document.addEventListener('DOMContentLoaded', iTemsToevoegenWinkelmandje);
 
 function iTemsToevoegenWinkelmandje(){
     const winkelmandje = JSON.parse(localStorage.getItem('winkelmandje'));
-    productenLijstParts.addEventListener('click', (e) => {
-        if (e.target.classList.contains('btn-item_toevoegen')) {
-            const product = e.target.parentElement;
 
             if (winkelmandje) {
                 winkelmandje.forEach((product) => {
-                    const {id, naam, prijs} = product;
-                    productToevoegen(id, naam, prijs);
+                    const {id, naam, prijs, hoeveelheid} = product;
+                    productToevoegen(id, naam, prijs,hoeveelheid);
                 });
             }
 
-            }
-
-            for(let i=0; i<kopen.length; i++){
-                const { id, naam, prijs } = productenParts[i];
-                kopen[i].addEventListener('click', ()=>{
+            for(let i=0; i<kopen.length; i++) {
+                kopen[i].addEventListener('click', function () {
+                const {id, naam, prijs, hoeveelheid} = productenParts[i];
                     aantalItemsMandje(productenParts[i]);
                     totalCost(productenParts[i]);
-                    productToevoegen(id, naam, prijs);
+                    productToevoegen(id, naam, prijs, hoeveelheid);
                 });
-
-        }
-
-    })
-
+            }
 }
 
-function productToevoegen(id, naam, prijs){
+function productToevoegen(id, naam, prijs, hoeveelheid){
     const winkelmandje=JSON.parse(localStorage.getItem('winkelmandje'))||[]
 
     const product ={
-        id, naam , prijs
+        id, naam , prijs, hoeveelheid
     };
 
     winkelmandje.push(product);
-    localStorage.setItem('winkelmandje',JSON.stringify(winkelmandje) )
+    localStorage.setItem('winkelmandje',JSON.stringify(winkelmandje));
+
+    // if(product.id ===product.id){
+    //     product.hoeveelheid++
+    // }
+let totalBedrag= localStorage.getItem('totalCost')
+
+    const productZichtbaarWinkelmandje = document.createElement('div');
+    productZichtbaarWinkelmandje.classList.add('product_zichtbaar_winkelmandje');
+    const costTotalZichtbaar= document.createElement('div');
+    costTotalZichtbaar.classList.add('cost-total-zichtbaar');
+
+    const totalTeBetalen= document.createElement('div');
+    totalTeBetalen.classList.add('total_te_betalen')
+
+    productZichtbaarWinkelmandje.innerHTML =  `
+ 
+                                        <div class="cart-product">
+                                            <div class="info-cart-product">
+                                                <span class="aantal_items">${product.hoeveelheid}</span>
+                                                <p class="naam_product">${product.naam}</p>
+                                                <span class="prijs_product">${product.prijs}</span>
+                                            </div>
+                                           <button class="btn btn-close btn-light"></button>
+                                        </div>
+                                
+
+`;
+
+    totalTeBetalen.innerHTML =  `
+ 
+                                    <div class="cart-total">
+                                        <h3>Total:</h3>
+                                        <span class="total-cost">${totalBedrag}</span>
+                                    </div>
+
+`;
+    containerMandjeProduct.appendChild(productZichtbaarWinkelmandje);
+    costTotalZichtbaar.appendChild(totalTeBetalen);
+    containerMandjeProduct.appendChild( costTotalZichtbaar);
+
+    const knopNaarWinkelmandjePagina = document.createElement('button');
+    knopNaarWinkelmandjePagina.classList.add('btn_mandje_pagina');
+    knopNaarWinkelmandjePagina.textContent = 'Naar winkelmandje';
+    costTotalZichtbaar.appendChild(knopNaarWinkelmandjePagina);
+
 }
 
 
@@ -196,7 +180,6 @@ localStorage.setItem('productenParts', productenLijstJson);
 //
 
 
-
 function aantalItemsMandje(productParts){
 
     let productNummmers = localStorage.getItem('aantalItemsMandje')
@@ -206,8 +189,8 @@ if(productNummmers){
     localStorage.setItem('aantalItemsMandje', productNummmers.toString());
     document.querySelector('.producten_opteller').textContent = productNummmers.toString();
 } else{
-    localStorage.setItem('aantalItemsMandje',1);
-    document.querySelector('.producten_opteller').textContent = 1;
+    localStorage.setItem('aantalItemsMandje','1');
+    document.querySelector('.producten_opteller').textContent = '1';
 }
 
 }
@@ -220,33 +203,11 @@ function totalCost(productParts){
         localStorage.setItem('totalCost', cartCost + productParts.prijs);
 
     } else{
-        localStorage.setItem('totalCost', productParts.prijs);
+        localStorage.setItem('totalCost', productParts.prijs.toString());
     }
 
+
 }
-
-const productZichtbaarWinkelmandje = document.createElement('div');
-productZichtbaarWinkelmandje.classList.add('product_zichtbaar_winkelmandje');
-
-productZichtbaarWinkelmandje.innerHTML =  `
- 
-                                        <div class="cart-product">
-                                            <div class="info-cart-product">
-                                                <span class="aantal_items">1</span>
-                                                <p class="naam_product">${naam}</p>
-                                                <span class="prijs_product">$80</span>
-                                            </div>
-                                            <i class="bi bi-x fs-2"></i>
-                                        </div>
-                                
-                                    <div class="cart-total">
-                                        <h3>Total:</h3>
-                                        <span class="total-cost">200</span>
-                                    </div>
-
-`
-
-
 
 
 function onLoadAantalItemsMandje(){
@@ -255,9 +216,9 @@ function onLoadAantalItemsMandje(){
     document.querySelector('.producten_opteller').textContent = productNummers;
 
 }
-iTemsToevoegenWinkelmandje()
-productToevoegen()
+
 onLoadAantalItemsMandje()
+iTemsToevoegenWinkelmandje()
 
 
 
