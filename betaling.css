@@ -13,6 +13,8 @@ img{
 }
 header h1{
     margin-top: 50px;
+    font-family: aptly, sans-serif;
+    font-weight: bold;
     color: #261F56;
     text-align: center;
     font-size: 46px;
@@ -20,7 +22,11 @@ header h1{
 header p{
     color: #261F56;
     text-align: center;
+    font-family: new order, sans-serif;
     font-size: 21px;
+}
+main p {
+    font-family: new order, sans-serif;
 }
 main{
     background-color: #261F56;
@@ -37,6 +43,7 @@ main{
 }
 label{
     font-size: 21px;
+    font-family: aptly, sans-serif;
     color: #5EBCAF;
 
     display: inline-block;
@@ -78,4 +85,3 @@ input[type="submit"] {
     background-color: #5EBCAF;
     border-radius: 10px;
 }
-
