@@ -4,6 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+ winkelmandje
+    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="winkelmandje final js werkt">
+      <change beforePath="$PROJECT_DIR$/winkelmandje.css" beforeDir="false" afterPath="$PROJECT_DIR$/winkelmandje.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/winkelmandje.html" beforeDir="false" afterPath="$PROJECT_DIR$/winkelmandje.html" afterDir="false" />
+
 winkelm
     <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/bezorgadres.html" beforeDir="false" afterPath="$PROJECT_DIR$/bezorgadres.html" afterDir="false" />
@@ -11,12 +16,13 @@ winkelm
     <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="test">
 JS-betalen/shaduw-over-ons
       <change beforePath="$PROJECT_DIR$/over_ons.css" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.css" afterDir="false" />
-=======
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/over_ons.css" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/over_ons.html" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.html" afterDir="false" />
 main
 main
+ main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +32,27 @@ main
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+ winkelmandje
+        <option value="CSS File" />
+        <option value="HTML File" />
+
         <option value="HTML File" />
         <option value="CSS File" />
+ main
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
+ winkelmandje
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
+
+ main
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="contact+faq" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,14 +60,37 @@ main
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+ winkelmandje
+  <component name="ProjectId" id="2P7OfBXLMQa5CWyKu4K0Tsqf4WX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+
   <component name="ProjectId" id="2P0VU8sORQPHN1BdiiKEgzSaCXM" />
   <component name="ProjectLevelVcsManager">
+ main
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+ winkelmandje
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mackj/Documents/Webstorm/Github&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mackj\Documents\Webstorm\Github" />
+    </key>
+  </component>
+
  winkelm
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -78,13 +118,29 @@ main
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
 main
+ main
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="test 2">
+      <created>1682595234210</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682595234210</updated>
+    </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="" />
-      <created>1682593998817</created>
+      <changelist id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="test 2" />
+      <created>1682804757149</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+ winkelmandje
+      <updated>1682804757149</updated>
+      <workItem from="1682804760489" duration="2297000" />
+      <workItem from="1683014462162" duration="12700000" />
+      <workItem from="1683546775440" duration="10920000" />
+      <workItem from="1683633079442" duration="3522000" />
+      <workItem from="1684151276950" duration="1291000" />
+
       <updated>1682593998817</updated>
       <workItem from="1682594000042" duration="66000" />
       <workItem from="1682594067886" duration="394000" />
@@ -116,14 +172,46 @@ winkelm
       <workItem from="1684740044055" duration="19856000" />
       <workItem from="1684816090499" duration="5294000" />
 main
+ main
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1682594146449</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00002" summary="push contact pagina final version, html and css">
+      <created>1683034483464</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1682594146449</updated>
+      <updated>1683034483464</updated>
     </task>
+    <task id="LOCAL-00003" summary="push contact pagina final version, html and css">
+      <created>1683034644036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683034644036</updated>
+    </task>
+    <task id="LOCAL-00004" summary="push contact pagina final version, html and css">
+      <created>1684152262497</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684152262497</updated>
+    </task>
+    <task id="LOCAL-00005" summary="winkelmandje final js werkt">
+      <created>1684836072638</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684836072638</updated>
+    </task>
+    <task id="LOCAL-00006" summary="winkelmandje final js werkt">
+      <created>1684836080725</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684836080725</updated>
+    </task>
+ winkelmandje
+    <option name="localTasksCounter" value="7" />
+
 winkelm
     <task id="LOCAL-00002" summary="loginpagina.html? loginpagina.html responsive gemaakt">
       <created>1684678900920</created>
@@ -184,6 +272,7 @@ winkelm
     </task>
     <option name="localTasksCounter" value="4" />
 main
+ main
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +303,12 @@ main
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+ winkelmandje
+    <MESSAGE value="test 2" />
+    <MESSAGE value="push contact pagina final version, html and css" />
+    <MESSAGE value="winkelmandje final js werkt" />
+    <option name="LAST_COMMIT_MESSAGE" value="winkelmandje final js werkt" />
+
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
     <MESSAGE value="loginpagina.html? loginpagina.html responsive gemaakt" />
@@ -221,5 +316,6 @@ main
     <MESSAGE value="kruis icoon toegevoegd" />
     <MESSAGE value="Responsive design bezorgadres" />
     <option name="LAST_COMMIT_MESSAGE" value="Responsive design bezorgadres" />
+ main
   </component>
 </project>
