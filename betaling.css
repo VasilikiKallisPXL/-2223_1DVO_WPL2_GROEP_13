@@ -36,7 +36,7 @@ header h1{
 main{
     background-color: #261F56;
     border-radius: 10px;
-    margin: 20px auto 0;
+    margin: 0 auto;
     max-width: 900px;
     padding: 50px;
 }
@@ -92,3 +92,35 @@ input[type="submit"] {
     background-color: #5EBCAF;
     border-radius: 10px;
 }
+@media screen and (max-width: 900px ) {
+    body {
+        background-color: #261F56;
+    }
+    header {
+        max-width: 700px;
+    }
+
+    header h1 {
+        color: #5EBCAF;
+    }
+
+    header #header_paragraaf {
+        color: #FFFFFF;
+    }
+
+    label {
+        display: block;
+    }
+    input[type="submit"] {
+        display: block;
+        margin: 10px auto;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 576px ) {
+    header h1{
+        font-size: 20px;
+    }
+}
+
+
