@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact pagina</title>
+    <title>Winkelmandje</title>
     <link rel="stylesheet" href="contact.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -13,7 +13,12 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="winkelmandje.css">
-    <
+
+    <script defer src="trashcan.js"></script>
+    <script defer src="counterprice.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-G6et7+8UfwUD2PYhP27DFXu9jWEsFmZGt/1GQVcJDluPCPnlcJFka7RexReK87sT"
+            crossorigin="anonymous"></script>
 
 
 </head>
@@ -26,83 +31,17 @@
                 <div class="row d-flex justify-content-center my-4">
                     <div class="col-md-8">
                         <div class="card mb-4">
-                            <div class="card-header py-3">
-                                <h5 class="mb-0">Cart - 2 items</h5>
+                            <div class="card-header py-3 achtergrondkaart">
+                                <h5 class="mb-0">Winkelmandje</h5>
                             </div>
                             <div class="card-body">
                                 <!-- Single item -->
-                                <div class="row">
+                                <div class="row product">
                                     <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                                         <!-- Image -->
                                         <div class="bg-image hover-overlay hover-zoom ripple rounded"
                                              data-mdb-ripple-color="light">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
-                                                 class="w-100" alt="Blue Jeans Jacket"/>
-                                            <a href="#!">
-                                                <div class="mask"
-                                                     style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                            </a>
-                                        </div>
-                                        <!-- Image -->
-                                    </div>
-
-                                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                                        <!-- Data -->
-                                        <p><strong>Blue denim shirt</strong></p>
-                                        <p>Color: blue</p>
-                                        <p>Size: M</p>
-                                        <button type="button" class="btn btn-primary btn-sm me-1 mb-2"
-                                                data-mdb-toggle="tooltip"
-                                                title="Remove item">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-danger btn-sm mb-2"
-                                                data-mdb-toggle="tooltip"
-                                                title="Move to the wish list">
-                                            <i class="bi bi-heart"></i>
-                                        </button>
-                                        <!-- Data -->
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                        <!-- Quantity -->
-                                        <div class="d-flex mb-4" style="max-width: 300px">
-                                            <button class="btn btn-primary px-3 me-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                <i class="bi bi-dash"></i>
-                                            </button>
-
-                                            <div class="form-outline">
-                                                <input id="form1" min="0" name="quantity" value="1" type="number"
-                                                       class="form-control"/>
-                                                <label class="form-label" for="form1">Quantity</label>
-                                            </div>
-
-                                            <button class="btn btn-primary px-3 ms-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="bi bi-plus"></i>
-                                            </button>
-                                        </div>
-                                        <!-- Quantity -->
-
-                                        <!-- Price -->
-                                        <p class="text-start text-md-center">
-                                            <strong>$17.99</strong>
-                                        </p>
-                                        <!-- Price -->
-                                    </div>
-                                </div>
-                                <!-- Single item -->
-
-                                <hr class="my-4"/>
-
-                                <!-- Single item -->
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                                        <!-- Image -->
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded"
-                                             data-mdb-ripple-color="light">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
+                                            <img src="laadpaal.png" alt="voorbeeld foto"
                                                  class="w-100"/>
                                             <a href="#!">
                                                 <div class="mask"
@@ -114,47 +53,80 @@
 
                                     <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                                         <!-- Data -->
-                                        <p><strong>Red hoodie</strong></p>
-                                        <p>Color: red</p>
-                                        <p>Size: M</p>
+                                        <p><strong>Headline deel 1</strong></p>
+                                        <p>Volledige kit met alles
+                                            aanwezig</p>
 
-                                        <button type="button" class="btn btn-primary btn-sm me-1 mb-2"
-                                                data-mdb-toggle="tooltip"
-                                                title="Remove item">
-                                            <i class="bi bi-trash"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-danger btn-sm mb-2"
-                                                data-mdb-toggle="tooltip"
-                                                title="Move to the wish list">
-                                            <i class="bi bi-heart"></i>
-                                        </button>
                                         <!-- Data -->
+
+                                        <!-- Quantity -->
+                                        <div class="d-flex mb-4 quantity">
+                                            <div class="form-outline d-flex align-items-center">
+                                                <input id="form2" min="0" name="quantity" value="1" type="number" class="form-control quantity-input"/>
+                                                <label class="form-label" for="form2"></label>
+                                                <button type="button" class="btn btn-primary btn-sm me-1 mb-2 trashcan" data-mdb-toggle="tooltip" title="Remove item">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Quantity -->
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                        <!-- Price -->
+                                        <p class="text-start text-md-center prijs" data-price="29.00">
+                                            <strong>€29,00</strong>
+                                        </p>
+                                        <!-- Price -->
+                                    </div>
+                                </div>
+                                <!-- Single item -->
+
+                                <hr class="my-4"/>
+
+                                <!-- Single item -->
+                                <div class="row product">
+                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                                        <!-- Image -->
+                                        <div class="bg-image hover-overlay hover-zoom ripple rounded"
+                                             data-mdb-ripple-color="light">
+                                            <img src="laadpaal.png" alt="voorbeeld foto"
+                                                 class="w-100"/>
+                                            <a href="#">
+                                                <div class="mask"
+                                                     style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                            </a>
+                                        </div>
+                                        <!-- Image -->
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                                        <!-- Data -->
+                                        <p><strong>Headline deel 2</strong></p>
+                                        <p>Volledige kit met alles
+                                            aanwezig</p>
+
+                                        <!-- Data -->
+
                                         <!-- Quantity -->
-                                        <div class="d-flex mb-4" style="max-width: 300px">
-                                            <button class="btn btn-primary px-3 me-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                <i class="bi bi-dash"></i>
-                                            </button>
-
-                                            <div class="form-outline">
-                                                <input id="form2" min="0" name="quantity" value="1" type="number"
-                                                       class="form-control"/>
-                                                <label class="form-label" for="form2">Quantity</label>
+                                        <div class="d-flex mb-4 quantity">
+                                            <div class="form-outline d-flex align-items-center">
+                                                <input id="form3" min="0" name="quantity" value="1" type="number" class="form-control quantity-input"/>
+                                                <label class="form-label" for="form3"></label>
+                                                <button type="button" class="btn btn-primary btn-sm me-1 mb-2 trashcan" data-mdb-toggle="tooltip" title="Remove item">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
                                             </div>
-
-                                            <button class="btn btn-primary px-3 ms-2"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="bi bi-plus"></i>
-                                            </button>
                                         </div>
                                         <!-- Quantity -->
 
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                                         <!-- Price -->
-                                        <p class="text-start text-md-center">
-                                            <strong>$17.99</strong>
+                                        <p class="text-start text-md-center prijs" data-price="179,95">
+                                            <strong>€179,95</strong>
                                         </p>
                                         <!-- Price -->
                                     </div>
@@ -168,38 +140,37 @@
                     <div class="col-md-4">
                         <div class="card mb-4">
                             <div class="card-header py-3">
-                                <h5 class="mb-0">Summary</h5>
+                                <h5 class="mb-0">Opsomming</h5>
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li
-                                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                                        Products
-                                        <span>$53.98</span>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                        producten
+                                        <span id="aantal-producten">2</span>
+
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                        Shipping
+                                        Verzending
                                         <span>Gratis</span>
                                     </li>
-                                    <li
-                                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                                         <div>
-                                            <strong>Total amount</strong>
+                                            <strong>Totaal bedrag</strong>
                                             <strong>
-                                                <p class="mb-0">(including VAT)</p>
+                                                <p class="mb-0">(Exclusief BTW)</p>
                                             </strong>
                                         </div>
-                                        <span><strong>$53.98</strong></span>
+                                        <span id="total-price"><strong>€179,95</strong></span>
                                     </li>
                                 </ul>
 
-                                <button type="button" class="btn btn-primary btn-lg btn-block">
-                                    Go to checkout
+                                <button type="button" class="btn btn-primary btn-lg btn-block checkout">
+                                    Ga naar check-out
                                 </button>
                             </div>
                             <div class="card mb-4 mb-lg-0">
                                 <div class="card-body">
-                                    <p><strong>We accept</strong></p>
+                                    <p><strong>Wij accepteren</strong></p>
                                     <img class="me-2" width="45px"
                                          src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
                                          alt="Visa"/>
@@ -209,7 +180,6 @@
                                     <img class="me-2" width="45px"
                                          src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
                                          alt="Mastercard"/>
-
                                 </div>
                             </div>
                         </div>
@@ -220,5 +190,56 @@
 
     </div>
 </div>
+
+<script>
+    // Function to update the total price
+    function updateTotalPrice() {
+        let total = 0;
+
+        // Get all the product elements
+        const products = document.querySelectorAll('.product');
+
+        // Loop through each product element
+        products.forEach(product => {
+            const quantityInput = product.querySelector('.quantity-input');
+            const priceElement = product.querySelector('.prijs');
+            const price = parseFloat(priceElement.getAttribute('data-price'));
+            const quantity = parseInt(quantityInput.value);
+            const productTotal = price * quantity;
+
+            // Update the price display
+            const priceDisplay = product.querySelector('.prijs strong');
+            priceDisplay.textContent = `€${productTotal.toFixed(2)}`;
+
+            // Add to the total
+            total += productTotal;
+        });
+
+        // Update the total price display
+        const totalPriceElement = document.getElementById('total-price');
+        totalPriceElement.textContent = `€${total.toFixed(2)}`;
+    }
+
+    // Add event listeners to quantity inputs
+    const quantityInputs = document.querySelectorAll('.quantity-input');
+    quantityInputs.forEach(input => {
+        input.addEventListener('input', updateTotalPrice);
+    });
+
+    // Remove item
+    const trashCans = document.querySelectorAll('.trashcan');
+    trashCans.forEach(trashCan => {
+        trashCan.addEventListener('click', () => {
+            const product = trashCan.closest('.product');
+            product.remove();
+            updateTotalPrice();
+        });
+    });
+
+    // Initial update of the total price
+    updateTotalPrice();
+</script>
+
+
 </body>
 </html>
