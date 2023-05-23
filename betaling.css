@@ -11,6 +11,11 @@ img{
     width: 60px;
     padding-right: 10px;
 }
+header h1{
+    margin-top: 50px;
+    font-family: aptly, sans-serif;
+    font-weight: bold;
+
 header{
     max-width: 900px;
     margin: 0 auto;
@@ -24,14 +29,12 @@ header #header_paragraaf{
     text-align: center;
     font-size: 16px;
 }
-header h1{
-    color: #261F56;
-    text-align: center;
-    font-size: 25px;
-}
-
 #betaling_kruisje img{
     width: 40px;
+
+}
+main p {
+    font-family: new order, sans-serif;
 }
 main{
     background-color: #261F56;
@@ -53,6 +56,7 @@ input{
 }
 label{
     font-size: 21px;
+    font-family: aptly, sans-serif;
     color: #5EBCAF;
     display: inline-block;
     width: 250px;

@@ -9,9 +9,13 @@ winkelm
       <change beforePath="$PROJECT_DIR$/bezorgadres.html" beforeDir="false" afterPath="$PROJECT_DIR$/bezorgadres.html" afterDir="false" />
 
     <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="test">
+JS-betalen/shaduw-over-ons
+      <change beforePath="$PROJECT_DIR$/over_ons.css" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.css" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/over_ons.css" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/over_ons.html" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.html" afterDir="false" />
+main
 main
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +28,7 @@ main
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -65,7 +70,7 @@ main
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Portfolio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Webstorm-Semester 2 - 2021-2022/Week1-JavaScript" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
