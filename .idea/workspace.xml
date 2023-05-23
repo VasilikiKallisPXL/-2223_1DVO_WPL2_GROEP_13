@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="winkelmandje final js werkt">
-      <change beforePath="$PROJECT_DIR$/winkelmandje.css" beforeDir="false" afterPath="$PROJECT_DIR$/winkelmandje.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/winkelmandje.html" beforeDir="false" afterPath="$PROJECT_DIR$/winkelmandje.html" afterDir="false" />
+    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/contact.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

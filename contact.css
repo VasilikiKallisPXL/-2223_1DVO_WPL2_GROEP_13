@@ -14,6 +14,557 @@ p,span, li, a {
 }
 
 
+/*___HEADER*/
+/*____________NAVBAR*/
+
+.navbar{
+    background-color: #ffffff;
+
+}
+.navbar-brand{
+    width: 4rem;
+}
+
+.navbar ul li a {
+    margin: 0 10px;
+    font-size: 16px;
+
+}
+
+.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+    font-weight: bold;
+}
+.navbar-brand img{
+    width: 100%;
+}
+
+.container_modal .btn-close{
+    background-color:#ffffff;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+.hidden-mandje{
+    display: none;
+}
+
+
+
+
+/* main */
+main {
+    margin-bottom: -150px;
+    margin-top: 85px;
+}
+
+
+
+/* Titel */
+#intro__tekst h1{
+    font-size: 60px;
+    font-family: Aptly, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    color: #261F56;
+    padding-top: 147px;
+    text-align: center;
+}
+
+#intro__tekst #hoofd__titel h1 {
+    font-size:47px;
+    font-family: Aptly, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    color: #261F56;
+    padding: 5px;
+}
+
+#row, #col {
+    display: inline-block;
+}
+
+/* img */
+.img-fluid {
+    width: 140%;
+}
+
+
+/* Onze unieke waarden */
+#tekst_uniek h1 {
+    font-size:46px;
+    font-family: Aptly, sans-serif;
+    font-weight: bold;
+    color: #261F56;
+    padding: 5px;
+    display: inline-block;
+}
+
+#tekst_uniek {
+    color: #000;
+    padding-top: 88px;
+    padding-left: 100px;
+}
+
+#charge {
+    float: right;
+    width: 830px;
+    overflow: hidden;
+}
+
+#charge_2 {
+    visibility: hidden;
+    display: none;
+}
+
+
+
+/*CARD EIGENSCHAPPEN*/
+#titel__cards h2 {
+    font-family: aptly, sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    color: #261F56;
+}
+
+
+.cards-eigenschappen {
+    background-color: #4A4A82;
+    color: #ffffff;
+    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+}
+.cards-eigenschappen img{
+    width: 100%;
+    max-width: 25%;
+}
+.cards-eigenschappen .card-body{
+    height: 500px;
+}
+
+.cards-eigenschappen img:hover{
+    transform: scale(1.5);
+    transition: all 0.2s ease-in;
+}
+
+
+/*missie + visie*/
+#missie__blok, #visie__blok {
+    text-align: center;
+    padding: 5px;
+    background-color: #261F56;
+}
+
+#missie__blok p, #visie__blok p {
+    color: #ffffff;
+    margin-left: 175px;
+    margin-right: 175px;
+}
+
+#missie__blok h1, #visie__blok h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #5EBCAF;
+    padding-top: 20px;
+}
+
+
+
+/*werkende personeel*/
+#blokken__personeel h1{
+    font-size: 46px;
+    color: #261F56;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+#blok__1, #blok__2, #blok__3, #blok__4, #blok__5, #blok__6, #blok__7, #blok__8{
+    background-color: #4A4A82;
+    text-align: center;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);
+}
+
+#bovenste__blokken p, #onderste__blokken p {
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#bovenste__blokken h2, #onderste__blokken h2 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#blokken__personeel .img-fluid {
+    padding: 10px;
+    width: 65%;
+    height: auto;
+}
+
+/*BLOKKEN KERNWAARDEN*/
+#kernwaarden h1{
+    font-size: 46px;
+    color: #261F56;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+#kernwaarden_rij_1 div,#kernwaarden_rij_2 div {
+    background-color: #4A4A82;
+    text-align: center;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);
+}
+
+#kernwaarden_rij_1 p, #kernwaarden_rij_2 p {
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#kernwaarden_rij_1 h2, #kernwaarden_rij_2 h2 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#leeg__kernwaarden__1, #leeg__kernwaarden__2{
+    display: none;
+}
+
+
+/*BRANDING*/
+#branding {
+    text-align: center;
+}
+
+#branding h1 {
+    font-size: 46px;
+    color: #261F56;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+#branding p {
+    font-weight: 600;
+}
+
+#branding button {
+    padding: 10px;
+    background-color: #261F56;
+    color: #ffffff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+#branding img {
+    padding-left: 10px;
+}
+.footer {
+    width: 100%;
+    height: 100px; /* pas de hoogte aan zoals gewenst */
+    overflow: auto; /* of overflow: hidden; */
+}
+
+.formulier{
+    height: 50px;
+    width: 50px;
+}
+
+/*FOOTER*/
+
+.footer__{
+    background-color: #261F56;
+    color: #ffffff;
+    min-height: 500px;
+    max-height:800px;
+}
+
+.footer__ ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer__ ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__ span{
+    color: #5EBCAF;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 30px ;
+}
+.social-media-footer a{
+
+    display: flex;
+    padding: 2px;
+    margin: 20px 10px ;
+    color: #ffffff;
+}
+.footer__ p:last-child{
+    color: #000000;
+}
+.footer__ iframe{
+    width: 100%;
+    height: 400px;
+}
+
+
+/*responsief*/
+@media screen and (max-width: 1400px) {
+    #tekst_uniek {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #missie__blok p, #visie__blok p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    #blok__1, #blok__2, #blok__3, #blok__4, #blok__5, #blok__6, #blok__7, #blok__8{
+        padding: 4px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #intro__tekst h1 {
+        padding-top: 0;
+    }
+    #missie__blok p, #visie__blok p {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #charge_2 {
+        visibility: visible;
+        float: right;
+        overflow: hidden;
+        display: inline-block;
+    }
+    #charge {
+        display: none;
+    }
+    #tekst_uniek {
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #intro__tekst h1 {
+        font-size: 26px;
+    }
+
+    #intro__tekst #hoofd__titel h1, #tekst_uniek h1, #titel__cards h2, #missie__blok h1, #visie__blok h1,
+    #blokken__personeel h1, #kernwaarden h1, #branding h1{
+        font-size: 30px;
+    }
+
+    #intro__tekst #hoofd__titel p, #missie__blok p, #visie__blok, #titel__cards p{
+        font-size: 18px;
+    }
+
+    #missie__blok img, #visie__blok img {
+        width: 7%;
+        height: 15%;
+    }
+
+    #blokken__personeel img{
+        width: 30%;
+        height: auto;
+    }
+    #kernwaarden #kernwaarden_rij_1, #kernwaarden #kernwaarden_rij_2 {
+        margin: 20px;
+    }
+    .navbar ul li .titel_visible_hidden{
+        display: inline;
+    }
+
+    .navbar ul{
+        margin: 20px;
+
+    }
+}
+
+@media screen and (max-width:450px) {
+    .navbar ul {
+        margin: 20px;
+    }
+
+    .footer__ div iframe {
+        display: none;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*FONTS*/
+h1,h2,h3,h4,h5,h6, .navbar ul li a{
+    font-family: "Aptly", sans-serif;
+}
+
+p,span, li, a {
+    font-family: new-order, sans-serif;}
+/* Achtergrondafbeelding */
+.bg-image {
+    /* background: url('achtergrond.jpg') no-repeat center center fixed; */
+    background-color: #261F56;
+    background-size: cover;
+    height: 60vh;
+}
+
+/* Verticale afstand tussen de div's */
+.row > div:not(:first-child) {
+    margin-top: 50px;
+}
+
+/* Afgeronde knop */
+.btn-rounded {
+    border-radius: 35px;
+
+}
+
+.btn-primary {
+    background-color: #261F56;
+    border-color: #261F56;
+}
+
+.btn-primary:hover {
+    background-color: #3B327A;
+    border-color: #3B327A;
+}
+
+.bg-blue {
+    background-color: #5EBCAF;
+    height: 40vh;
+}
+
+#top{
+    background-color: #261F56;
+    color: #fff;
+    margin-bottom:-10px ;
+    padding: 15px;
+}
+#top h1{
+    padding-bottom: 25px;
+}
+
+.icon-contact{
+    height: 9vh;
+    width: 7vh;
+
+}
+.dashdash{
+    margin-bottom: 50px;
+}
+
+
+
+/*___HEADER*/
+/*____________NAVBAR*/
+.navbar{
+    height: 100px;
+}
+.navbar-brand{
+    width: 4rem;
+}
+
+.navbar ul li a {
+    margin: 0 10px;
+    font-size: 16px;
+
+}
+
+.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+    font-weight: bold;
+}
+.navbar-brand  img{
+    width: 100%;
+}
+/*FOOTER*/
+
+.footer__{
+    background-color: #261F56;
+    color: #ffffff;
+    max-height: 450px;
+}
+
+.footer__ ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer__ ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__ span{
+    color: #5EBCAF;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 30px ;
+}
+.social-media-footer a{
+
+    display: flex;
+    padding: 2px;
+    margin: 20px 10px ;
+    color: #ffffff;
+}
+.footer__ p:last-child{
+    background-color: #ffffff;
+    color: #000000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*FONTS*/
+h1,h2,h3,h4,h5,h6, .navbar ul li a{
+    font-family: "Aptly", sans-serif;
+}
+
+p,span, li, a {
+    font-family: new-order, sans-serif;
+}
+
+
 
 /*___HEADER*/
 /*____________NAVBAR*/
