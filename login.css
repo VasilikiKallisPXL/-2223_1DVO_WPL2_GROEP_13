@@ -49,15 +49,16 @@ input {
     height: 35px;
     margin-top: 5px;
     margin-bottom: 10px;
+    color: #ffffff;
+    padding-left: 15px;
+    font-weight: 100;
+    font-size: 15px;
     outline: none;
 
 }
 
 ::placeholder {
     color: #ffffff;
-    padding-left: 10px;
-    font-weight: 100;
-    font-size: 15px;
 }
 
 input[type="submit"] {
@@ -86,7 +87,7 @@ a {
 
 @media screen and (min-width: 576px ) {
     #login_registreerknop {
-    padding-left: 0;
+        padding-left: 0;
     }
 }
 

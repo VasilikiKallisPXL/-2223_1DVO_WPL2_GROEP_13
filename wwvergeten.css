@@ -36,13 +36,18 @@ label {
     font-size: 16px;
     margin-left: 20px;
 }
-
-::placeholder {
+input{
     color: #ffffff;
-    padding-left: 10px;
+    padding-left: 15px;
     font-weight: 100;
     font-size: 15px;
+    outline: none;
+
 }
+::placeholder {
+    color: #ffffff;
+}
+
 
 input[type="email"] {
     width: 90%;
@@ -53,7 +58,6 @@ input[type="email"] {
     border-radius: 10px;
     border: 1px solid #5EBCAF;
     background-color: #261F56;
-    outline: none;
 
 }
 
