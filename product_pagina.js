@@ -18,7 +18,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"High-Speed fuses",
         prijs: 66,
-        hoeveelheid:0
+        hoeveelheid:1
 
     },
     {
@@ -28,7 +28,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Charging plug",
         prijs: 120,
-        hoeveelheid:0
+        hoeveelheid:1
 
     },
     {
@@ -38,7 +38,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Display",
         prijs: 76.50,
-        hoeveelheid:0
+        hoeveelheid:1
 
     },
     {
@@ -48,7 +48,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Current Transformer",
         prijs: 32.20,
-        hoeveelheid:0
+        hoeveelheid:1
 
     },
     {
@@ -58,7 +58,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Cables",
         prijs: 53.95,
-        hoeveelheid:0
+        hoeveelheid:1
 
     },
     {
@@ -68,7 +68,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Power suply",
         prijs: 35.80,
-        hoeveelheid:0
+        hoeveelheid:1
 
     },
     {
@@ -78,7 +78,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Display",
         prijs: 62.95,
-        hoeveelheid:0
+        hoeveelheid:1
     },
     {
         id: 8,
@@ -87,7 +87,7 @@ const productenParts = [
         beschrijving: "Een simpel maar makkelijke adapter voor universeel gebruik.",
         type:"Display",
         prijs: 26.50,
-        hoeveelheid:0
+        hoeveelheid:1
 
     }
 ];
@@ -105,14 +105,16 @@ function iTemsToevoegenWinkelmandje(){
                 });
             }
 
-            for(let i=0; i<kopen.length; i++) {
-                kopen[i].addEventListener('click', function () {
-                const {id, naam, prijs, hoeveelheid} = productenParts[i];
-                    aantalItemsMandje(productenParts[i]);
-                    totalCost(productenParts[i]);
-                    productToevoegen(id, naam, prijs, hoeveelheid);
-                });
-            }
+
+
+    kopen.forEach((item,index) =>{
+        item.addEventListener('click', function (){
+            const { id, naam, prijs, hoeveelheid } = productenParts[index];
+            aantalItemsMandje(productenParts[index]);
+            totalCost(productenParts[index]);
+            productToevoegen(id, naam, prijs, hoeveelheid);
+        });
+    });
 }
 
 function productToevoegen(id, naam, prijs, hoeveelheid){
@@ -128,15 +130,19 @@ function productToevoegen(id, naam, prijs, hoeveelheid){
     // if(product.id ===product.id){
     //     product.hoeveelheid++
     // }
-let totalBedrag= localStorage.getItem('totalCost')
+
 
     const productZichtbaarWinkelmandje = document.createElement('div');
     productZichtbaarWinkelmandje.classList.add('product_zichtbaar_winkelmandje');
     const costTotalZichtbaar= document.createElement('div');
     costTotalZichtbaar.classList.add('cost-total-zichtbaar');
 
-    const totalTeBetalen= document.createElement('div');
-    totalTeBetalen.classList.add('total_te_betalen')
+
+
+
+    containerMandjeProduct.appendChild(productZichtbaarWinkelmandje);
+    costTotalZichtbaar.appendChild(totalTeBetalen);
+    containerMandjeProduct.appendChild( costTotalZichtbaar);
 
     productZichtbaarWinkelmandje.innerHTML =  `
  
@@ -148,29 +154,30 @@ let totalBedrag= localStorage.getItem('totalCost')
                                             </div>
                                            <button class="btn btn-close btn-light"></button>
                                         </div>
-                                
-
+                     
 `;
 
-    totalTeBetalen.innerHTML =  `
- 
-                                    <div class="cart-total">
-                                        <h3>Total:</h3>
-                                        <span class="total-cost">${totalBedrag}</span>
-                                    </div>
-
-`;
-    containerMandjeProduct.appendChild(productZichtbaarWinkelmandje);
-    costTotalZichtbaar.appendChild(totalTeBetalen);
-    containerMandjeProduct.appendChild( costTotalZichtbaar);
-
-    const knopNaarWinkelmandjePagina = document.createElement('button');
-    knopNaarWinkelmandjePagina.classList.add('btn_mandje_pagina');
-    knopNaarWinkelmandjePagina.textContent = 'Naar winkelmandje';
     costTotalZichtbaar.appendChild(knopNaarWinkelmandjePagina);
 
 }
 
+
+const knopNaarWinkelmandjePagina = document.createElement('button');
+knopNaarWinkelmandjePagina.classList.add('btn_mandje_pagina');
+knopNaarWinkelmandjePagina.textContent = 'Naar winkelmandje';
+
+
+let totalBedrag= localStorage.getItem('totalCost');
+const totalTeBetalen= document.createElement('div');
+totalTeBetalen.classList.add('total_te_betalen');
+totalTeBetalen.innerHTML =  `
+ 
+                        <div class="cart-total">
+                                        <h3>Total:</h3>
+                                        <span class="total-cost">${totalBedrag}</span>
+                                    </div>          
+
+`;
 
 
 /////////////////
@@ -182,13 +189,15 @@ localStorage.setItem('productenParts', productenLijstJson);
 
 function aantalItemsMandje(productParts){
 
-    let productNummmers = localStorage.getItem('aantalItemsMandje')
+    let productNummmers = localStorage.getItem('aantalItemsMandje');
 
 productNummmers = parseInt(productNummmers) + 1;
+
 if(productNummmers){
     localStorage.setItem('aantalItemsMandje', productNummmers.toString());
     document.querySelector('.producten_opteller').textContent = productNummmers.toString();
-} else{
+}
+else{
     localStorage.setItem('aantalItemsMandje','1');
     document.querySelector('.producten_opteller').textContent = '1';
 }
@@ -218,7 +227,7 @@ function onLoadAantalItemsMandje(){
 }
 
 onLoadAantalItemsMandje()
-iTemsToevoegenWinkelmandje()
+
 
 
 
