@@ -91,6 +91,9 @@ a {
 
 
 /* main */
+main {
+margin-top: 85px;
+}
 /* intro */
 .intro {
     margin-top: -80px;
