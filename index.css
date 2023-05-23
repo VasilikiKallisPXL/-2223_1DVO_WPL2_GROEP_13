@@ -825,6 +825,10 @@ span {
     margin: 10px 30px;
 }
 
+.social {
+    display: inline;
+}
+
 .social-media-footer a {
     display: flex;
     padding: 2px;
