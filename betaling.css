@@ -11,10 +11,11 @@ img{
     width: 60px;
     padding-right: 10px;
 }
-header h1{
+header h1 {
     margin-top: 50px;
     font-family: aptly, sans-serif;
     font-weight: bold;
+}
 
 header{
     max-width: 900px;
