@@ -36,6 +36,95 @@
 <!-- Voeg commentaar toe bij elk onderdeel van code bv.: section, div, header -->
 <!-- Voeg een margin toe onder de navigatiebar -->
 
+<!--NAV-->
+<!--HEADER-->
+<div class="container-fluid   align-items-stretch m-0 pb-4">
+    <div class="row">
+        <div class="col-md-12">
+            <!--    NAVBAR-->
+            <!--    NAVBAR-->
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-white ">
+                <div class="container-fluid pt-1 pb-1 align-items-center">
+
+                    <a class="navbar-brand" href="index.html"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end align-items-end " id="navbarNavDropdown">
+                        <ul class="navbar-nav  me-3 mb-lg-2 mb-lg-0  my-md-4 my-sm-5 text-sm-center">
+                            <li>
+                                <div class="input-group mb-3 mt-sm-auto" style="min-width: 350px">
+                                    <input type="text" class="form-control border border-end-0 " placeholder=""
+                                           aria-label="Username" aria-describedby="basic-addon1">
+                                    <span class="input-group-text bg-white border border-start-0 "
+                                          id="basic-addon1"><i class="bi bi-search "></i></span>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled d-sm-none d-md-block " href="#">Dashboard</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link disabled " href="#">Community</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu text-sm-center text-lg-start ">
+                                    <li><a class="dropdown-item" href="productpagina-station2.html">Station</a></li>
+                                    <li><a class="dropdown-item" href="diy-kits.html">DIY-kits</a></li>
+                                    <li><a class="dropdown-item" href="productpagina-parts.html">Parts</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="creeeraccountpagina.html">Inloggen</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="d-lg-none ">Notificaties</span><i class="bi bi-bell d-none d-lg-inline"> </i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="d-lg-none">Favorieten</span><i class="bi bi-heart  d-none d-lg-inline"></i></a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <div class="row">
+                                    <div class="container-mandje ">
+                                        <div class="container-mandje-icoon">
+                                            <button type="button" class="btn btn-white"><span class="d-lg-none ">Winkelwagentje</span>
+                                                <i class="bi bi-cart2 d-none d-lg-inline"></i>
+                                                <span class="badge text-bg-dark producten_opteller" >0</span>
+                                            </button>
+
+                                        </div>
+                                    </div >
+                                    <div class="container-cart-products hidden-mandje">
+
+
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+
+
 <!--MAIN-->
 <!--TITEL-->
 <!--WAT IS OWNIT-->
@@ -148,7 +237,7 @@
 
 
 <!--    MISSIE + VISIE-->
-    <div id="3e__blok">
+    <div class="container-fluid" id="3e__blok">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6" id="missie__blok">
                 <h1>Onze missie</h1>
@@ -160,7 +249,7 @@
                     U wilt ownership over de- door u verwerkte -functies?
                     Of course! 'Cuz you buy it, you Ownit!</p>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6" id="visie__blok">
+            <div class="col-sm-11 col-md-6 col-lg-6" id="visie__blok">
                 <h1>Onze Visie</h1>
                 <img src="assets/goal-flag.png" alt="missie_img">
                 <p>Wij opteren om mensen met een EV (Electric Vehicle) een gunstig gebruik te bieden met laadpalen.
@@ -172,9 +261,9 @@
         </div>
     </div>
 
-<!--    class="col-sm-8 col-md-5 col-lg-4  py-3 "-->
+
 <!--BLOKKEN - WERKEND PERSONEEL-->
-    <div id="blokken__personeel">
+    <div class="container-fluid" id="blokken__personeel">
         <h1>Ons team</h1>
         <div class="row justify-content-center" id="bovenste__blokken">
             <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2" id="blok__1">
@@ -240,9 +329,9 @@
     </div>
 
 
-    <!--namen aanpassen van de id-->
+
 <!--        KERNWAARDES TONEN-->
-    <div id="kernwaarden">
+    <div class="container-fluid" id="kernwaarden">
         <h1>Onze 5 kernwaardes</h1>
         <div class="row justify-content-center" id="kernwaarden_rij_1">
             <div class="col-sm-10 col-md-5 col-lg-3">
@@ -298,7 +387,65 @@
         <p>Download dan onze brand guide hier.</p>
         <button>Download de brandguide<img src="assets/download_icon.png" alt="download_icon"></button>
     </div>
-</main>
 
+    <!-- FOOTER -->
+
+    <!--    LINKS FOOTER-->
+    <div class="container-fluid footer__  py-5 ">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-4">
+
+                <!--        CONTACT-->
+                <p><span>Contact</span></p>
+                <ul class="mb-5">
+                    <li>Ownit</li>
+                    <li> PXL - Kempische steenweg,</li>
+                    <li> Corda campus, 3500</li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contact.html">Contact formulier</a></li>
+                </ul>
+
+                <!--        SOCIAL MEDIA-->
+                <p><span>Social media</span></p>
+                <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start mx-2 col-10">
+                    <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-facebook fs-2"></i></a>
+                    <a href="https://www.instagram.com/ownit.website/" target="_blank" rel="noreferrer"><i class="bi bi-instagram fs-2"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-linkedin fs-2"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-github fs-2"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-youtube fs-2"></i></a>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <!--    OVER ONS-->
+
+                <p><span>Over ons</span></p>
+                <ul class="my-2">
+                    <li><a href="over_ons.html">Misie en visie</a></li>
+                    <li><a href="over_ons.html">Ons team</a></li>
+                    <li><a href="over_ons.html">Road map</a></li>
+                    <li><a href="over_ons.html">Ownit app</a></li>
+
+                </ul>
+                <div class="col-sm-6 col-md-4">
+                    <p><span>Community</span></p>
+                    <ul>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Bibliotheek</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4 d-none d-md-inline mb-4 ">
+                <iframe   src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Corda%20Campus,%20Kempische%20Steenweg%20293/16,%203500%20Hasselt+(Ownit%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
+
+
+        <!--            Copyright-->
+        <div class="row mt-3 p-2 bg-light mb-0">
+            <p class="text-center mt-auto">Copyright &#169; Ownit, 2023 all right reserved </p>
+        </div>
+    </div>
+</main>
 </body>
 </html>

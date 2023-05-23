@@ -13,13 +13,77 @@ p,span, li, a {
     font-family: new-order, sans-serif;
 }
 
+
 /*___HEADER*/
 /*____________NAVBAR*/
+
+.navbar{
+    background-color: #ffffff;
+
+}
+.navbar-brand{
+    width: 4rem;
+}
+
+.navbar ul li a {
+    margin: 0 10px;
+    font-size: 16px;
+
+}
+
+.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+    font-weight: bold;
+}
+.navbar-brand img{
+    width: 100%;
+}
+
+.container_modal .btn-close{
+    background-color:#ffffff;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+.hidden-mandje{
+    display: none;
+}
+
+
+
 
 /* main */
 main {
     margin-bottom: -150px;
+    margin-top: 85px;
 }
+
+
 
 /* Titel */
 #intro__tekst h1{
@@ -118,8 +182,8 @@ main {
 
 #missie__blok p, #visie__blok p {
     color: #ffffff;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 175px;
+    margin-right: 175px;
 }
 
 #missie__blok h1, #visie__blok h1 {
@@ -165,7 +229,6 @@ main {
     width: 65%;
     height: auto;
 }
-
 
 /*BLOKKEN KERNWAARDEN*/
 #kernwaarden h1{
@@ -230,6 +293,47 @@ main {
 }
 
 
+
+/*FOOTER*/
+
+.footer__{
+    background-color: #261F56;
+    color: #ffffff;
+    min-height: 500px;
+    max-height:800px;
+}
+
+.footer__ ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.footer__ ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer__ span{
+    color: #5EBCAF;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 30px ;
+}
+.social-media-footer a{
+
+    display: flex;
+    padding: 2px;
+    margin: 20px 10px ;
+    color: #ffffff;
+}
+.footer__ p:last-child{
+    color: #000000;
+}
+.footer__ iframe{
+    width: 100%;
+    height: 400px;
+}
+
+
+/*responsief*/
 @media screen and (max-width: 1400px) {
     #tekst_uniek {
         padding-top: 10px;
@@ -297,42 +401,22 @@ main {
     #kernwaarden #kernwaarden_rij_1, #kernwaarden #kernwaarden_rij_2 {
         margin: 20px;
     }
+    .navbar ul li .titel_visible_hidden{
+        display: inline;
+    }
+
+    .navbar ul{
+        margin: 20px;
+
+    }
 }
 
-/*FOOTER*/
+@media screen and (max-width:450px) {
+    .navbar ul {
+        margin: 20px;
+    }
 
-.footer__{
-    background-color: #261F56;
-    color: #ffffff;
-    min-height: 500px;
-    max-height:800px;
-}
-
-.footer__ ul li {
-    text-decoration: none;
-    list-style: none;
-}
-.footer__ ul li a{
-    color: #ffffff;
-    text-decoration: none;
-}
-.footer__ span{
-    color: #5EBCAF;
-    font-size: 20px;
-    font-weight: normal;
-    margin: 10px 30px ;
-}
-.social-media-footer a{
-
-    display: flex;
-    padding: 2px;
-    margin: 20px 10px ;
-    color: #ffffff;
-}
-.footer__ p:last-child{
-    color: #000000;
-}
-.footer__ iframe{
-    width: 100%;
-    height: 400px;
+    .footer__ div iframe {
+        display: none;
+    }
 }
