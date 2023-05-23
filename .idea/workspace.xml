@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+winkelm
+    <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/bezorgadres.html" beforeDir="false" afterPath="$PROJECT_DIR$/bezorgadres.html" afterDir="false" />
+
     <list default="true" id="5359c3aa-168a-4c50-ba37-1b70a36da1aa" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/over_ons.css" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/over_ons.html" beforeDir="false" afterPath="$PROJECT_DIR$/over_ons.html" afterDir="false" />
+main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +46,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+ winkelm
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/gocer/Documents/WebStorm/h8-flexbox",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -54,6 +72,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+main
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,6 +83,10 @@
       <updated>1682593998817</updated>
       <workItem from="1682594000042" duration="66000" />
       <workItem from="1682594067886" duration="394000" />
+winkelm
+      <workItem from="1684154587795" duration="1427000" />
+      <workItem from="1684226916986" duration="672000" />
+      <workItem from="1684677064419" duration="24121000" />
       <workItem from="1683558876194" duration="210000" />
       <workItem from="1683621972755" duration="1204000" />
       <workItem from="1683632250221" duration="1330000" />
@@ -87,6 +110,7 @@
       <workItem from="1684673542073" duration="877000" />
       <workItem from="1684740044055" duration="19856000" />
       <workItem from="1684816090499" duration="5294000" />
+main
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1682594146449</created>
@@ -95,6 +119,50 @@
       <option name="project" value="LOCAL" />
       <updated>1682594146449</updated>
     </task>
+winkelm
+    <task id="LOCAL-00002" summary="loginpagina.html? loginpagina.html responsive gemaakt">
+      <created>1684678900920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684678900920</updated>
+    </task>
+    <task id="LOCAL-00003" summary="creeraccount, login en wwvergeten responsief design klaar">
+      <created>1684680119115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684680119115</updated>
+    </task>
+    <task id="LOCAL-00004" summary="creeraccount, login en wwvergeten responsief design klaar">
+      <created>1684680326997</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684680326998</updated>
+    </task>
+    <task id="LOCAL-00005" summary="kruis icoon toegevoegd">
+      <created>1684769099308</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684769099308</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Responsive design bezorgadres">
+      <created>1684787515097</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684787515097</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Responsive design bezorgadres">
+      <created>1684829541748</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684829541748</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <task id="LOCAL-00002" summary="test">
       <created>1683633010696</created>
       <option name="number" value="00002" />
@@ -110,6 +178,7 @@
       <updated>1683634206186</updated>
     </task>
     <option name="localTasksCounter" value="4" />
+main
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +211,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="loginpagina.html? loginpagina.html responsive gemaakt" />
+    <MESSAGE value="creeraccount, login en wwvergeten responsief design klaar" />
+    <MESSAGE value="kruis icoon toegevoegd" />
+    <MESSAGE value="Responsive design bezorgadres" />
+    <option name="LAST_COMMIT_MESSAGE" value="Responsive design bezorgadres" />
   </component>
 </project>
