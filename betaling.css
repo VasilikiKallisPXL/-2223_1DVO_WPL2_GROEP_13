@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+body{
+    background-color: #ffffff;
+}
+img{
+    width: 60px;
+    padding-right: 10px;
+}
+header h1{
+    margin-top: 50px;
+    font-family: aptly, sans-serif;
+    font-weight: bold;
+
+header{
+    max-width: 900px;
+    margin: 0 auto;
+}
+header #header_container{
+    margin-top: 40px;
+}
+header #header_paragraaf{
+    margin-top: 20px;
+    color: #261F56;
+    text-align: center;
+    font-size: 16px;
+}
+#betaling_kruisje img{
+    width: 40px;
+
+}
+main p {
+    font-family: new order, sans-serif;
+}
+main{
+    background-color: #261F56;
+    border-radius: 10px;
+    margin: 20px auto 0;
+    max-width: 900px;
+    padding: 50px;
+}
+input{
+    color: #ffffff;
+    padding-left: 15px;
+    font-weight: 100;
+    font-size: 15px;
+    outline: none;
+
+}
+::placeholder {
+    color: #ffffff;
+}
+label{
+    font-size: 21px;
+    font-family: aptly, sans-serif;
+    color: #5EBCAF;
+    display: inline-block;
+    width: 250px;
+}
+.leeglabel{
+    display: none;
+}
+
+input[name="knaam"], input[name="achternaam"], input[name="einddatum"], input[name="cvv"] {
+    display: inline-block;
+    width: 29%;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #261F56;
+    border: 1px solid #5EBCAF;
+    border-radius: 10px;
+    margin-right: 1.5%;
+
+}
+input[name="kaarthoudernummer"] {
+    width: 60%;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #261F56;
+    border: 1px solid #5EBCAF;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    width: 40%;
+    height: 45px;
+    display: inline-block;
+    border: 1px solid #5EBCAF;
+    font-size: 16px;
+    background-color: #5EBCAF;
+    border-radius: 10px;
+}
