@@ -1,387 +1,494 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ownit | Smart charger</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./startpagina.css">
 
-    
+<head>
+    <!-- TITEL -->
+    <title>Ownit | Startpagina</title>
+
+    <!-- FAVICON-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon_ownit.png">
+    <!-- CSS-->
+    <link rel="stylesheet" href="startpagina.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
     <!--ICONEN BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
+    <!-- METADATA-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Ana">
+    <meta name="description" content="productpagina-webshop parts-OWNIT">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-     <!--!!!! Rules of code !!!! -->
-       <!-- Gebruik Bootstrap -->
-       <!-- Gebruik id's, classes (naamgeving: foto__profiel), 'alt' bij img,  -->
-       <!-- Voorkom conflicten: communniceer duidelijk wanneer er gewerkt wordt aan een pagina en wanneer je eindigt met bewerken. 
-    !!! Vermeld wat gewijzigd is in de commit!!! -->
+
+    <!--!!!! Rules of code !!!! -->
+    <!-- Gebruik Bootstrap -->
+    <!-- Gebruik id's, classes (naamgeving: foto__profiel), 'alt' bij img, -->
+    <!-- Voorkom conflicten: communniceer duidelijk wanneer er gewerkt wordt aan een pagina en wanneer je eindigt met bewerken.
+        !!! Vermeld wat gewijzigd is in de commit!!! -->
     <!-- Voeg commentaar toe bij elk onderdeel van code bv.: section, div, header -->
     <!-- Voeg een margin toe onder de navigatiebar -->
 
-   <!--HEADER-->
-<div class="container-fluid align-items-stretch">
-    <div class="row ">
-        <div class="col-md-12">
-            <!--    NAVBAR-->
-            <nav class="navbar fixed navbar-expand-lg bg-body-tertiary ">
-                <div class="container-fluid ">
-
-                    <a class="navbar-brand" href="index.html"><img src="assets/logo_ownit.jpg"Logo Ownit"/></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <!--HEADER-->
+    <div class="container-fluid pb-4 align-items-stretch">
+        <div class="row algin-item-stretch">
+            <div class="col">
+                <!--NAVBAR-->
+                <nav class="navbar fixed navbar-expand-lg justify-content-space-between">
+                    <div class="container-fluid ">
+                        <a class="navbar-brand" href="#"><img src="assets/logo_ownit.jpg" alt="Logo Ownit" /></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <div class="collapse navbar-collapse  justify-content-end " id="navbarNavDropdown">
-                        <ul class="navbar-nav  me-4 mb-2 mb-lg-0  ">
-                            <li>
-                                <div class="input-group mb-3 " style="max-width: 350px">
-                                    <input type="text" class="form-control border border-end-0 " placeholder=""
-                                           aria-label="Username" aria-describedby="basic-addon1">
-                                    <span class="input-group-text bg-white border border-start-0 "
-                                          id="basic-addon1-zoekbalk"><i class="bi bi-search "></i></span>
-                                </div>
-                            </li>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="align-items-end">
+                                    <div class="input-group mb-3">
+                                        <input type="text" id="search__input" class="form-control border border-end-0 "
+                                            placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        <span class="input-group-text bg-white border border-start-0"
+                                            id="basic-addon1-zoekbalk"><i class="bi bi-search "></i></span>
+                                    </div>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Community</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                   aria-expanded="false">
-                                    Products
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Station</a></li>
-                                    <li><a class="dropdown-item" href="#">DIY-kits</a></li>
-                                    <li><a class="dropdown-item" href="#">Parts</a></li>
-                                </ul>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Community</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Products
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="productpagina-station2.html">Station</a></li>
+                                        <li><a class="dropdown-item" href="diy-kits.html">DIY-kits</a></li>
+                                        <li><a class="dropdown-item" href="productpagina-parts.html">Parts</a></li>
+                                    </ul>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"> <i class="bi bi-person"></i></a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="loginpagina.html"><i class="bi bi-person"></i></a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="bi bi-cart2"></i></a>
-                            </li>
-                        </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="bi bi-cart2"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- head -->
+    <!-- titel -->
+    <main>
+        <Section class="intro justify-content-center">
+            <div class="contianer " id="title__start">
+                <h2 class="" id="coming__soon">Coming soon</h2>
+                <h1 class="col-7">Extended<br>Ground Station</h1>
+            </div>
+
+            <!-- vraag om e-mail in te vullen met button en kleine beschrijving -->
+            <div class="container" id="intro__start">
+                <div class="row">
+                    <div class="col-xs-5">
+                        <h2 class="mb-4" id="title__mail__start">Get a notification when we launch.</h2>
+                        <input type="text" id="input__mail__start" />
+                        <button type="button" id="button__notify" class="btn btn-dark">Notify me</button>
+                    </div>
+                    <div class="second__intro__start">
+                        <p id="input__text__start" class="intro__text">Enter your email adress</p>
+                    </div>
+                    <div class="button__text"></div>
+                    <p id="button__text">Dit station is een uniek product op de markt dat uit de<br>
+                        grond kan komen. Heb je thuis geen plaats voor<br>een
+                        laadpaal? Dan kan je deze gewoon in de<br> grond
+                        plaatsen, waarbij de kabel is geïntegreerd<br>in een spoel.<br><br>
+                        <b id="endpara__intro">Uw gebruiksgemak is onze prioriteit.</b>
+                    </p>
+                </div>
+            </div>
+            </div>
+
+            <!-- banner/hero rechts uitgelijnd -->
+            <div class="container-fluid">
+                <!-- image als background -->
+                <div class="row pe-5 me-5">
+                    <div class="col justify-content-end ">
+                        <img src="assets/ownit3d_blue.png" alt="onwnit3d_blue" class="rounded" id="img__3d">
+                    </div>
+                </div>
+            </div>
+        </Section>
+        <!-- countdown -->
+        <div class="container" id="countdown__container">
+            <div class="row" id="countdown__timer">
+                <div id="countdown__item1" class="col-12 col-md-5 col-xl-3">
+                    <span id="nr__1">03:</span>
+                    <span id="months" class="countdown__label">Maand</span>
+                </div>
+                <div id="countdown__item2" class="col-12">
+                    <span id="nr__2">12:</span>
+                    <span id="days" class="countdown__label">Dag</span>
+                </div>
+                <div id="countdown__item3" class="col-12">
+                    <span id="nr__3">11:</span>
+                    <span id="hours" class="countdown__label">Uur</span>
+                </div>
+                <div id="countdown__item4" class="col-12">
+                    <span id="nr__4">55:</span>
+                    <span id="minutes" class="countdown__label">Minuten</span>
+                </div>
+                <div id="countdown__item5" class="col-12">
+                    <span id="nr__5">20</span>
+                    <span id="seconds" class="countdown__label">Seconden</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- top scrollsection -->
+        <section class="mission justify-content-start mt-5">
+            <div class="missie">
+                <div id="top__scrollsection1">
+                    <!-- image driving person -->
+                    <img src="assets/car__drive.jpg" alt="scroll down" id="drive">
+                    <h2 id="missie__title">Onze missie</h2>
+                    <p id="missie__p">Wij opteren om mensen met een EV (Electric Vehicle) een
+                        <br>gunstig gebruik te bieden met laadpalen.<br>
+                        Hoe doen we dit? Simpel, innovatie, dynamiek en connectie!<br><br>
+                        Geen ontwikkelaar? Geen nood!<br> Sluit je aan bij onze community en ontdek de wondere
+                        <br>wereld van Open-Source Tech.
+                    </p>
+                    <!-- button -->
+                    <div class="button__drive">
+                        <a href="#"><button type="button" id="btn__drive" class="btn btn-dark" href="overons.html">Lees
+                                meer</button></a>
+                        <i class="bi bi-chevron-right" id="bi"></i>
+                    </div>
+                </div>
+        </section>
+
+        <!-- cards 4 in 1 row, 2col -->
+        <!-- row 1 -->
+        <!-- Head Title cards -->
+        <section class="cards">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col justify-content-end pt-5 mt-5 mb-2">
+                    <h3 class="align-items-center" id="extended__title"><b>Voordelen van de nieuwe Extended Ground
+                            Station</b></h3>
+                        </div>
+                </div>
+            </div>
+
+            <!-- cards row 1 -->
+            <!-- col 1 -->
+            <div class="container-xxl">
+                <div class="row justify-content-center" id="top-row">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">High quality</h5>
+                                <img src="assets/hoge_kwaliteit.png" alt="check" class="f fs-1" id="check__icon">
+                                <p class="card-text pt-3">Ownit biedt hoge kwaliteit aan.<br>
+                                    Wij zorgen dat de onderdelen<br>duurzaam zijn gemaakt en van<br>
+                                    gerecycleerd materiaal zijn<br>
+                                    gewonnen. Wij dragen ons<br>steentje bij aan de toekomst.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col2 -->
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Open-source</h5>
+                                <img src="assets/open-source.png" class="f fs-1" alt="open__source"
+                                    id="opensource_icon">
+                                <p class="card-text pt-3">Ons product is open-source, wij
+                                    willen dat iedereen functies kantoevoegen en bijbouwen. Als je<br>niks van coderen
+                                    kent,<br>
+                                    geen zorgen. In de community tab staan functies
+                                    die zijn ontworpen door gebruikers.<br></p>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- col3 -->
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Low Cost</h5>
+                                <img src="assets/lage kosten.png" class="f fs-1" alt="open__source" id="lowcost__icon">
+                                <p class="card-text pt-3">Milieuvriendelijkheid staat niet<br>
+                                    gelijk aan oplopende kosten.<br>Daarom bieden wij goedkope<br>laadpalen aan
+                                    van stevige kwaliteit.<br>U tevreden<br> net zoals de natuur.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- col 4 -->
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Easy To Use</h5>
+                                <img src="assets/Gemakkelijk__te__gebruiken.png" class="f fs-1" alt="Easy to use"
+                                    id="easyuse__icon">
+                                <p class="card-text pt-3">De laadpaal wordt bij jou thuis<br>
+                                    volledig geïnstalleerd<br>en is onmiddellijk gebruiksklaar<br>
+                                    na installatie.<br>Your wish is our command.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </nav>
 
-        </div>
-    </div>
-</div>
+                <!-- col5 -->
+                <div class="row justify-content-centerp" id="low-row">
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Full-Battery in 3 hours</h5>
+                                <img src="assets/full-battery.png" class="f fs-1" alt="full battery"
+                                    id="full__battery__icon">
+                                <p cla<p class="card-text pt-3">Met de DCFC technologie kan je<br> een maximale output
+                                    genereren <br>
+                                    van 350KW. Dit zorgt ervoor dat<br> je batterij snel zal worden<br>
+                                    opgeladen.<br>Charge it for life.</p>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- head -->
-<!-- titel -->
-<main>
-<div class="title__start" id="title__start">
-    <h2 id="coming__soon">Coming soon</h2>
-<h1 class="col-7">Extended Ground Station</h1>
-</div>
+                    <!-- col6 -->
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Bluetooth</h5>
+                                <img src="assets/bluetooth.png" class="f fs-1" alt="bluetooth" id="bluetooth_icon">
+                                <p class="card-text pt-3">Klaar voor vertrek,<br>tijdens vakantie of een inbraak<br>
+                                    voorkomen?
+                                    Verbind je apparaat sneller dan ooit<br> met jouw Smart charger en beheer<br>al jouw
+                                    instellingen vanop afstand.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col7 -->
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Distance-Problem Solving</h5>
+                                <img src="assets/headphones.png" class="f fs-1" alt="problem solving" id="dps__icon">
+                                <p class="card-text pt-3">Wij zijn vanop een afstand<br>bereikbaar om al jouw issues<br>
+                                    op te lossen<br>
+                                    voor jouw eigen laadpaal.<br>Uw garantie binnen handbereik.<br><br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- col8 -->
+                    <div class="col-lg-3 col-md-5 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Low maintenance</h5>
+                                <img src="assets/low.png" class="f fs-1" alt="Low maintenance"
+                                    id="low__maintensance__icon">
+                                <p class="card-text pt-3">De Ownit Smart-charge is<br> 'easyyy' te onderhouden,<br>
+                                    kwalitatief en duurzaam.<br>
+                                    Ideaal om er jaren van te genieten.<br>Enjoy it for a lifetime.<br><br></p>
+                            </div>
+                        </div>
 
-<!-- vraag om e-mail in te vullen met button en kleine beschrijving -->
-<div class="container" id="intro__start">
-    <div class="row">
-    <div class="col-xs-5">
-    <h2 class="mb-4" id="title__mail__start">Get a notification when we launch.</h2>
-    <input type="text" id="input__mail__start" />
-    <button type="button" id="button__notify" class="btn btn-dark">Notify me</button>
-    </div>
-    <div class="second__intro__start">
-        <p id="input__text__start" class="intro__text">Enter your email adress</p>
-    </div>
-    <div class="button__text"></div>
-    <p id="button__text">Dit station is een uniek product op de markt dat uit de
-        grond kan<br>komen.<br>Heb je thuis geen plaats voor een
-             laadpaal?<br>Dan kan je deze gewoon in de grond 
-             plaatsen,<br>waarbij de kabel is geïntegreerd in een spoel.<br><br>
-                <b id="endpara__intro">Uw gebruiksgemak is onze prioriteit.</b>
-            </p>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <a href="#"><button type="button" id="aanbod"
+                                        class="btn btn-dark justify-content-center align-items-center"
+                                        href="overons.html">Bekijk ons aanbod</button></a>
+                            </div>
+                        </div>
+        </section>
+        <!-- laadpaal features -->
+        <section class="featureslp">
+            <div id="lp__title">
+                <h2><b>Wat zit er in de Extended Ground Station?</b></h2>
             </div>
-        </div>
-</div>
+            <div class="lp__pic">
+                <img src="assets/foto_laadpaal.jpg" alt="laadpaal" id="laadpaal__pic">
+            </div>
+        </section>
+        <!-- features -->
+        <section class="general__features">
+            <div class="container">
+                <div class="row mb-5" id="info_row1">
+                    <div class="col-lg-7">
+                        <h1 id="home__feature">Terug thuis komen - omhoog komen<br>van de laadpaal</h1>
+                        <p id="home__txt">De laadpaal zal automatisch uit de grond komen zodra je thuis komt<br>zodat je
+                            deze sneller
+                            kunt gebruiker, scan simpel met je Id kaart om<br>deze te gebruiken. Als het laden voltooid
+                            is en je thuis vertrekt zal de<br>kabel automatisch terug in de laadpaal gaan en dan zal de
+                            laadpaal<br>terug in de grond zakken automatisch. Dit is echt bedoeld voor de<br>mensen die
+                            geen plaats thuis hebben.</p>
+                        <img src="assets/singleOwnit.png" alt="foto" id="ownit__single__charger">
+                    </div>
+                </div>
+                <div class="row mb-5" id="info_row2">
+                    <div class="col-lg-5">
+                        <img src="assets/hands.jpg" alt="foto" id="hands__img">
+                    </div>
+                    <div class="col-lg-7">
+                        <h1 id="give__feature">Teruggeven aan je huis</h1>
+                        <p id="give__text">Er is een functie gemaakt op de laadpaal waardoor dat als je<br>thuis komt en
+                            je batterij van de
+                            auto heeft nog stroom, dan zal<br>deze stroom terug geven aan je huis. Totdat de batterij
+                            helemaal<br>leeg is en daarna zal deze pas beginnen met het<br>terug heropladen
+                            automatisch.<br>
+                            Dit is beter voor de batterij van de auto en dan zal deze ook<br>langer meegaan. </p>
+                    </div>
+                </div>
+                <div class="row mb-5" id="info_row3">
+                    <div class="stroom__pic">
+                        <img src="assets/vwui.jpg" alt="foto" id="car__ui_img">
+                    </div>
 
-<!-- banner/hero rechts uitgelijnd -->
-<div class="container">
-    <!-- image als background -->
-    <img src="assets/ownit3d_blue.png" alt="onwnit3d_blue" class="rounded d-block" id="img__3d">
-    
-    <a href="productpagina-station.html"><button type="button" id="button__info" class="btn btn-dark" >Meer info</button></a>
-    <button type="button" id="button__info" class="btn btn-dark" >Meer info</button>
-    
-</div>
+                    <div class="col-lg-7 ">
+                        <h1 id="stroom__feature">Stroompieken, wat nu?</h1>
+                        <p id="strf">Dit is een interessante functie dat het laden van de auto zal<br>optimaliseren op
+                            basis van jouw
+                            eigen piek uren. Als u bijvoorbeeld<br>aan het laden bent en ook tegelijkertijd aan het
+                            koken,
+                            wassen,<br>strijken bezig bent dan zal het laden van de auto tijdelijk stoppen<br>om geld te
+                            besparen. Zodra deze activiteiten klaar zijn dan zal de<br>app zien dat het piek uur voorbij
+                            is
+                            zal de auto terug beginnen met<br>het heropladen.</p>
+                    </div>
+                </div>
 
-<!-- countdown-->
-<!-- <div class="container" id="countdown__start">
-     <div class="row" id="countdown__timer">
-        <div id="cd__time" class="col-12">
-            <p id="nr__1">03:</p>
-            <p id="nr__2">12:</p>
-            <p id="nr__3">11:</p>
-            <p id="nr__4">55:</p>
-            <p id="nr__5">20</p>
-        </div>
-        <div id="countdown__timer" class="col-3">
-            <p id="months">Months</p>
-            <p id="days">Days</p>
-            <p id="hours">Hours</p>
-            <p id="minutes">Minutes</p>
-            <p id="seconds">Seconds</p>
-        </div>
-    </div>
-</div> -->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <a href="#"><button type="button" id="aanbod2"
+                                class="btn btn-dark justify-content-center align-items-center"
+                                href="overons.html">Bekijk ons aanbod</button></a>
+                    </div>
+                </div>
+        </section>
 
-<!-- top scrollsection -->
-<div class="missie">
-<div id="top__scrollsection1">
-    <!-- image driving person -->
-    <img src="assets/car__drive.jpg" alt="scroll down" id="drive">
-    <h2 id="missie__title">Onze missie</h2>
-    <p id="missie__p">Wij opteren om mensen met een EV (Electric Vehicle) een 
-        <br>gunstig gebruik te bieden met laadpalen.<br>
-        Hoe doen we dit? Simpel, innovatie, dynamiek en connectie!<br><br>
-        Geen ontwikkelaar? Geen nood!<br> Sluit je aan bij onze community en ontdek de wondere
-        <br>wereld van Open-Source Tech.</p>
-    <!-- button -->
-    <div class="button__drive">
 
-        <a href="#"><button type="button" id="btn__drive" class="btn btn-dark" href="overons.html">Lees meer</button></a>
 
-        <button type="button" id="btn__drive" class="btn btn-dark" href="overons.html">Lees meer</button>
+        <sectiom class="lp__app">
+            <div class="row mb-5" id="lp__app">
+                <div class="stroom__pic">
+                    <img src="assets/lp__ui.png" alt="foto" id="app__ui_img">
+                </div>
 
-        <i class="bi bi-chevron-right" id="bi"></i>
-     </div>
-</div>
+                <div class="col-lg-7 ">
+                    <h1 id="ui_title">Vind meer op de Ownit app </h1>
+                    <p id="ui__text">Wil je een overzicht hebben van de status van het laden?<br>Bekijk dan op je laptop
+                        het dashboard of download de<br>
+                        app en bekijk het hierop. Met de app kan je de volledige<br>laadpaal bedienen en configureren
+                        naar je eigen hand.<br>Dit kan je doen omdat de laadpaal open-source is.</p>
+                </div>
+            </div>
 
-<!-- cards 4 in row, 2 cols -->
-<!-- row 1 -->
-<!-- Head Title cards -->
-<h3 class="extended__title" id="extended__title"><b>Voordelen van de nieuwe Extended Ground Station</b></h3>
+            <div class="button__ui">
+                <a href="#"><button type="button" id="btn__app" class="btn btn-dark" href="overons.html">
+                        <p class="ui__para">Lees
+                            meer</p>
+                    </button></a>
+                <!-- <i class="bi bi-chevron-center" id="bi__ui"></i> -->
+            </div>
+            </div>
+        </sectiom>
 
-<div class="row" id="cards__middle">
-    <div class="col-md-5">
-        <div class="card">
-        <h5 class="card-title"><b>High quality</b></h5>
-        <div class="card-body">
-            <img src="assets/Hoge kwaliteit.png" alt="check" id="check__icon">
-          <p class="card-text">Ownit biedt hoge kwaliteit aan.<br>
-            Wij zorgen dat de onderdelen<br>duurzaam zijn gemaakt en van<br>
-           gerecycleerd materiaal zijn<br>
-            gewonnen. Wij dragen ons<br>steentje bij aan de toekomst.</p>
-        </div>
+
+        <!-- reviews -->
+        <div id="reviews">
+            <h1>Ons team</h1>
+            <div class="row justify-content-center" id="second__cards">
+                <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2" id="persoon_1">
+                    <img src="assets/lisa.png" class="img-fluid" alt="blok__1">
+                    <h2>Lisa Smeets</h2>
+                    <p>Voor mij is dit het ideale product. Ik<br>woon in een klein huisje met een kleine<br>oprit.
+                        Hierdoor heb ik geen plaats voor een laadpaal.<br> Kort gezegd, de ideale laadpaal.</p>
+                </div>
+                <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2" id="persoon_2">
+                    <img src="assets/persoon__2.png" class="img-fluid" alt=" blok__2">
+                    <h2>Jacob Mertens</h2>
+                    <p>Ik ben Jacob en ik heb in het verleden<br> al 2 soorten laadpalen gehad. Hier valt<br> te zeggen
+                        dat deze twee niet te vergelijken zijn.<br>
+                        De laadpaal is over het algemeen gewoon mooier en strakker.</p>
+                </div>
+                <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2" id="persoon_3">
+                    <img src="assets/persoon__3.png" class="img-fluid" alt="blok__3">
+                    <h2>Abuh Doornen</h2>
+                    <p>Ik heb niet veel tijd door mijn job en het feit dat deze laadpaal automatisch uit de grond komt
+                        als ik thuis kom en meteen kan beginnen met laden zonder aan iets te denken is echt ideaal.</p>
+                </div>
+                <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2" id="persoon_4">
+                    <img src="assets/persoon__4.png" class="img-fluid" alt="blok__4">
+                    <h2>Alexander Vogels</h2>
+                    <p>Ik ben Alexander en thuis heb ik normaal echt helemaal geen plaats. Deze laadpaal lost dit wel
+                        op.</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!-- community -->
+            <!-- <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/community.png" class="w-100" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/work.png" class="" w-100" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/handshake.png" class="w-100" alt="Image 3">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/group.png" class="w-100" alt="Image 4">
       </div>
     </div>
-    <div class="col-md-5">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><b>Open-source</b></h5>
-          <img src="assets/open-source.png" class="card-img-top" alt="open__source" id="opensource_icon">
-          <p class="card-text">Ons product is open-source, wij
-             willen dat iedereen functies kantoevoegen en bijbouwen. Als je
-              niks van coderen kent,
-               geen zorgen. In de community tab staan functies
-               die zijn ontworpen door gebruikers.</p>
-        </div>
-      </div>
-    </div>
-<!-- <div class="row" id="cards__middle2"></div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><b>Low Cost</b></h5>
-          <img src="assets/lage kosten.jpg" class="card-img-top" alt="open__source" id="lowcost__icon">
-          <p class="card-text">Milieuvriendelijkheid staat niet<br>
-             gelijk aan oplopende kosten.<br>Daarom bieden wij goedkope<br>laadpalen aan
-             van stevige kwaliteit.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><b>Easy To Use</b></h5>
-          <img src="assets/Gemakkelijk__te__gebruiken.jpg" class="card-img-top" alt="Easy to use" id="easyuse__icon">
-          <p class="card-text">De laadpaal wordt bij jou thuis<br>
-            volledig geïnstalleerd.<br>en is onmiddellijk gebruiksklaar<br>
-            na installatie.</p>
-        </div>
-      </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>  -->
 
-  <!-- row 1 -->
-<!--   
-<div class="row row-col row-col-md-4 g-4" id="cards__middle">
-    <div class="col">
-      <div class="card">
-        <h5 class="card-title"><b>Full-Battery in 3 hours</b></h5>
-        <div class="card-body">
-            <img src="assets/full-battery.jpg" alt="check" id="full__battery__icon">
-          <p class="card-text">Met de DCFC technologie kan je<br>een maximale output genereren <br>
-            van 350KW. Dit zorgt ervoor dat<br> je batterij snel zal worden<br> opgeladen.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><b>Bluetooth</b></h5>
-          <img src="assets/bluetooth.jpg" class="card-img-top" alt="open__source" id="bluetooth_icon">
-          <p class="card-text">Klaar voor vertrek,<br>tijdens vakantie of een inbraak<br> voorkomen?
-            Verbind je apparaat sneller dan ooit<br> met jouw Smart charger en beheer<br>al jouw
-                instellingen vanop afstand.
-            </p>
-        </div>
-      </div>
-    </div>
-</div>
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><b>Distance-Problem solving</b></h5>
-          <img src="assets/headphones.jpg" class="card-img-top" alt="open__source" id="dps__icon">
-          <p class="card-text">Wij zijn vanop een afstand<br>bereikbaar om al jouw issues<br>
-            op te lossen<br>
-            voor jouw eigen laadpaal.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><b>Low maintenance</b></h5>
-          <img src="assets/low.jpg" class="card-img-top" alt="Easy to use" id="low__maintensance__icon">
-          <p class="card-text">De Ownit Smart-charge is<br> 'easyyy' te onderhouden,<br> kwalitatief en duurzaam.<br>
-            Ideaal om er jaren van te genieten.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<!--
-<div id="top__scrollsection2">
-    <div class="card">
-        <div class="card-header">
-            Voordelen van de nieuwe Extended Wall Station
-        </div>  -->
-        <!-- Card1 -->
-        <!-- <div class="card-body">
-            <h4 class="card-title">High quality</h4>
-            <p class="card-text">Text</p>
-        </div> -->
-         <!-- Card2 -->
-        <!-- <div class="card-body">
-            <h4 class="card-title">Open-source</h4>
-            <p class="card-text">Text</p>
-        </div> -->
-         <!-- Card3 -->
-        <!-- <div class="card-body">
-            <h4 class="card-title">Low Cost</h4>
-            <p class="card-text">Text</p>
-        </div> -->
-         <!-- Card4 -->
-        <!-- <div class="card-body">
-            <h4 class="card-title">Easy To Use</h4>
-            <p class="card-text">Text</p>
-        </div> -->
-         <!-- Card5 -->
-         <!-- <div class="card-body">
-            <h4 class="card-title">Full-Battery in 3 hours</h4>
-            <p class="card-text">Text</p>
-        </div> -->
-          <!-- Card6 -->
-          <!-- <div class="card-body">
-            <h4 class="card-title">Bluetooth</h4>
-            <p class="card-text">Text</p>
-        </div> -->
-           <!-- Card7 -->
-           <!-- <div class="card-body">
-            <h4 class="card-title">distance Problem-solving</h4>
-            <p class="card-text">Text</p>
-        </div> -->
-            <!-- Card8 -->
-            <!-- <div class="card-body">
-                <h4 class="card-title">Low maintenance</h4>
-                <p class="card-text">Text</p>
-            </div> -->
 
 
 
-        <!-- <div class="card-footer text-muted">
-            <button class="btn btn-pills btn-primary" id="click__toshop">Ga naar de shop</button>
-        </div>
-    </div> -->
-</div>
 
 
-<!-- laadpaal features -->
-<div id="lp__title">
-<h2><b>Wat zit er in de Extended Ground Station?</b></h2>
-</div>
-<div class="lp__pic">
-<img src="assets/foto_laadpaal.jpg" alt="laadpaal" id="laadpaal__pic">
-</div>
-
-
-
-<!-- features -->
-<div class="container">
-    <div class="row mb-5" id="info_row1">
-        <div class="col-lg-7">
-            <h1 id="home__feature">Terug thuis komen - omhoog komen van de laadpaal</h1>
-            <p id="home__txt">De laadpaal zal automatisch uit de grond komen zodra je thuis komt<br>zodat je deze sneller
-                kunt gebruiker, scan simpel met je Id kaart om<br>deze te gebruiken. Als het laden voltooid
-                is en je thuis vertrekt zal de<br>kabel automatisch terug in de laadpaal gaan en dan zal de
-                laadpaal<br>terug in de grond zakken automatisch. Dit is echt bedoeld voor de<br>mensen die
-                geen plaats thuis hebben.</p>
-                <img src="assets/singleOwnit.png" alt="foto" id="ownit__single__charger">
-        </div>
-    </div>
-    <div class="row mb-5" id="info_row2">
-        <div class="col-lg-5">
-            <img src="assets/hands.jpg" alt="foto" id="hands__img">
-        </div>
-        <div class="col-lg-7">
-            <h1 id="give__feature">Teruggeven aan je huis</h1>
-            <p id="give__text">Er is een functie gemaakt op de laadpaal waardoor dat als je<br>thuis komt en je batterij van de
-                auto heeft nog stroom, dan zal<br>deze stroom terug geven aan je huis. Totdat de batterij
-                helemaal<br>leeg is en daarna zal deze pas beginnen met het<br>terug heropladen automatisch.<br>
-                Dit is beter voor de batterij van de auto en dan zal deze ook<br>langer meegaan. </p>
-        </div>
-    </div>
-    <div class="row mb-5" id="info_row3">
-        <div class="col-lg-7 ">
-            <h1 id="stroom__feature">Stroompieken, wat nu?</h1>
-            <p >Dit is een interessante functie dat het laden van de auto zal<br>optimaliseren op basis van jouw
-                eigen piek uren. Als u bijvoorbeeld<br>aan het laden bent en ook tegelijkertijd aan het koken,
-                wassen,<br>strijken bezig bent dan zal het laden van de auto tijdelijk stoppen<br>om geld te
-                besparen. Zodra deze activiteiten klaar zijn dan zal de<br>app zien dat het piek uur voorbij is
-                zal de auto terug beginnen met<br>het heropladen.</p>
-                 <img src="assets/vwui.jpg" alt="foto" id="car__ui_img">
-            </div>
-    </div>
-
-<!-- community -->
-<!-- <div class="row mb-5" id="info_row3">
+            <!-- <div class="row mb-5" id="info_row3">
     <div class="col-lg-7 ">
         <h1 id="stroom__feature">Community</h1>
         <p >Bekijk onze community en werk samen met anderen mensen<br>aan een bepaalde
@@ -391,18 +498,20 @@
 </div> -->
 
 
-<!-- cards review -->
+            <!-- cards review -->
 
-</main>
 
-<!-- FOOTER -->
 
-<!--    LINKS FOOTER-->
-<div class="container-fluid footer__  py-5 " >
+    </main>
+
+    <!-- FOOTER -->
+
+    <!--    LINKS FOOTER-->
+    <!-- <div class="container-fluid footer__  py-5 " >
     <div class="row ">
-        <div class="col-sm-6 col-md-4 " >
-            <!--        CONTACT-->
-            <p><span>Contact</span></p>
+        <div class="col-sm-6 col-md-4 " > -->
+    <!--        CONTACT-->
+    <!-- <p><span>Contact</span></p>
             <ul>
                 <li>Ownit</li>
                 <li> PXL - Kempische steenweg,</li>
@@ -410,9 +519,9 @@
                 <li><a>FAQ</a></li>
                 <li><a>Contact formulier</a></li>
             </ul>
-        </div>
-        <!--    OVER ONS-->
-        <div class="col-sm-6 col-md-4">
+        </div> -->
+    <!--    OVER ONS-->
+    <!-- <div class="col-sm-6 col-md-4">
             <p><span>Over ons</span></p>
             <ul>
 
@@ -422,10 +531,10 @@
                 <li><a>Ownit app</a></li>
 
             </ul>
-        </div>
+        </div> -->
 
-        <!--        COMMUNITY-->
-        <div class="col-sm-6 col-md-4">
+    <!--        COMMUNITY-->
+    <!-- <div class="col-sm-6 col-md-4">
             <p><span>Community</span></p>
             <ul>
 
@@ -435,9 +544,9 @@
             </ul>
         </div>
 
-    </div>
+    </div> -->
     <!--        SOCIAL MEDIA-->
-    <div class="row mx-5 my-5">
+    <!-- <div class="row mx-5 my-5">
        <div class="col">
            <p><span>Social media</span></p>
         <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start">
@@ -450,30 +559,23 @@
        </div>
 
 
-    </div>
-
+    </div> -->
     <!--            Copyright-->
-
-    <!--Copyright-->
-
-    <div>
+    <!-- <div>
         <p class="text-center mt-auto">Copyright &#169; Ownit, 2023 all rights reserved </p>
     </div>
-</div>
+</div> -->
 
     <!--ONS JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    
-<!-- websites voor Bootstrap components -->
+
+    <!-- websites voor Bootstrap components -->
     <!-- https://getbootstrap.com/docs/5.0/content/images/ -->
 
     <!-- websites voor CSS -->
     <!-- https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit -->
 </body>
+
 </html>
