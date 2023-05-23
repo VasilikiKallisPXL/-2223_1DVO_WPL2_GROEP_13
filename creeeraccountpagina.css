@@ -4,37 +4,51 @@
     padding: 0;
     color: #ffffff;
 }
-body{
+
+body {
     background-color: #ffffff;
 }
 
-main{
+main {
     background-color: #261F56;
     border-radius: 10px;
     margin: 50px auto 0;
     max-width: 450px;
     padding: 20px;
 }
+
 main h1 {
     font-size: 21px;
     margin-bottom: 10px;
     font-weight: 400;
 }
-::placeholder {
-    color: #ffffff;
-    padding-left: 10px;
-    font-weight: 100;
-    font-size: 15px;
-}
-label{
-    font-size: 16px;
-}
-input {
-    border-radius: 10px;
-    border: 1px solid #000;
+
+main p {
+    font-size: 12px;
 }
 
-input[name="volledigenaam"], input[name="email"], input[name="pwd"], input[name="herhaalwachtwoord"]{
+input {
+    color: #ffffff;
+    padding-left: 15px;
+    font-weight: 100;
+    font-size: 15px;
+    outline: none;
+
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    border-radius: 10px;
+}
+
+input[name="volledigenaam"], input[name="email"], input[name="pwd"], input[name="herhaalwachtwoord"] {
     width: 95%;
     height: 35px;
     margin-top: 5px;
@@ -50,7 +64,7 @@ input[type="checkbox"] {
     height: 25px;
 }
 
-label[for="servicevoorwaarden"], label[for="optioneel"]{
+label[for="servicevoorwaarden"], label[for="optioneel"] {
     font-size: 12px;
     margin-bottom: 5px;
 }
@@ -63,21 +77,30 @@ input[type="submit"] {
     border: 1px solid #5EBCAF;
     font-size: 12px;
 }
-#creeeraccount{
+
+#creeeraccount {
     background-color: #5EBCAF;
 }
-#signupgoogle{
+
+#signupgoogle {
     color: #000000;
     background-color: white;
 }
-a{
+
+a {
     list-style-type: none;
     text-decoration: none;
     color: #5EBCAF;
 }
 
-@media screen and (max-width: 820px ){
-    body{
+@media screen and (max-width: 820px ) {
+    body {
         background-color: #261F56;
+    }
+}
+
+@media screen and (max-width: 576px ) {
+    #creeeraccount_loginknop {
+        padding-left: 0;
     }
 }

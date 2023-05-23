@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header #header_container {
+    margin-top: 40px;
+}
+
+header #header_paragraaf {
+    margin-top: 20px;
+    color: #261F56;
+    text-align: center;
+    font-size: 16px;
+}
+
+header h1 {
+    color: #261F56;
+    text-align: center;
+    font-size: 25px;
+}
+
+#betaling_kruisje img {
+    width: 40px;
+}
+
+main {
+    background-color: #261F56;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 50px;
+}
+input{
+    color: #ffffff;
+    padding-left: 15px;
+    font-weight: 100;
+    font-size: 15px;
+    outline: none;
+
+}
+::placeholder {
+    color: #ffffff;
+}
+
+label {
+    font-size: 21px;
+    color: #5EBCAF;
+    /*margin-top: 10px;*/
+    /*margin-bottom: 10px;*/
+    /*margin-left: 50px;*/
+    display: inline-block;
+    width: 300px;
+}
+
+.leeglabel {
+    display: none;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+label[for="heer"], label[for="mevrouw"], label[for="geen"] {
+    font-size: 16px;
+    width: auto;
+    display: inline-block;
+    margin: 10px;
+}
+
+input[name="postcode"], input[name="gemeente"], input[name="huisnr"], input[name="bus"] {
+    display: inline-block;
+    width: 29%;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #261F56;
+    border: 1px solid #5EBCAF;
+    border-radius: 10px;
+    margin-right: 1.5%;
+
+}
+
+input[name="extraad"], input[name="straat"], input[name="voornaam"], input[name="achternaam"] {
+    width: 60%;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #261F56;
+    border: 1px solid #5EBCAF;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    width: 40%;
+    height: 45px;
+    display: inline-block;
+    border: 1px solid #5EBCAF;
+    font-size: 16px;
+    background-color: #5EBCAF;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 892px ) {
+    body {
+        background-color: #261F56;
+    }
+    header {
+        max-width: 700px;
+    }
+
+    header h1 {
+        color: #5EBCAF;
+    }
+
+    header #header_paragraaf {
+        color: #FFFFFF;
+    }
+
+    label {
+        display: block;
+    }
+
+    input[name="extraad"], input[name="straat"], input[name="voornaam"], input[name="achternaam"] {
+        width: 90%;
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin: 10px auto;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 576px ) {
+    header h1{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 533px ) {
+    label[for="heer"], label[for="mevrouw"], label[for="geen"] {
+        font-size: 12px;
+    }
+    input[type="radio"] {
+        width: 15px;
+    }
+
+}
+@media screen and (max-width: 401px ) {
+    label[for="heer"], label[for="mevrouw"], label[for="geen"] {
+        margin: 2px;
+    }
+}
+
