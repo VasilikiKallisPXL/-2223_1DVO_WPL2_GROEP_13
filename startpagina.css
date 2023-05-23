@@ -753,11 +753,7 @@ span {
 }
 
 
-<<<<<<< HEAD
- 
 
-=======
->>>>>>> acde1965df35bbb089b62bdc3672b0c5e5aa5579
 /*FOOTER*/
 
 .footer__ {
@@ -770,16 +766,12 @@ span {
     text-decoration: none;
     list-style: none;
 }
-<<<<<<< HEAD
 .footer__ ul li a{
     color: #ffffff;
     text-decoration: none;
 }
-.footer__ span{
-=======
 
 .footer__ span {
->>>>>>> acde1965df35bbb089b62bdc3672b0c5e5aa5579
     color: #5EBCAF;
     font-size: 20px;
     font-weight: normal;
