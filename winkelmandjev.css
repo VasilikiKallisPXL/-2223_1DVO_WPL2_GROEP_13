@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*___HEADER*/
+/*____________NAVBAR*/
+
+.navbar {
+    background-color: #ffffff;
+
+}
+
+.navbar-brand {
+    width: 4rem;
+}
+
+.navbar ul li a {
+    margin: 0 10px;
+    font-size: 16px;
+
+}
+
+.navbar .nav-link:hover, .nav-link .dropdown-toggle {
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.container_modal .btn-close {
+    background-color: #ffffff;
+}
+
+.container-cart-products {
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.hidden-mandje {
+    display: none;
+}
+
+/*main*/
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 80px 0;
+}
+
+/*main deel 1*/
+
+#main_bezorgadres {
+    background-color: #eeeeee;
+    border-radius: 15px;
+    width: 70%;
+    padding: 0;
+
+}
+
+#main_bezorgadres h2, #main_bezorgadres p {
+    padding-left: 10px;
+}
+
+#bezorg_gegevens {
+    margin: 0 auto;
+}
+
+#card_bezorgadres {
+    background-color: #261F56;
+    width: 25%;
+    height: 170px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#card_bezorgadres_2 {
+    background-color: #4A4A82;
+    width: 25%;
+    height: 170px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#card_bezorgadres_2 h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#card_bezorgadres h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#card_bezorgadres p {
+    font-size: 14px;
+}
+
+#card_bezorgadres_2 p {
+    font-size: 14px;
+}
+
+main #card_img img {
+    width: 40px;
+}
+
+main #card_img_2 img {
+    width: 40px;
+}
+
+main a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#bezorgadres_button {
+    width: 35%;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 40px;
+    margin: 10px auto;
+}
+
+/*main deel 2*/
+
+#main_betaalmethode {
+
+    background-color: #eeeeee;
+    border-radius: 15px;
+    width: 70%;
+    /*margin-right: 100px ;*/
+    padding: 0;
+}
+
+#main_betaalmethode h2 {
+    padding-left: 10px;
+}
+
+#card_visa {
+    background-color: #261F56;
+    width: 25%;
+    height: 170px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#card_master {
+    background-color: #4A4A82;
+    width: 25%;
+    height: 170px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#card_master h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+#card_visa h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+main #master_img img {
+    width: 90px;
+}
+
+main #visa_img img {
+    width: 90px;
+}
+
+main a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#betaal_button {
+    width: 35%;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 40px;
+    margin: 10px auto;
+}
+
+/*betaal overzicht*/
+#betaal_overzicht {
+    width: 30%;
+    height: 300px;
+    background-color: #fff;
+    margin-left: 70px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #e7e7e7;
+    border: 1px solid #efefef;
+}
+
+hr {
+    border: 1px solid #707070;
+    opacity: 50%;
+}
+
+#betaal_overzicht h4 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+#bestellen {
+    display: block;
+    height: 40px;
+    width: 90%;
+    background-color: #261F56;
+    color: #FFFFFF;
+    margin: 10px auto;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #261F56;
+    border-radius: 10px;
+}
+.bestellen_betalen{
+    width: 30px;
+}
+
+/*FOOTER*/
+
+
+/*.footer__{*/
+/*    background-color: #261F56;*/
+/*    color: #ffffff;*/
+/*    min-height: 500px;*/
+/*    max-height:800px;*/
+/*}*/
+
+/*.footer__ ul li {*/
+/*    text-decoration: none;*/
+/*    list-style: none;*/
+/*}*/
+/*.footer__ ul li a{*/
+/*    color: #ffffff;*/
+/*    text-decoration: none;*/
+/*}*/
+/*.footer__ span{*/
+/*    color: #5EBCAF;*/
+/*    font-size: 20px;*/
+/*    font-weight: normal;*/
+/*    margin: 10px 30px ;*/
+/*}*/
+/*.social-media-footer a{*/
+
+/*    display: flex;*/
+/*    padding: 2px;*/
+/*    margin: 20px 10px ;*/
+/*    color: #ffffff;*/
+/*}*/
+/*.footer__ p:last-child{*/
+/*    color: #000000;*/
+/*}*/
+/*.footer__ iframe{*/
+/*    width: 100%;*/
+/*    height: 400px;*/
+/*}*/
