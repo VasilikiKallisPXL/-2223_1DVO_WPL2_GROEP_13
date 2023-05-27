@@ -104,7 +104,7 @@ margin-top: 85px;
     font-weight: Semibold;
     font-size: 27px;
     color: #261F56;
-    margin-top: 150px;
+    margin-top: 190px;
     margin-left: 100px;
     text-align: left;
     padding-left: 12.5px;
@@ -198,12 +198,12 @@ h2,
 
 /* img */
 #img__3d {
-    position: relative;
-    height: 750px;
-    width: 680px;
-    margin-top: -580px;
-    margin-left: 820px;
-    display: inline-block;
+    float: right;
+    /* height: 750px;
+    width: 680px; */
+    /* margin-top: -580px;
+    margin-left: 420px; */
+    display: inline;
     /* object-fit: none;
     object-position: 50% 50%; */
 }
@@ -224,8 +224,50 @@ h2,
 }
 
 /* countdown */
-#container {
-    margin-top: 0px;
+    .countdown-item {
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 10px;
+    }
+
+    .countdown-text {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Aptly", Arial, sans-serif;
+    }
+    
+    .countdown-number {
+    font-size: 55px;
+    font-weight: 600;
+    font-family: "Aptly", Arial, sans-serif;
+    }
+
+
+
+
+
+/* .countdown-container span {
+     margin-top: 20px;
+    flex-direction: row;
+    }
+    .countdown-item {
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+.time {
+    font: "Aptly", "sans-serif", "Semibold", 68px;
+}
+    
+    .time-text {
+       display: block;
+       font: "Aptly", "sans-serif", "Semibold", 68px;
+    } */
+
+/* #container {
+    margin-top: -100px;
     margin-left: 54px;
     display: inline-block;
      justify-content: space-around;
@@ -273,46 +315,47 @@ span {
     display: inline;
     margin: 0;
     padding: 0;
-}
+} */
 
 /*  time stamps */
-#nr__1 {
-    margin-top: -300px;
+/* #nr__1 {
+    position: absolute;
+    margin-top: -180px;
     margin-left: -94px;
 }
 
 #nr__2 {
     position: absolute;
-    margin-top: -130px;
+    margin-top: -205px;
     margin-left: -2px;
 }
 
 #nr__3 {
     position: absolute;
-    margin-top: -147px;
+    margin-top: -222px;
     margin-left: 92px;
 }
 
 #nr__4 {
     position: absolute;
-    margin-top: -164px;
+    margin-top: -240px;
     margin-left: 187px;
 }
 
 #nr__5 {
     position: absolute;
-    margin-top: -182px;
+    margin-top: -257px;
     margin-left: 286px;
-}
+} */
 
 /* text time stamps */
-.countdown__label {
+/* .countdown__label {
     display: flex;
     justify-content: space-between;
 }
 
 #months {
-    margin-top: -20px;
+    margin-top: -70px;
     margin-left: -88px;
 }
 
@@ -334,7 +377,7 @@ span {
 #seconds {
     margin-top: -99px;
     margin-left: 283px;
-}
+} */
 
 
 
@@ -652,7 +695,7 @@ span {
 
 
 #strf {
-    margin-top: -265px;
+    margin-top: 20px;
 }
 
 
