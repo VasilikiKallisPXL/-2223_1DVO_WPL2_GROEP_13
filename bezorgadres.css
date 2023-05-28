@@ -29,6 +29,7 @@ header h1 {
     color: #261F56;
     text-align: center;
     font-size: 25px;
+    font-family: aptly, sans-serif;
 }
 
 #betaling_kruisje img {
@@ -49,6 +50,7 @@ input{
     font-size: 15px;
     outline: none;
 
+
 }
 ::placeholder {
     color: #ffffff;
@@ -59,6 +61,7 @@ label {
     color: #5EBCAF;
     display: inline-block;
     width: 300px;
+    font-family: aptly, sans-serif;
 }
 
 .leeglabel {
