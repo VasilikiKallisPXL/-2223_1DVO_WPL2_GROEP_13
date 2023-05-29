@@ -19,21 +19,30 @@ p,span, li, a {
 
 .navbar{
     background-color: #ffffff;
-
 }
 .navbar-brand{
     width: 4rem;
 }
-
-.navbar ul li a {
+.navbar-item{
     margin: 0 10px;
+}
+.navbar ul li a {
     font-size: 16px;
-
 }
 
-.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+.navbar .nav-link:hover, .nav-link .dropdown-toggle:hover, .nav-link .dropdown-item a:hover{
     font-weight: bold;
 }
+.navbar .dropdown-menu{
+    border: none;
+}
+.navbar .dropdown-menu li:hover{
+    filter:invert(100);
+}
+.navbar .dropdown-menu li a:active{
+    background-color: rgba(182, 36, 36, 0.86);
+}
+
 .navbar-brand img{
     width: 100%;
 }
@@ -42,36 +51,28 @@ p,span, li, a {
     background-color:#ffffff;
 }
 
-.container-cart-products{
+#containerCartList{
     position: absolute;
     top: 100px;
     right: 0;
-
     background-color: #fff;
-    width: 400px;
+    width:600px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
+    overflow:auto;
+    overflow-x: hidden;
 
 }
 
-.cart-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
-
-.info-cart-product{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
-}
-.hidden-mandje{
+#containerCartList::-webkit-scrollbar{
     display: none;
+}
+#containerCartList::-webkit-scrollbar{
+    display: initial;
+}
+#containerCartList::-webkit-scrollbar-thumb{
+    background-color: #261F56;
 }
 
 
