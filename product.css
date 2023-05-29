@@ -4,7 +4,7 @@ box-sizing: border-box;
     padding: 0;
 }
 body{
-    min-width: 440px;
+    min-width: 400px;
     position: relative;
 }
 
@@ -21,21 +21,30 @@ p,span, li, a {
 
 .navbar{
     background-color: #ffffff;
-
 }
 .navbar-brand{
     width: 4rem;
 }
-
-.navbar ul li a {
+.navbar-item{
     margin: 0 10px;
+}
+.navbar ul li a {
     font-size: 16px;
-
 }
 
-.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+.navbar .nav-link:hover, .nav-link .dropdown-toggle:hover, .nav-link .dropdown-item a:hover{
     font-weight: bold;
 }
+.navbar .dropdown-menu{
+    border: none;
+}
+.navbar .dropdown-menu li:hover{
+    filter:invert(100);
+}
+.navbar .dropdown-menu li a:active{
+    background-color: rgba(182, 36, 36, 0.86);
+}
+
 .navbar-brand img{
     width: 100%;
 }
@@ -44,27 +53,38 @@ p,span, li, a {
     background-color:#ffffff;
 }
 
-.container-cart-products{
+#containerCartList{
     position: absolute;
     top: 100px;
     right: 0;
-
     background-color: #fff;
-    width: 400px;
+    width:600px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
+    overflow:auto;
+    overflow-x: hidden;
 
 }
+
+#containerCartList::-webkit-scrollbar{
+    display: none;
+}
+#containerCartList::-webkit-scrollbar{
+    display: initial;
+}
+#containerCartList::-webkit-scrollbar-thumb{
+    background-color: #261F56;
+}
+
+
 
 .cart-product{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
 }
 
 .info-cart-product{
@@ -72,17 +92,39 @@ p,span, li, a {
     justify-content: space-between;
     flex: 0.8;
 }
+
 .hidden-mandje{
     display: none;
 }
+.checkout-button button {
+    background-color: #4A4A82;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
+.checkout-button button:hover {
+    background-color: #5EBCAF;
+}
+
+.checkout-button button:active {
+    background-color: #4F847A;
+}
+
+.checkout-button button:focus {
+    outline: none;
+}
 /*HERO STATION*/
 .hero-station__  {
     margin-top: 100px ;
 }
-.hero-parts__, .hero_detail{
+.hero-parts__ .detail_pagina{
     margin-top: 200px;
 }
+
 .hero-station__ h1, .hero-station__ h2, .hero-station__ h3, .hero-station__ p:last-child, .hero-station__ .btn:nth-child(2){
     color: #5EBCAF;
 }
@@ -229,9 +271,9 @@ box-shadow: 5px 5px 3px rgba(136, 130, 130, 0.86);
     background-color: rgba(94, 188, 175, 0.64);
 }
 .card-img, .card-product-onderdelen__ .card img{
-    background-color: rgba(0,0,0,0.8);
     filter:brightness(0.6);
     min-height: 250px;
+
 }
 
 
@@ -283,8 +325,6 @@ width: 80px;
 
 }
 
-
-
  .filter_bagge span{
     background-color: #261F56;
      padding: 7px 12px ;
@@ -308,17 +348,15 @@ width: 80px;
     color: #ffffff;
 }
 .modal_layout .modal-content .btn-primary{
-    background-color: #5EBCAF;
-    color: #261F56;
     border: none;
 }
-.modal_layout .modal-content .btn-primary:hover{
+.modal_layout .modal-content .btn-primary,.modal_layout .modal-content .btn-primary:hover, .modal_layout .modal-content span{
     background-color: #5EBCAF;
 
     font-weight: bold;
 }
-.modal_layout .modal-content span {
-    background-color: #5EBCAF;
+.modal_layout .modal-content span, .modal_layout .modal-content .btn-primary{
+
     color: #261F56;
 }
 .modal_layout .modal-content .card-body p{
@@ -364,12 +402,16 @@ width: 80px;
     font-weight: normal;
     margin: 10px 30px ;
 }
+.footer__ a{
+    text-decoration: none;
+}
 .social-media-footer a{
 
     display: flex;
     padding: 2px;
     margin: 20px 10px ;
     color: #ffffff;
+
 }
 .footer__ p:last-child{
     color: #000000;
@@ -413,6 +455,12 @@ width: 80px;
     .navbar ul{
         margin: 20px;
     }
+    .navbar-nav ul{
+        margin-top: 100px;
+    }
+    .navbar-nav ul li{
+       text-align: center;
+    }
     .footer__ div iframe{
         display: none;
     }
@@ -431,9 +479,8 @@ width: 80px;
         display: inline;
     }
 
-    .navbar ul{
-        margin: 20px;
-
+    .navbar-nav ul{
+        margin-top: 100px;
     }
 
 
