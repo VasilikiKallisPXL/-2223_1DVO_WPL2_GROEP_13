@@ -126,7 +126,9 @@ main {
     margin-top: 85px;
 }
 
-
+div .product  {
+    height: 175px;
+}
 
 /*!* Titel *!*/
 /*#intro__tekst h1{*/
