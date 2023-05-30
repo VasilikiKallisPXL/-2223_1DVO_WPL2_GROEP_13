@@ -180,6 +180,21 @@ function aantalItemsWinkelmandje(infoProduct){
 
 }
 
+
+// function productenToegevoegd(infoProduct) {
+//     let winkelmandje = JSON.parse(localStorage.getItem('productenToegevoegd')) || {};
+//
+//     if (winkelmandje.hasOwnProperty(infoProduct.id)) {
+//         infoProduct.aantal = winkelmandje[infoProduct.id].aantal + 1;
+//     } else {
+//         infoProduct.aantal = 1;
+//     }
+//
+//     winkelmandje[infoProduct.id] = infoProduct;
+//     localStorage.setItem('productenToegevoegd', JSON.stringify(winkelmandje));
+// }
+
+
 function productenToegevoegd(infoProduct){
 
     let winkelmandje=localStorage.getItem('productenToegevoegd');
@@ -259,7 +274,7 @@ function productenWinkelmandjeTonen() {
                 <span class="total-cost"> €${totalBedrag}</span>
             </div>
              <div class="checkout-button btn ">
-                <button onclick="window.location.href='winkelmandje.html'">Ir a Winkelmandje</button>
+                <button onclick="window.location.href='winkelmandje.html'">Naar jouw Winkelmandje</button>
             </div>
         `;
         containerCartProduct.appendChild(totalPrijsBestelling);
@@ -283,6 +298,9 @@ function deleteProduct(index) {
     updateTotalPrijs();
     updateTellerCart();
 }
+
+
+
 function updateTotalPrijs() {
     let winkelmandje = JSON.parse(localStorage.getItem('productenToegevoegd'));
     let totalBedrag = 0;
@@ -310,21 +328,50 @@ function updateTellerCart(){
         productTellerCijfer.textContent = productTeller.toString();
     }
 }
-function filterenProducten(){
-    const filterProducts = document.querySelectorAll('.badge_filter');
-    filterProducts.forEach(filterProducts =>{
-        filterProducts.addEventListener('click', ()=>{
-            const gekozenCategorie = filterProducts.textContent.trim();
-            const producteMetFilter= productenParts.filter(productenParts =>{
-                return productenParts.type === gekozenCategorie
-            });
 
-        })
-    })
-}
+// ////WINKELMANDJE PAGINA
+// let containerWinkelmandjePagina = document.querySelector('.products')
+// let WinkelmandjePaginaResumeBestelling = document.createElement('div');
+// WinkelmandjePaginaResumeBestelling.classList.add('resume_bestelling_producten');
+// let winkelmandjeResumeTeBetalen = document.createElement('div');
+// winkelmandjeResumeTeBetalen.classList.add('resume_te_betalen');
+// let    containerBetalling = document.createElement('div');
+// containerBetalling.classList.add('container_betaling');
+//
+// if (winkelmandje && containerWinkelmandjePagina) {
+//     containerWinkelmandjePagina.innerHTML = '';
+//     Object.values(winkelmandje).map(product => {
+//         containerWinkelmandjePagina.innerHTML += `
+//     <div class="product">
+//       <i>buscar icoon dismiss</i>
+//       <img src="assets/producten_img/${product.afbeelding}" alt="product_verwijderd"/>
+//       <span>${product.naam}</span>
+//     </div>
+//   `;
+//     });
+//     containerWinkelmandjePagina.appendChild(WinkelmandjePaginaResumeBestelling);
+//     containerBetalling.appendChild(winkelmandjeResumeTeBetalen);
+//
+
+
+// function filterenProducten(){
+//     const filterProducts = document.querySelectorAll('.badge_filter');
+//     filterProducts.forEach(filterProducts =>{
+//         filterProducts.addEventListener('click', ()=>{
+//             const gekozenCategorie = filterProducts.textContent.trim();
+//             const productenMetFilter= productenParts.filter(productenParts =>{
+//                 return productenParts.type === gekozenCategorie
+//             });
+//
+//         })
+//     })
+// }
 
 DomProductenParts();
 productenWinkelmandjeTonen()
 updateWinkelmandje();
 deleteProduct();
+
+
+
 
