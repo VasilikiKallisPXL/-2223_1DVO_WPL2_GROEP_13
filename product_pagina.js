@@ -218,11 +218,9 @@ function productenToegevoegd(infoProduct){
     }
 
     localStorage.setItem('productenToegevoegd', JSON.stringify(winkelmandje));
-=======
 
-    },
+    }
 
-];
 
 let containerProducten = document.getElementById('producten_container_parts');
 
