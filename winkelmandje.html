@@ -24,12 +24,12 @@
 </head>
 
 <!--HEADER-->
-<div class="container-fluid   align-items-stretch m-0 pb-4">
-    <div class="row">
+<div class="container-fluid  py-4 align-items-stretch">
+    <div class="row ">
         <div class="col-md-12">
             <!--    NAVBAR-->
             <!--    NAVBAR-->
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-white ">
+            <nav class="navbar fixed-top  navbar-expand-lg  ">
                 <div class="container-fluid pt-1 pb-1 align-items-center">
 
                     <a class="navbar-brand" href="index.html"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"/></a>
@@ -49,12 +49,12 @@
                                           id="basic-addon1"><i class="bi bi-search "></i></span>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled d-sm-none d-md-block " href="#">Dashboard</a>
-                            </li>
 
                             <li class="nav-item">
-                                <a class="nav-link disabled " href="#">Community</a>
+                                <a class="nav-link disabled d-sm-none d-md-block" href="#">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Community</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -83,21 +83,20 @@
                                 <div class="row">
                                     <div class="container-mandje ">
                                         <div class="container-mandje-icoon">
-                                            <button type="button" class="btn btn-white"><span class="d-lg-none ">Winkelwagentje</span>
+                                            <a type="button" class="btn btn-white"><span class="d-lg-none ">Winkelwagentje</span>
                                                 <i class="bi bi-cart2 d-none d-lg-inline"></i>
                                                 <span class="badge text-bg-dark producten_opteller" >0</span>
-                                            </button>
+                                            </a>
 
                                         </div>
-                                    </div >
-                                    <div class="container-cart-products hidden-mandje">
-
 
 
                                     </div>
-                                </div>
-                            </li>
+                                    <div class="container_cart_products hidden-mandje" id="containerCartList">
 
+                                    </div>
+                                </div >
+                            </li>
 
                         </ul>
                     </div>
@@ -108,7 +107,6 @@
         </div>
     </div>
 </div>
-
 
 
 
@@ -130,9 +128,9 @@
                                 <div class="row product">
                                     <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                                         <!-- Image -->
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded"
+                                        <div class="bg-image ripple rounded"
                                              data-mdb-ripple-color="light">
-                                            <img src="laadpaal.png" alt="voorbeeld foto"
+                                            <img src="assets/singleOwnit.png" alt="voorbeeld foto"
                                                  class="w-100"/>
                                             <a href="#!">
                                                 <div class="mask"
@@ -180,9 +178,9 @@
                                 <div class="row product">
                                     <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                                         <!-- Image -->
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded"
+                                        <div class="bg-image ripple rounded"
                                              data-mdb-ripple-color="light">
-                                            <img src="laadpaal.png" alt="voorbeeld foto"
+                                            <img src="assets/singleOwnit.png" alt="voorbeeld foto"
                                                  class="w-100"/>
                                             <a href="#">
                                                 <div class="mask"
