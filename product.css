@@ -101,7 +101,6 @@ p,span, li, a {
 .total-cost{
     font-size: 25px;
 }
-=======
 
 
 .hidden-mandje{
@@ -485,6 +484,9 @@ div >.main__home {
     font-size: 3vw;
     font-weight: normal;
 
+}
+.team_card{
+ color: #ffffff;
 }
 
 /*RESPONSIVE*/
