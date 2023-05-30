@@ -85,7 +85,6 @@ p,span, li, a {
     justify-content: space-between;
     padding: 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
 }
 
 .info-cart-product{
@@ -98,22 +97,29 @@ p,span, li, a {
 .info-cart-product i{
   color: #261F56;
 }
+
 .total-cost{
     font-size: 25px;
 }
+=======
+
 
 .hidden-mandje{
     display: none;
 }
 .checkout-button button {
     background-color: #4A4A82;
+
     color: #FFFFFF;
+
+
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
 }
+
 
 .checkout-button button:hover {
     background-color: #5EBCAF;
@@ -123,6 +129,7 @@ p,span, li, a {
     background-color: #4F847A;
 }
 
+
 .checkout-button button:focus {
     outline: none;
 }
@@ -130,6 +137,8 @@ p,span, li, a {
 .hero-station__ , .hero_home {
     margin-top: 100px ;
 }
+
+
 
 .hero-parts__ .detail_pagina{
     margin-top: 200px;
@@ -548,9 +557,12 @@ div >.main__home {
 
     .navbar-nav ul{
         margin-top: 100px;
+
     }
     .countdown_ownit {
       display: none;
+
+
     }
 
 }

@@ -206,6 +206,7 @@
 
 
 
+
 <!--                                                MODAL                                                     -->
         <!--  FAVORIETE TOEGEVOEGD  MODAL-->
 
@@ -245,56 +246,105 @@
                                         data-bs-dismiss="modal">
                                     Of verder winkelen
                                 </button>
+
+<!--     
+        </div>
+
+    <!--        FILTER        MODAL-->
+    <div class="modal fade modal_layout" id="filter_parts" tabindex="-1" aria-hidden="true"
+         aria-labelledby="filter_parts_titel" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header container">
+                    <div class="row">
+                        <h4 class="modal-title col-md-6" id="filter_parts_titel">Filter je
+                            resultaten</h4>
+                        <button type="button" class="btn-close col-md-2 ms-auto px3"
+                                data-bs-dismiss="modal"
+                                aria-label="close"></button>
+                        <p class="col-md-12">Filter je resultaten hier om een artikel naar jou keuze
+                            te
+                            vinden,</p>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <!--                        CATEGORIE-->
+                                <h4>Categorie</h4>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="laadkabel"
+                                           checked>
+                                    <label class="form-check-label" for="laadkabel">
+                                        Laadkabel
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="vervangingsonderdeel" checked>
+                                    <label class="form-check-label" for="vervangingsonderdeel">
+                                        Vervangingsonderdeel
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="accessoires" checked>
+                                    <label class="form-check-label" for="accessoires">
+                                        Accessoires</label>
+                                </div>
+
                             </div>
                         </div>
 
+                        <!--                TYPE STEKKER-->
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Type stekker autozijde</h4>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!--!END FAVORIETE TOEGEVOEGD /MODAL-->
-        <!--                MODAL PRODUCT TOEGEVOEGD-->
-
-
-        <div class="modal fade modal_layout" id="product_toegevoegd" tabindex="-1" aria-hidden="true"
-             aria-labelledby="product_toegevoegd_titel" data-bs-backdrop="static">
-            <div class="modal-dialog modal-dialog-centered" style="min-width: 60vw">
-                <div class="modal-content">
-
-
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-1 ms-auto">
-                                    <button type="button" class="btn-close  ms-auto px3"
-                                            data-bs-dismiss="modal"
-                                            aria-label="close"></button>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="type1_stekker" checked>
+                                    <label class="form-check-label" for="type1_stekker">
+                                        Type 1
+                                    </label>
                                 </div>
+
                             </div>
                             <div class="row">
                                 <div class="col-md-6 .ms-auto">
                                     <h5 class="modal-title" id="product_toegevoegd_titel2">U artikel is
                                         toegevoegd aan u winkelmandje</h5>
-                                </div>
-                                <div class="col-md-4 ms-auto">
-                                    <a href="winkelmandje.html"><button class="btn btn-primary">Naar je winkelmantje <i
-                                            class="bi bi-chevron-right"></i></button></a>
 
-                                    <button type="button" class="btn  btn-link" data-bs-dismiss="modal">Of
-                                        verder winkelen
-                                    </button>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="type2_stekker" checked>
+                                    <label class="form-check-label" for="type2_stekker">
+                                        Type 2
+                                    </label>
+
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="ccs2"
+                                           checked>
+                                    <label class="form-check-label" for="ccs2">
+                                        CCS2 </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="schuko"
+                                           checked>
+                                    <label class="form-check-label" for="schuko">
+                                        Schuko </label>
                                 </div>
 
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p>De Extended wall station A1254</p>
-                                    <span class="badge rounded-pill">Op voorraad</span>
-                                </div>
 
-                            </div>
 
 
                             <!--                  MODAL                    CARDS-->
@@ -444,10 +494,57 @@
                                            id="type1_stekker" checked>
                                     <label class="form-check-label" for="type1_stekker">
                                         Type 1
+=======
+                        </div>
+                        <!--AANSLUITING MUURZIJDE-->
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Aansluiting muurzijde</h4>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="eu_stopcontact">
+                                    <label class="form-check-label" for="eu_stopcontact">
+                                        EU stopcontact
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value=""
+                                           id="type2_eu_stopcontact">
+                                    <label class="form-check-label" for="type2_eu_stopcontact">
+                                        Type 2 EU stopcontact
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="rode_stopcontact">
+                                    <label class="form-check-label" for="rode_stopcontact">
+                                        Rode CEE16A stopcontact </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="schuko_muur" checked>
+                                    <label class="form-check-label" for="schuko_muur">
+                                        Schuko </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--LENGTE KABEL-->
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h4>Lengte kabel</h4>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="halve_meter">
+                                    <label class="form-check-label" for="halve_meter">
+                                        0.5m
+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+
                                            id="type2_stekker" checked>
                                     <label class="form-check-label" for="type2_stekker">
                                         Type 2
@@ -536,6 +633,27 @@
                                 </div>
                             </div>
                         </div>
+
+                                           id="een_meter">
+                                    <label class="form-check-label" for="een_meter">
+                                        1m
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="anderhalf_m">
+                                    <label class="form-check-label" for="anderhalf_m">
+                                        1,5m</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                           id="vijf_m">
+                                    <label class="form-check-label" for="vijf_m">
+                                        5m</label>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="row">
                             <div class="col-md-8 ">
