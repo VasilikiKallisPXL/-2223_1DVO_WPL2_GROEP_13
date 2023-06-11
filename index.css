@@ -92,8 +92,9 @@ a {
 
 /* main */
 main {
-margin-top: 85px;
+    margin-top: 85px;
 }
+
 /* intro */
 .intro {
     margin-top: -80px;
@@ -105,7 +106,7 @@ margin-top: 85px;
     font-size: 27px;
     color: #261F56;
     margin-top: 190px;
-    margin-left: 100px;
+    margin-left: 23px;
     text-align: left;
     padding-left: 12.5px;
 }
@@ -118,7 +119,7 @@ margin-top: 85px;
     color: #261F56;
     text-align: left;
     margin-top: 12px;
-    margin-left: 110px;
+    margin-left: 33px;
     display: inline-block;
 }
 
@@ -127,7 +128,7 @@ margin-top: 85px;
     font-size: 32px;
     border: none;
     border-radius: 10px;
-    margin-left: 54px;
+    margin-left: -10px;
     margin-top: 107px;
     display: inline-flex;
     cursor: pointer;
@@ -198,12 +199,12 @@ h2,
 
 /* img */
 #img__3d {
-    float: right;
-    /* height: 750px;
-    width: 680px; */
-    /* margin-top: -580px;
-    margin-left: 420px; */
-    display: inline;
+    /* float: right; */
+    height: 750px;
+    width: 680px;
+    margin-top: -580px;
+    margin-left: 720px;
+    display: flex;
     /* object-fit: none;
     object-position: 50% 50%; */
 }
@@ -224,25 +225,30 @@ h2,
 }
 
 /* countdown */
-    .countdown-item {
-    text-align: center;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: 10px;
-    }
+.countdown-container {
+    display: flex;
+    align-items: center;
+}
 
-    .countdown-text {
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: "Aptly", Arial, sans-serif;
-    }
-    
-    .countdown-number {
-    font-size: 55px;
-    font-weight: 600;
-    font-family: "Aptly", Arial, sans-serif;
-    }
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.countdown-item span {
+    font-size: 20px;
+}
+
+.countdown-label {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.countdown-image {
+    margin-right: 20px;
+}
 
 
 
@@ -453,27 +459,50 @@ span {
     justify-content: center;
 }
 
-
+/* cards head title */
 #extended__title {
     display: inline;
     font: Aptly, regular, 46px;
     color: #261F56;
     margin-top: 130px;
     float: left;
-    margin-left: 199px;
+    margin-left: 270px;
     padding-left: 200px;
     padding-bottom: 30px;
 
 }
 
+/* cards */
+.card {
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.card-title {
+    margin-top: 20px;
+} 
+
+.card-text {
+    margin-top: 20px;
+}
+
+.card text-center{
+    border-radius: 10px;
+}
+
+
 .card-body {
     background-color: #4A4A82;
-    color: #ffffff;
     box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    flex-grow: 1;
 }
 
 /* titel per card */
-.card-title {
+.card-body h5 {
     font: Aptly, bold, 28px;
     color: #ffffff;
     margin-top: 20px;
@@ -485,7 +514,6 @@ span {
     font: New order, regular, 20px;
     color: #ffffff;
     margin-top: 20px;
-    justify-content: space-around;
 }
 
 #cards__middle {
@@ -493,12 +521,12 @@ span {
     margin-top: 50px;
     margin-left: 93px;
     padding: 0px 20px 10px 20px;
-    display: flex;
+
 }
 
-.card-body {
+/* .card-body {
     transition: box-shadow .2s, transform .3s cubic-bezier(0.03, 0.94, 0.98, 1.21);
-}
+} */
 
 /* #cards__middle2 {
     text-align: center;
@@ -515,76 +543,22 @@ span {
 
 
 /* icons */
-#check__icon {
-    height: 80px;
-    width: 80px;
-    color: #5EBCAF;
-    margin-top: 5px;
-    margin-left: -5px;
-    display: inline;
-}
-
-#opensource_icon {
-    height: 80px;
-    width: 80px;
-    color: #5EBCAF;
-    margin-top: 5px;
-    margin-left: -5px;
-    display: inline;
-}
-
-#lowcost__icon {
-    height: 80px;
-    width: 80px;
-    color: #5EBCAF;
-    margin-top: 5px;
-    margin-left: 5px;
-    display: inline;
-}
-
-#easyuse__icon {
-    height: 80px;
-    width: 80px;
-    color: #5EBCAF;
-    margin-top: 10px;
-    margin-left: 98px;
-    display: flex;
-}
-
-#full__battery__icon {
-    height: 80px;
-    width: 80px;
-    color: #5EBCAF;
-    margin-top: 25px;
-    margin-left: -20px;
-
-}
-
-#bluetooth_icon {
-    height: 80px;
-    width: 80px;
-    color: #5EBCAF;
-    margin-top: 25px;
-    margin-left: -20px;
-
-}
-
-#dps__icon {
-    height: 80px;
-    width: 80px;
-    color: #5EBCAF;
-    margin-top: 25px;
-    margin-left: -20px;
-
-}
-
+#check__icon,
+#opensource_icon,
+#lowcost__icon,
+#easyuse__icon,
+#easyuse__icon,
+#battery__icon,
+#full__battery__icon,
+#bluetooth_icon,
+#dps__icon,
 #low__maintensance__icon {
     height: 80px;
     width: 80px;
     color: #5EBCAF;
-    margin-top: 25px;
-    margin-left: -20px;
-
+    margin-top: 5px;
+    margin-left: -5px;
+    display: inline;
 }
 
 /* button cards */
@@ -595,7 +569,7 @@ span {
     width: 155px;
     border: none;
     border-radius: 10px;
-    margin-left: -432px;
+    margin-left: -480px;
     margin-top: 30px;
     display: inline-block;
     cursor: pointer;
@@ -610,7 +584,7 @@ span {
     font: Aptly, regular, 46px;
     color: #261F56;
     margin-top: 100px;
-    margin-left: 410px;
+    margin-left: 440px;
 }
 
 #laadpaal__pic {
@@ -672,7 +646,7 @@ span {
 #car__ui_img {
     height: 450px;
     width: 700px;
-    margin-left: 688px;
+    margin-left: -340px;
     padding: 0px;
     margin-top: 90px;
     border-radius: 10px;
@@ -715,12 +689,13 @@ span {
 
 
 /* ui app */
-#app__ui_img {
+
+.stroom__pic {
     height: 650px;
-    width: 310px;
+    width: 330px;
     padding: 0px;
     margin-left: 1028px;
-    margin-top: 159px;
+    margin-top: 129px;
     border-radius: 10px;
 }
 
@@ -728,7 +703,7 @@ span {
     font: Aptly, regular, 46px;
     color: #261F56;
     margin-left: 240px;
-    margin-top: -470px;
+    margin-top: -500px;
 }
 
 #ui__text {
@@ -746,7 +721,7 @@ span {
     border: none;
     border-radius: 10px;
     margin-left: 250px;
-    margin-top: -300px;
+    margin-top: -330px;
     display: inline-block;
     cursor: pointer;
 }
@@ -778,26 +753,15 @@ span {
     margin-top: 15px;
 } */
 
-/* Community */
-/* img */
-#community__img {
-    height: 450px;
-    width: 700px;
-    margin-left: 708px;
-    padding-bottom: -20px;
-    margin-top: -360px;
-    border-radius: 10px;
-}
-
-
 /*  cards review */
 /*werkende */
-#reviews h1 {
+/* #reviews h1 {
     display: flex;
     font-size: 46px;
     color: #261F56;
     text-align: center;
     padding-top: 40px;
+    margin-left: 270px;
     font-weight: bold;
 }
 
@@ -843,8 +807,68 @@ span {
     padding: 10px;
     width: 65%;
     height: 50px;
+} */
+
+
+
+/* Community */
+/* img */
+.community__section {
+    margin-top: -150px;
 }
 
+.carousel-wrapper {
+    float: right;
+    width: calc(100% - 400px);
+    padding-right: 20px;
+    border: none;
+}
+
+.slide {
+    position: relative;
+    width: 700px;
+    margin-left: 419px;
+    margin-bottom: 40px;
+    margin-top: -150px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    width: 500px;
+    height: 380px;
+    
+}
+.community {
+    margin-left: -150px;
+}
+
+#com__title {
+    margin-left: 350px;
+    margin-top: 150px;
+}
+
+.com__text {
+    padding-top: 49px;
+    margin-top: 0px;
+    margin-left: 330px;
+}
+
+.carousel-image {
+    height: 100%;
+    width: 700px;
+    border-radius: 10px;
+}
+
+
+/* #community__img {
+    height: 150px;
+    max-width: 400px;
+    margin-left: 708px;
+    padding-bottom: -20px;
+    margin-top: -360px;
+    border-radius: 10px;
+} */
 
 /*FOOTER*/
 .footer__ {
@@ -852,6 +876,7 @@ span {
     color: #ffffff;
     min-height: 500px;
     max-height: 800px;
+    margin-top: 450px;
 }
 
 .footer__ ul li {
