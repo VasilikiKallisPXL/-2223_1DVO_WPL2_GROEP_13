@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     color: #ffffff;
+    font-family: aptly, sans-serif;
+
 }
 
 body {
@@ -21,6 +23,8 @@ main h1 {
     font-size: 21px;
     margin-bottom: 10px;
     font-weight: 400;
+    font-family: aptly, sans-serif;
+
 }
 
 main p {

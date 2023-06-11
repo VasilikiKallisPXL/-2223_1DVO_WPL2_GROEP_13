@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: #ffffff;
+    font-family: New-order, sans-serif;
 }
 
 body {
@@ -17,6 +18,7 @@ main h1 {
     font-size: 21px;
     margin-top: 10px;
     margin-bottom: 20px;
+    font-family: aptly, sans-serif;
 }
 
 main p {

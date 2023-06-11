@@ -4,7 +4,7 @@ box-sizing: border-box;
     padding: 0;
 }
 body{
-    min-width: 440px;
+    min-width: 400px;
     position: relative;
 }
 
@@ -21,21 +21,30 @@ p,span, li, a {
 
 .navbar{
     background-color: #ffffff;
-
 }
 .navbar-brand{
     width: 4rem;
 }
-
-.navbar ul li a {
+.navbar-item{
     margin: 0 10px;
+}
+.navbar ul li a {
     font-size: 16px;
-
 }
 
-.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+.navbar .nav-link:hover, .nav-link .dropdown-toggle:hover, .nav-link .dropdown-item a:hover{
     font-weight: bold;
 }
+.navbar .dropdown-menu{
+    border: none;
+}
+.navbar .dropdown-menu li:hover{
+    filter:invert(100);
+}
+.navbar .dropdown-menu li a:active{
+    background-color: rgba(182, 36, 36, 0.86);
+}
+
 .navbar-brand img{
     width: 100%;
 }
@@ -44,45 +53,96 @@ p,span, li, a {
     background-color:#ffffff;
 }
 
-.container-cart-products{
+#containerCartList{
     position: absolute;
     top: 100px;
     right: 0;
-
     background-color: #fff;
-    width: 400px;
+    width:600px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
+    overflow:auto;
+    overflow-x: hidden;
 
 }
+
+#containerCartList::-webkit-scrollbar{
+    display: none;
+}
+#containerCartList::-webkit-scrollbar{
+    display: initial;
+}
+#containerCartList::-webkit-scrollbar-thumb{
+    background-color: #261F56;
+}
+
+
 
 .cart-product{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
 }
 
 .info-cart-product{
     display: flex;
     justify-content: space-between;
     flex: 0.8;
+    padding: 25px;
+
 }
+.info-cart-product i{
+  color: #261F56;
+}
+
+.total-cost{
+    font-size: 25px;
+}
+
+
 .hidden-mandje{
     display: none;
 }
+.checkout-button button {
+    background-color: #4A4A82;
 
+    color: #FFFFFF;
+
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.checkout-button button:hover {
+    background-color: #5EBCAF;
+}
+
+.checkout-button button:active {
+    background-color: #4F847A;
+}
+
+
+.checkout-button button:focus {
+    outline: none;
+}
 /*HERO STATION*/
-.hero-station__  {
+.hero-station__ , .hero_home {
     margin-top: 100px ;
 }
-.hero-parts__, .hero_detail{
+
+
+
+.hero-parts__ .detail_pagina{
     margin-top: 200px;
 }
+
 .hero-station__ h1, .hero-station__ h2, .hero-station__ h3, .hero-station__ p:last-child, .hero-station__ .btn:nth-child(2){
     color: #5EBCAF;
 }
@@ -144,15 +204,15 @@ background-color: #4F847A;
     color: #ffffff;
 }
 /*----------!/END HEADER*/
-/*HERO DETAIL*/
-.detail_pagina .btn-primary, .detail_pagina .btn-secondary{
+/*HERO DETAIL */
+.detail_pagina .btn-primary, .detail_pagina .btn-secondary, .main__home button, .button__notify{
     background-color: #261F56;
-
+color: #FFFFFF;
 }
 .detail_pagina .btn-primary{
     border: none;
 }
-.hero_detail span,  .hover_buttons button:hover {
+.hero_detail span,  .hover_buttons button:hover , .main__home button:hover, .button__notify:hover{
     background-color: #5EBCAF;
     border: none;
     color: #000000;
@@ -188,10 +248,22 @@ color: #22ab22;
 }
 /*CARD EIGENSCHAPPEN*/
 
-.cards-eigenschappen {
+.cards-eigenschappen, .team_card {
     background-color: #4A4A82;
     color: #ffffff;
-box-shadow: 5px 5px 3px rgba(136, 130, 130, 0.86);
+box-shadow: 5px 5px 3px rgba(141, 141, 141, 0.86);
+}
+.team_card{
+    padding: 30px 10px;
+    border-radius: 25px;
+    margin: 20px;
+}
+.team_card img{
+    margin-bottom: 20px ;
+
+}
+.team_card > div{
+    margin: 50px 0;
 }
 .cards-eigenschappen img{
     width: 100%;
@@ -229,9 +301,9 @@ box-shadow: 5px 5px 3px rgba(136, 130, 130, 0.86);
     background-color: rgba(94, 188, 175, 0.64);
 }
 .card-img, .card-product-onderdelen__ .card img{
-    background-color: rgba(0,0,0,0.8);
     filter:brightness(0.6);
     min-height: 250px;
+
 }
 
 
@@ -283,8 +355,6 @@ width: 80px;
 
 }
 
-
-
  .filter_bagge span{
     background-color: #261F56;
      padding: 7px 12px ;
@@ -308,17 +378,15 @@ width: 80px;
     color: #ffffff;
 }
 .modal_layout .modal-content .btn-primary{
-    background-color: #5EBCAF;
-    color: #261F56;
     border: none;
 }
-.modal_layout .modal-content .btn-primary:hover{
+.modal_layout .modal-content .btn-primary,.modal_layout .modal-content .btn-primary:hover, .modal_layout .modal-content span{
     background-color: #5EBCAF;
 
     font-weight: bold;
 }
-.modal_layout .modal-content span {
-    background-color: #5EBCAF;
+.modal_layout .modal-content span, .modal_layout .modal-content .btn-primary{
+
     color: #261F56;
 }
 .modal_layout .modal-content .card-body p{
@@ -364,12 +432,16 @@ width: 80px;
     font-weight: normal;
     margin: 10px 30px ;
 }
+.footer__ a{
+    text-decoration: none;
+}
 .social-media-footer a{
 
     display: flex;
     padding: 2px;
     margin: 20px 10px ;
     color: #ffffff;
+
 }
 .footer__ p:last-child{
     color: #000000;
@@ -378,6 +450,45 @@ width: 80px;
     width: 100%;
    height: 400px;
 }
+/*HOME PAGE/*/
+
+#mail_invoegen {
+    box-shadow: 6px 1px 13px rgba(0, 0, 0, 0.11);
+    border-bottom: 1px solid #261F56;
+    width: 60%;
+
+}
+div > #mail_invoegen {
+    margin: 10px 0 50px 0;
+}
+ .hero_home, .main__home h1,  .main__home h2,   .main__home h3{
+     color: #261F56;
+
+ }
+div >.main__home {
+    margin: 10px 0;
+}
+ .main__home h1{
+     margin-bottom: 30px
+ }
+.hero_home, .main__home h2,.main__home h3{
+    margin-bottom: 15px;
+}
+.countdown_ownit {
+    margin-top: 150px;
+}
+.countdown-item{
+    margin: 5% ;
+}
+.countdown-number{
+    font-size: 3vw;
+    font-weight: normal;
+
+}
+.team_card{
+ color: #ffffff;
+}
+
 /*RESPONSIVE*/
 
 @media screen and (max-width:450px){
@@ -397,14 +508,21 @@ width: 80px;
     .hero_parts_links {
         display: none;
     }
+    .hero_home{
+        width: 90%;
+        padding: 5%;
+
+    }
+   .countdown_ownit{
+       width: 60%;
+   }
+
 
     .card-body-rechts .titel_visible_hidden{
         visibility: visible;
         color: #5EBCAF;
     }
-/*    .btn-primary .source_code_knoppen {*/
-/*        background-color: white;*/
-/*    }*/
+
     .detail_pagina .btn-primary{
         background-color: #ffffff;
         color: #261F56;
@@ -413,9 +531,16 @@ width: 80px;
     .navbar ul{
         margin: 20px;
     }
+    .navbar-nav ul{
+        margin-top: 100px;
+    }
+    .navbar-nav ul li{
+       text-align: center;
+    }
     .footer__ div iframe{
         display: none;
     }
+
 }
 @media screen and(max-width: 768px ){
     .hero_parts_links div{
@@ -424,6 +549,7 @@ width: 80px;
     .hero_parts_links {
         display: none;
     }
+
     .detail_pagina .btn-primary, .detail_pagina .btn-secondary{
         background-color: #ffffff;
     }
@@ -431,10 +557,15 @@ width: 80px;
         display: inline;
     }
 
-    .navbar ul{
-        margin: 20px;
+    .navbar-nav ul{
+        margin-top: 100px;
+
+    }
+    .countdown_ownit {
+      display: none;
+
 
     }
 
-
 }
+
