@@ -129,7 +129,7 @@ function DomProductenParts() {
             const infoProduct = {
 
                 id:product.id,
-                naam: product.naam,
+               naam: product.naam,
                 prijs: product.prijs,
                 aantal: product.hoeveelheid,
             };
@@ -197,26 +197,26 @@ function aantalItemsWinkelmandje(infoProduct){
 
 function productenToegevoegd(infoProduct){
 
-    let winkelmandje=localStorage.getItem('productenToegevoegd');
+   let winkelmandje=localStorage.getItem('productenToegevoegd');
     winkelmandje = JSON.parse(winkelmandje);
 
-    if(winkelmandje != null){
-        if(winkelmandje[infoProduct.id] === undefined){
-            winkelmandje = {
-                ...winkelmandje,
-                [infoProduct.id]:infoProduct
-            }
-        }
-        winkelmandje[infoProduct.id].aantal += 1;
-
-    } else {
-        infoProduct.aantal = 1;
-        winkelmandje = {
-            [infoProduct.id]: infoProduct
-        }
+  if(winkelmandje != null){
+if(winkelmandje[infoProduct.id] === undefined){
+    winkelmandje = {
+        ...winkelmandje,
+    [infoProduct.id]:infoProduct
     }
+}
+      winkelmandje[infoProduct.id].aantal += 1;
 
-    localStorage.setItem('productenToegevoegd', JSON.stringify(winkelmandje));
+  } else {
+      infoProduct.aantal = 1;
+ winkelmandje = {
+   [infoProduct.id]: infoProduct
+      }
+  }
+
+localStorage.setItem('productenToegevoegd', JSON.stringify(winkelmandje));
 
 }
 
@@ -333,49 +333,49 @@ function updateTotalPrijs() {
 function updateTellerCart(){
     let winkelmandje = JSON.parse(localStorage.getItem('productenToegevoegd'));
     const productTeller= winkelmandje? winkelmandje.length : 0;
-    const productTellerCijfer = document.querySelector('.producten_opteller');
-    if(productTellerCijfer){
-        productTellerCijfer.textContent = productTeller.toString();
-    }
+const productTellerCijfer = document.querySelector('.producten_opteller');
+if(productTellerCijfer){
+    productTellerCijfer.textContent = productTeller.toString();
+}
 }
 
-// ////WINKELMANDJE PAGINA
-// let containerWinkelmandjePagina = document.querySelector('.products')
-// let WinkelmandjePaginaResumeBestelling = document.createElement('div');
-// WinkelmandjePaginaResumeBestelling.classList.add('resume_bestelling_producten');
-// let winkelmandjeResumeTeBetalen = document.createElement('div');
-// winkelmandjeResumeTeBetalen.classList.add('resume_te_betalen');
-// let    containerBetalling = document.createElement('div');
-// containerBetalling.classList.add('container_betaling');
-//
-// if (winkelmandje && containerWinkelmandjePagina) {
-//     containerWinkelmandjePagina.innerHTML = '';
-//     Object.values(winkelmandje).map(product => {
-//         containerWinkelmandjePagina.innerHTML += `
-//     <div class="product">
-//       <i>poner icoon dismiss</i>
-//       <img src="assets/producten_img/${product.afbeelding}" alt="product_verwijderd"/>
-//       <span>${product.naam}</span>
-//     </div>
-//   `;
-//     });
-//     containerWinkelmandjePagina.appendChild(WinkelmandjePaginaResumeBestelling);
-//     containerBetalling.appendChild(winkelmandjeResumeTeBetalen);
-//
+    // ////WINKELMANDJE PAGINA
+    // let containerWinkelmandjePagina = document.querySelector('.products')
+    // let WinkelmandjePaginaResumeBestelling = document.createElement('div');
+    // WinkelmandjePaginaResumeBestelling.classList.add('resume_bestelling_producten');
+    // let winkelmandjeResumeTeBetalen = document.createElement('div');
+    // winkelmandjeResumeTeBetalen.classList.add('resume_te_betalen');
+    // let    containerBetalling = document.createElement('div');
+    // containerBetalling.classList.add('container_betaling');
+    //
+    // if (winkelmandje && containerWinkelmandjePagina) {
+    //     containerWinkelmandjePagina.innerHTML = '';
+    //     Object.values(winkelmandje).map(product => {
+    //         containerWinkelmandjePagina.innerHTML += `
+    //     <div class="product">
+    //       <i>poner icoon dismiss</i>
+    //       <img src="assets/producten_img/${product.afbeelding}" alt="product_verwijderd"/>
+    //       <span>${product.naam}</span>
+    //     </div>
+    //   `;
+    //     });
+    //     containerWinkelmandjePagina.appendChild(WinkelmandjePaginaResumeBestelling);
+    //     containerBetalling.appendChild(winkelmandjeResumeTeBetalen);
+    //
 
 
-// function filterenProducten(){
-//     const filterProducts = document.querySelectorAll('.badge_filter');
-//     filterProducts.forEach(filterProducts =>{
-//         filterProducts.addEventListener('click', ()=>{
-//             const gekozenCategorie = filterProducts.textContent.trim();
-//             const producteMetFilter= productenParts.filter(productenParts =>{
-//                 return productenParts.type === gekozenCategorie
-//             });
-//
-//         })
-//     })
-// }
+function filterenProducten(){
+    const filterProducts = document.querySelectorAll('.badge_filter');
+    filterProducts.forEach(filterProducts =>{
+        filterProducts.addEventListener('click', ()=>{
+            const gekozenCategorie = filterProducts.textContent.trim();
+            const producteMetFilter= productenParts.filter(productenParts =>{
+                return productenParts.type === gekozenCategorie
+            });
+
+        })
+    })
+}
 
 DomProductenParts();
 productenWinkelmandjeTonen()

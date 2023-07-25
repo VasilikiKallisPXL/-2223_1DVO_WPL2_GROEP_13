@@ -102,7 +102,6 @@ p,span, li, a {
 }
 
 
-
 .hidden-mandje{
     display: none;
 }
@@ -204,7 +203,7 @@ background-color: #4F847A;
     color: #ffffff;
 }
 /*----------!/END HEADER*/
-/*HERO DETAIL*/
+/*HERO DETAIL */
 .detail_pagina .btn-primary, .detail_pagina .btn-secondary, .main__home button, .button__notify{
     background-color: #261F56;
 color: #FFFFFF;
@@ -484,6 +483,9 @@ div >.main__home {
     font-size: 3vw;
     font-weight: normal;
 
+}
+.team_card{
+ color: #ffffff;
 }
 
 /*RESPONSIVE*/

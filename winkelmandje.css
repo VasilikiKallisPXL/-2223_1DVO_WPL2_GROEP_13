@@ -14,26 +14,37 @@ p,span, li, a {
 }
 
 
+
+
 /*___HEADER*/
 /*____________NAVBAR*/
 
 .navbar{
     background-color: #ffffff;
-
 }
 .navbar-brand{
     width: 4rem;
 }
-
-.navbar ul li a {
+.navbar-item{
     margin: 0 10px;
+}
+.navbar ul li a {
     font-size: 16px;
-
 }
 
-.navbar .nav-link:hover, .nav-link .dropdown-toggle{
+.navbar .nav-link:hover, .nav-link .dropdown-toggle:hover, .nav-link .dropdown-item a:hover{
     font-weight: bold;
 }
+.navbar .dropdown-menu{
+    border: none;
+}
+.navbar .dropdown-menu li:hover{
+    filter:invert(100);
+}
+.navbar .dropdown-menu li a:active{
+    background-color: rgba(182, 36, 36, 0.86);
+}
+
 .navbar-brand img{
     width: 100%;
 }
@@ -42,27 +53,37 @@ p,span, li, a {
     background-color:#ffffff;
 }
 
-.container-cart-products{
+#containerCartList{
     position: absolute;
     top: 100px;
     right: 0;
-
     background-color: #fff;
-    width: 400px;
+    width:600px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
+    overflow:auto;
+    overflow-x: hidden;
 
 }
+
+#containerCartList::-webkit-scrollbar{
+    display: none;
+}
+#containerCartList::-webkit-scrollbar{
+    display: initial;
+}
+#containerCartList::-webkit-scrollbar-thumb{
+    background-color: #261F56;
+}
+
 
 .cart-product{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
 }
 
 .info-cart-product{
@@ -70,8 +91,30 @@ p,span, li, a {
     justify-content: space-between;
     flex: 0.8;
 }
+
 .hidden-mandje{
     display: none;
+}
+.checkout-button button {
+    background-color: #4A4A82;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-button button:hover {
+    background-color: #5EBCAF;
+}
+
+.checkout-button button:active {
+    background-color: #4F847A;
+}
+
+.checkout-button button:focus {
+    outline: none;
 }
 
 
@@ -83,214 +126,216 @@ main {
     margin-top: 85px;
 }
 
-
-
-/* Titel */
-#intro__tekst h1{
-    font-size: 60px;
-    font-family: Aptly, sans-serif;
-    font-weight: bold;
-    display: inline-block;
-    color: #261F56;
-    padding-top: 147px;
-    text-align: center;
+div .product  {
+    height: 175px;
 }
 
-#intro__tekst #hoofd__titel h1 {
-    font-size:47px;
-    font-family: Aptly, sans-serif;
-    font-weight: bold;
-    display: inline-block;
-    color: #261F56;
-    padding: 5px;
-}
+/*!* Titel *!*/
+/*#intro__tekst h1{*/
+/*    font-size: 60px;*/
+/*    font-family: Aptly, sans-serif;*/
+/*    font-weight: bold;*/
+/*    display: inline-block;*/
+/*    color: #261F56;*/
+/*    padding-top: 147px;*/
+/*    text-align: center;*/
+/*}*/
 
-#row, #col {
-    display: inline-block;
-}
+/*#intro__tekst #hoofd__titel h1 {*/
+/*    font-size:47px;*/
+/*    font-family: Aptly, sans-serif;*/
+/*    font-weight: bold;*/
+/*    display: inline-block;*/
+/*    color: #261F56;*/
+/*    padding: 5px;*/
+/*}*/
 
-/* img */
-.img-fluid {
-    width: 140%;
-}
+/*#row, #col {*/
+/*    display: inline-block;*/
+/*}*/
 
-
-/* Onze unieke waarden */
-#tekst_uniek h1 {
-    font-size:46px;
-    font-family: Aptly, sans-serif;
-    font-weight: bold;
-    color: #261F56;
-    padding: 5px;
-    display: inline-block;
-}
-
-#tekst_uniek {
-    color: #000;
-    padding-top: 88px;
-    padding-left: 100px;
-}
-
-#charge {
-    float: right;
-    width: 830px;
-    overflow: hidden;
-}
-
-#charge_2 {
-    visibility: hidden;
-    display: none;
-}
+/*!*!* img *!*!*/
+/*!*.img-fluid {*!*/
+/*!*    *!*/
+/*!*}*!*/
 
 
+/*!* Onze unieke waarden *!*/
+/*#tekst_uniek h1 {*/
+/*    font-size:46px;*/
+/*    font-family: Aptly, sans-serif;*/
+/*    font-weight: bold;*/
+/*    color: #261F56;*/
+/*    padding: 5px;*/
+/*    display: inline-block;*/
+/*}*/
 
-/*CARD EIGENSCHAPPEN*/
-#titel__cards h2 {
-    font-family: aptly, sans-serif;
-    font-size: 46px;
-    font-weight: bold;
-    color: #261F56;
-}
+/*#tekst_uniek {*/
+/*    color: #000;*/
+/*    padding-top: 88px;*/
+/*    padding-left: 100px;*/
+/*}*/
 
+/*#charge {*/
+/*    float: right;*/
+/*    width: 830px;*/
+/*    overflow: hidden;*/
+/*}*/
 
-.cards-eigenschappen {
-    background-color: #4A4A82;
-    color: #ffffff;
-    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);
-    border-radius: 10px;
-}
-.cards-eigenschappen img{
-    width: 100%;
-    max-width: 25%;
-}
-.cards-eigenschappen .card-body{
-    height: 500px;
-}
-
-.cards-eigenschappen img:hover{
-    transform: scale(1.5);
-    transition: all 0.2s ease-in;
-}
-
-
-/*missie + visie*/
-#missie__blok, #visie__blok {
-    text-align: center;
-    padding: 5px;
-    background-color: #261F56;
-}
-
-#missie__blok p, #visie__blok p {
-    color: #ffffff;
-    margin-left: 175px;
-    margin-right: 175px;
-}
-
-#missie__blok h1, #visie__blok h1 {
-    font-weight: bold;
-    font-size: 40px;
-    color: #5EBCAF;
-    padding-top: 20px;
-}
+/*#charge_2 {*/
+/*    visibility: hidden;*/
+/*    display: none;*/
+/*}*/
 
 
 
-/*werkende personeel*/
-#blokken__personeel h1{
-    font-size: 46px;
-    color: #261F56;
-    text-align: center;
-    padding-top: 40px;
-    font-weight: bold;
-}
-
-#blok__1, #blok__2, #blok__3, #blok__4, #blok__5, #blok__6, #blok__7, #blok__8{
-    background-color: #4A4A82;
-    text-align: center;
-    padding: 10px;
-    margin: 25px;
-    border-radius: 10px;
-    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);
-}
-
-#bovenste__blokken p, #onderste__blokken p {
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#bovenste__blokken h2, #onderste__blokken h2 {
-    font-size: 28px;
-    color: #ffffff;
-}
-
-#blokken__personeel .img-fluid {
-    padding: 10px;
-    width: 65%;
-    height: auto;
-}
-
-/*BLOKKEN KERNWAARDEN*/
-#kernwaarden h1{
-    font-size: 46px;
-    color: #261F56;
-    text-align: center;
-    padding-top: 40px;
-    font-weight: bold;
-}
-
-#kernwaarden_rij_1 div,#kernwaarden_rij_2 div {
-    background-color: #4A4A82;
-    text-align: center;
-    padding: 10px;
-    margin: 25px;
-    border-radius: 10px;
-    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);
-}
-
-#kernwaarden_rij_1 p, #kernwaarden_rij_2 p {
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#kernwaarden_rij_1 h2, #kernwaarden_rij_2 h2 {
-    font-size: 28px;
-    color: #ffffff;
-}
-
-#leeg__kernwaarden__1, #leeg__kernwaarden__2{
-    display: none;
-}
+/*!*CARD EIGENSCHAPPEN*!*/
+/*#titel__cards h2 {*/
+/*    font-family: aptly, sans-serif;*/
+/*    font-size: 46px;*/
+/*    font-weight: bold;*/
+/*    color: #261F56;*/
+/*}*/
 
 
-/*BRANDING*/
-#branding {
-    text-align: center;
-}
+/*.cards-eigenschappen {*/
+/*    background-color: #4A4A82;*/
+/*    color: #ffffff;*/
+/*    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);*/
+/*    border-radius: 10px;*/
+/*}*/
+/*.cards-eigenschappen img{*/
+/*    width: 100%;*/
+/*    max-width: 25%;*/
+/*}*/
+/*!*.cards-eigenschappen .card-body{*!*/
+/*!*    height: 500px;*!*/
+/*!*}*!*/
 
-#branding h1 {
-    font-size: 46px;
-    color: #261F56;
-    font-weight: bold;
-    padding-top: 40px;
-}
+/*.cards-eigenschappen img:hover{*/
+/*    transform: scale(1.5);*/
+/*    transition: all 0.2s ease-in;*/
+/*}*/
 
-#branding p {
-    font-weight: 600;
-}
 
-#branding button {
-    padding: 10px;
-    background-color: #261F56;
-    color: #ffffff;
-    margin-bottom: 50px;
-    border-radius: 10px;
-}
+/*!*missie + visie*!*/
+/*#missie__blok, #visie__blok {*/
+/*    text-align: center;*/
+/*    padding: 5px;*/
+/*    background-color: #261F56;*/
+/*}*/
 
-#branding img {
-    padding-left: 10px;
-}
+/*#missie__blok p, #visie__blok p {*/
+/*    color: #ffffff;*/
+/*    margin-left: 175px;*/
+/*    margin-right: 175px;*/
+/*}*/
+
+/*#missie__blok h1, #visie__blok h1 {*/
+/*    font-weight: bold;*/
+/*    font-size: 40px;*/
+/*    color: #5EBCAF;*/
+/*    padding-top: 20px;*/
+/*}*/
+
+
+
+/*!*werkende personeel*!*/
+/*#blokken__personeel h1{*/
+/*    font-size: 46px;*/
+/*    color: #261F56;*/
+/*    text-align: center;*/
+/*    padding-top: 40px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*#blok__1, #blok__2, #blok__3, #blok__4, #blok__5, #blok__6, #blok__7, #blok__8{*/
+/*    background-color: #4A4A82;*/
+/*    text-align: center;*/
+/*    padding: 10px;*/
+/*    margin: 25px;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);*/
+/*}*/
+
+/*#bovenste__blokken p, #onderste__blokken p {*/
+/*    color: #ffffff;*/
+/*    padding-left: 20px;*/
+/*    padding-right: 20px;*/
+/*}*/
+
+/*#bovenste__blokken h2, #onderste__blokken h2 {*/
+/*    font-size: 28px;*/
+/*    color: #ffffff;*/
+/*}*/
+
+/*#blokken__personeel .img-fluid {*/
+/*    padding: 10px;*/
+/*    width: 65%;*/
+/*    height: auto;*/
+/*}*/
+
+/*!*BLOKKEN KERNWAARDEN*!*/
+/*#kernwaarden h1{*/
+/*    font-size: 46px;*/
+/*    color: #261F56;*/
+/*    text-align: center;*/
+/*    padding-top: 40px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*#kernwaarden_rij_1 div,#kernwaarden_rij_2 div {*/
+/*    background-color: #4A4A82;*/
+/*    text-align: center;*/
+/*    padding: 10px;*/
+/*    margin: 25px;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 10px 1px 13px rgba(0, 0, 0, 0.18);*/
+/*}*/
+
+/*#kernwaarden_rij_1 p, #kernwaarden_rij_2 p {*/
+/*    color: #ffffff;*/
+/*    padding-left: 20px;*/
+/*    padding-right: 20px;*/
+/*}*/
+
+/*#kernwaarden_rij_1 h2, #kernwaarden_rij_2 h2 {*/
+/*    font-size: 28px;*/
+/*    color: #ffffff;*/
+/*}*/
+
+/*#leeg__kernwaarden__1, #leeg__kernwaarden__2{*/
+/*    display: none;*/
+/*}*/
+
+
+/*!*BRANDING*!*/
+/*#branding {*/
+/*    text-align: center;*/
+/*}*/
+
+/*#branding h1 {*/
+/*    font-size: 46px;*/
+/*    color: #261F56;*/
+/*    font-weight: bold;*/
+/*    padding-top: 40px;*/
+/*}*/
+
+/*#branding p {*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*#branding button {*/
+/*    padding: 10px;*/
+/*    background-color: #261F56;*/
+/*    color: #ffffff;*/
+/*    margin-bottom: 50px;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*#branding img {*/
+/*    padding-left: 10px;*/
+/*}*/
 
 
 
