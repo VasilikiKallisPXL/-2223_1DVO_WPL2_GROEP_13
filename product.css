@@ -64,7 +64,6 @@ p,span, li, a {
     border-radius: 10px;
     overflow:auto;
     overflow-x: hidden;
-
 }
 
 #containerCartList::-webkit-scrollbar{
@@ -101,7 +100,7 @@ p,span, li, a {
 .total-cost{
     font-size: 25px;
 }
-=======
+
 
 
 .hidden-mandje{
@@ -490,7 +489,9 @@ div >.main__home {
 /*RESPONSIVE*/
 
 @media screen and (max-width:450px){
-
+    #mail_invoegen{
+        width: 90%;
+    }
     .hero-station__{
         align-items: center;
     }
@@ -541,6 +542,9 @@ div >.main__home {
 
 }
 @media screen and(max-width: 768px ){
+    #mail_invoegen{
+        width: 90%;
+    }
     .hero_parts_links div{
         display: none;
     }

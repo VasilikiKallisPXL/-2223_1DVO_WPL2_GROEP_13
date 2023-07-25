@@ -381,3 +381,6 @@ DomProductenParts();
 productenWinkelmandjeTonen()
 updateWinkelmandje();
 deleteProduct();
+
+
+
