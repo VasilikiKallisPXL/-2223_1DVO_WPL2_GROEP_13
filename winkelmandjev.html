@@ -15,21 +15,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="winkelmandjev.css">
 </head>
-<body>
-<!--HEADER-->
-<!--HEADER-->
-<div class="container-fluid  py-4 align-items-stretch">
-    <div class="row align-items-stretch">
-        <div class="col">
+<body><div class="container-fluid  py-4 align-items-stretch">
+    <div class="row ">
+        <div class="col-md-12">
             <!--    NAVBAR-->
             <!--    NAVBAR-->
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-white ">
+            <nav class="navbar fixed-top  navbar-expand-lg  ">
                 <div class="container-fluid pt-1 pb-1 align-items-center">
 
-                    <a class="navbar-brand" href="index.html"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"/></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="index.html"><img src="assets/logo_ownit.jpg" alt="Logo Ownit"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -37,10 +32,8 @@
                         <ul class="navbar-nav  me-3 mb-lg-2 mb-lg-0  my-md-4 my-sm-5 text-sm-center">
                             <li>
                                 <div class="input-group mb-3 mt-sm-auto" style="min-width: 350px">
-                                    <input type="text" class="form-control border border-end-0 " placeholder=""
-                                           aria-label="Username" aria-describedby="basic-addon1">
-                                    <span class="input-group-text bg-white border border-start-0 "
-                                          id="basic-addon1"><i class="bi bi-search "></i></span>
+                                    <input type="text" class="form-control border border-end-0 " placeholder="" aria-label="Username" aria-describedby="basic-addon1" wtx-context="90A17F51-5B14-427F-9214-B6F8B3BF25D0">
+                                    <span class="input-group-text bg-white border border-start-0 " id="basic-addon1"><i class="bi bi-search "></i></span>
                                 </div>
                             </li>
 
@@ -51,58 +44,45 @@
                                 <a class="nav-link disabled" href="#">Community</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                   aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Products
                                 </a>
-                                <ul class="dropdown-menu text-sm-center text-lg-start">
+                                <ul class="dropdown-menu text-sm-center text-lg-start ">
                                     <li><a class="dropdown-item" href="productpagina-station2.html">Station</a></li>
                                     <li><a class="dropdown-item" href="diy-kits.html">DIY-kits</a></li>
                                     <li><a class="dropdown-item" href="productpagina-parts.html">Parts</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Inloggen</a>
+                                <a class="nav-link" href="creeeraccountpagina.html">Inloggen</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="d-lg-none ">Notificaties</span><i
-                                        class="bi bi-bell d-none d-lg-inline"> </i></a>
+                                <a class="nav-link" href="#"><span class="d-lg-none ">Notificaties</span><i class="bi bi-bell d-none d-lg-inline"> </i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><span class="d-lg-none">Favorieten</span><i
-                                        class="bi bi-heart  d-none d-lg-inline"></i></a>
+                                <a class="nav-link" href="#"><span class="d-lg-none">Favorieten</span><i class="bi bi-heart  d-none d-lg-inline"></i></a>
                             </li>
 
 
                             <li class="nav-item">
-                                <div class="container-mandje ">
-                                    <div class="container-mandje-icoon">
-                                        <button type="button" class="btn btn-white"><span class="d-lg-none ">Winkelwagentje</span>
-                                            <i class="bi bi-cart2 d-none d-lg-inline"></i>
-                                            <span class="badge text-bg-dark producten_opteller">0</span>
-                                        </button>
+                                <div class="row">
+                                    <div class="container-mandje ">
+                                        <div class="container-mandje-icoon">
+                                            <a type="button" class="btn btn-white"><span class="d-lg-none ">Winkelwagentje</span>
+                                                <i class="bi bi-cart2 d-none d-lg-inline"></i>
+                                                <span class="badge text-bg-dark producten_opteller">0</span>
+                                            </a>
 
-                                    </div>
-                                </div>
-                                <div class="container-cart-products hidden-mandje">
-                                    <div class="row-product">
-                                        <div class="cart-product">
-                                            <div class="info-cart-product">
-
-                                            </div>
-                                            <button type="button" class="btn  btn-close btn-light"
-                                                    data-bs-dismiss="modal"></button>
                                         </div>
-                                    </div>
-                                    <div class="cart-total">
-                                        <h3>Total:</h3>
-                                        <span class="total-cost">200</span>
-                                    </div>
 
+
+                                    </div>
+                                    <div class="container_cart_products hidden-mandje" id="containerCartList">
+
+                                    </div>
                                 </div>
                             </li>
-
 
                         </ul>
                     </div>
@@ -115,201 +95,272 @@
 </div>
 
 
-<main>
-    <h1>Betalen</h1>
-    <div class="container-fluid m-0 p-0">
-        <div class="row m-4">
-            <div class="col-lg-10" id="main_bezorgadres">
-                <h2>Bezorgadres</h2>
-                <p>Verwachte levering is binnen 2 weken.</p>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-6" id="card_bezorgadres">
-                        <a href="#" class="card-link">
 
-                            <div class="row">
-                                <h3>Profiel bezorgadres</h3>
+
+
+<div class="container-center">
+    <div class="winkelmandje-container">
+
+        <section class="h-100 gradient-custom">
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center my-4">
+                    <div class="col-md-8">
+                        <div class="card mb-4">
+                            <div class="card-header py-3 achtergrondkaart">
+                                <h5 class="mb-0">Winkelmandje</h5>
                             </div>
-                            <div class="row">
-                                <div class="col-3 p-1 ps-2 text-center" id="card_img">
-                                    <img src="assets/Group 84.png" alt="locatie_icoon">
+                            <div class="card-body">
+                                <!-- Single item -->
+                                <div class="row product">
+                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                                        <!-- Image -->
+                                        <div class="img-fluid mx-auto ripple rounded" data-mdb-ripple-color="light">
+                                            <img src="assets/singleOwnit.png" alt="voorbeeld foto" class="w-100">
+                                            <a href="#!">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                            </a>
+                                        </div>
+                                        <!-- Image -->
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                                        <!-- Data -->
+                                        <p><strong>Extended wall station</strong></p>
+                                        <p>Volledige kit met alles
+                                            aanwezig</p>
+
+                                        <!-- Data -->
+
+                                        <!-- Quantity -->
+                                        <div class="d-flex mb-4 quantity">
+                                            <div class="form-outline d-flex align-items-center">
+                                                <input id="form2" min="0" name="quantity" value="1" type="number" class="form-control quantity-input" wtx-context="1635C297-555A-420B-8F56-7AB12F26DE4F">
+                                                <label class="form-label" for="form2"></label>
+                                                <button type="button" class="btn btn-primary btn-sm me-1 mb-2 trashcan" data-mdb-toggle="tooltip" title="Remove item">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Quantity -->
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                        <!-- Price -->
+                                        <p class="text-start text-md-center prijs" data-price="29.00">
+                                            <strong>€29.00</strong>
+                                        </p>
+                                        <!-- Price -->
+                                    </div>
                                 </div>
-                                <div class="col p-1 ps-2">
-                                    <p>Liam Vranken<br>Kempische steenweg 25,<br>Hasselt 3500</p>
+                                <!-- Single item -->
+
+                                <hr class="my-4">
+
+                                <!-- Single item -->
+                                <div class="row product">
+                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                                        <!-- Image -->
+                                        <div class="img-fluid mx-auto ripple rounded" data-mdb-ripple-color="light">
+                                            <img src="assets/singleOwnit.png" alt="voorbeeld foto" class="w-100">
+                                            <a href="#">
+                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                            </a>
+                                        </div>
+                                        <!-- Image -->
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                                        <!-- Data -->
+                                        <p><strong>Extended ground station</strong></p>
+                                        <p>Volledige kit met alles
+                                            aanwezig</p>
+
+                                        <!-- Data -->
+
+                                        <!-- Quantity -->
+                                        <div class="d-flex mb-4 quantity">
+                                            <div class="form-outline d-flex align-items-center">
+                                                <input id="form3" min="0" name="quantity" value="1" type="number" class="form-control quantity-input" wtx-context="A640106C-10CD-4D85-8B32-11037ABE7966">
+                                                <label class="form-label" for="form3"></label>
+                                                <button type="button" class="btn btn-primary btn-sm me-1 mb-2 trashcan" data-mdb-toggle="tooltip" title="Remove item">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Quantity -->
+
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                        <!-- Price -->
+                                        <p class="text-start text-md-center prijs" data-price="179,95">
+                                            <strong>€179.00</strong>
+                                        </p>
+                                        <!-- Price -->
+                                    </div>
+                                </div>
+                                <!-- Single item -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="mb-0">Opsomming</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                        producten
+                                        <span id="aantal-producten">2</span>
+
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                        Verzending
+                                        <span>Gratis</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                        <div>
+                                            <strong>Totaal bedrag</strong>
+                                            <strong>
+                                                <p class="mb-0">(Exclusief BTW)</p>
+                                            </strong>
+                                        </div>
+                                        <span id="total-price">€208.00</span>
+                                    </li>
+                                </ul>
+                                <a href="winkelmandjev.html">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block checkout">
+                                        Ga naar check-out
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="card mb-4 mb-lg-0">
+                                <div class="card-body">
+                                    <p><strong>Wij accepteren</strong></p>
+                                    <img class="me-2" width="45px" src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" alt="Visa">
+                                    <img class="me-2" width="45px" src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" alt="American Express">
+                                    <img class="me-2" width="45px" src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" alt="Mastercard">
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6" id="card_bezorgadres_2">
-                        <a href="#" class="card-link">
-                            <div class="row">
-                                <h3>Ander bezorgadres</h3>
-                            </div>
-                            <div class="row">
-                                <div class="col-3 p-1 ps-2 text-center" id="card_img_2">
-                                    <img src="assets/Group 514.png" alt="locatie_icoon">
-                                </div>
-                                <div class="col p-1 ps-2">
-                                    <p>Daniël Bosmans<br>Kempische steenweg 25,<br>Hasselt 3500</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <a href="bezorgadres.html">
-                                <button id="bezorgadres_button">Kies een ander adres</button>
-                            </a>
-
                         </div>
                     </div>
                 </div>
             </div>
-            <!--    betaal overzicht-->
-            <div class="col-4" id="betaal_overzicht">
-                <h4>Betaal overzicht</h4>
-                <div class="row">
-                    <div class="col">
-                        <p>Artikelen (2)</p>
-                        <p>$248,00</p>
-                    </div>
-                    <div class="col">
-                        <p>verzendkosten</p>
-                        <p>$5,00</p>
-                    </div>
-                    <hr>
-                    <a href="bestelling.html">
-                        <button id="bestellen">Bestellen</button>
-                    </a>
-                    <div class="row p-3 justify-content-center ms-1" id="payment_card">
-                        <div class="col-2 text-center p-0">
-                            <img src="assets/visa2.png" alt="visa" class="bestellen_betalen">
-                        </div>
-                        <div class="col-2 text-center p-0">
-                            <img src="assets/mastercard2.png" alt="visa" class="bestellen_betalen">
-                        </div>
-                        <div class="col-2 text-center p-0">
-                            <img src="assets/paypal.png" alt="visa" class="bestellen_betalen">
-                        </div>
-                        <div class="col-2 text-center p-0">
-                            <img src="assets/payment-ideal.png" alt="visa" class="bestellen_betalen">
-                        </div>
-                    </div>
-                </div>
+        </section>
 
-            </div>
-        </div>
-
-    </div>
-    <!--main deel 2-->
-    <div class="row m-4">
-        <div class="col-lg-10" id="main_betaalmethode">
-            <h2>Betaalmethode</h2>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6" id="card_visa">
-                    <a href="#" class="card-link">
-
-                        <div class="row justify-content-center">
-                            <div class="col pt-5 text-center" id="visa_img">
-                                <img src="assets/Icon%20awesome-cc-visa.png" alt="visa_icoon">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6" id="card_master">
-                    <a href="#" class="card-link">
-                        <div class="row justify-content-center">
-                            <div class="col pt-5 text-center" id="master_img">
-                                <img src="assets/Icon%20awesome-cc-mastercard.png" alt="mastercard_icoon">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <a href="betaling.html">
-                            <button id="betaal_button"> Kies een ander betaalmethode</button>
-                        </a>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</main>
-
-<!-- FOOTER -->
-
-<!--    LINKS FOOTER-->
-<div class="container-fluid footer__  py-5 ">
-    <div class="row justify-content-center">
-        <div class="col-sm-6 col-md-4">
-
-            <!--        CONTACT-->
-            <p><span>Contact</span></p>
-            <ul class="mb-5">
-                <li>Ownit</li>
-                <li> PXL - Kempische steenweg,</li>
-                <li> Corda campus, 3500</li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="contact.html">Contact formulier</a></li>
-            </ul>
-
-            <!--        SOCIAL MEDIA-->
-
-
-            <p><span>Social media</span></p>
-            <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start mx-2 col-10">
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-facebook fs-2"></i></a>
-                <a href="https://www.instagram.com/ownit.website/" target="_blank" rel="noreferrer"><i
-                        class="bi bi-instagram fs-2"></i></a>
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-linkedin fs-2"></i></a>
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-github fs-2"></i></a>
-                <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-youtube fs-2"></i></a>
-
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <!--    OVER ONS-->
-
-            <p><span>Over ons</span></p>
-            <ul class="my-2">
-
-                <li><a href="over_ons.html">Misie en visie</a></li>
-                <li><a href="#">Ons team</a></li>
-                <li><a href="#">Road map</a></li>
-                <li><a href="#">Ownit app</a></li>
-
-            </ul>
-
-
-            <div class="col-sm-6 col-md-4">
-                <p><span>Community</span></p>
-                <ul>
-
-                    <li><a href="#">Forum</a></li>
-                    <li><a href="#">Bibliotheek</a></li>
-
-                </ul>
-            </div>
-
-        </div>
-        <div class="col-4 d-none d-md-inline mb-4 ">
-
-            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Corda%20Campus,%20Kempische%20Steenweg%20293/16,%203500%20Hasselt+(Ownit%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-
-        </div>
-
-
-    </div>
-
-
-    <!--            Copyright-->
-    <div class="row mt-3 p-2 bg-light">
-        <p class="text-center mt-auto">Copyright &#169; Ownit, 2023 all right reserved </p>
     </div>
 </div>
+<footer><!-- FOOTER -->
+
+    <!--    LINKS FOOTER-->
+    <div class="container-fluid footer__  py-5 ">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-4">
+
+                <!--        CONTACT-->
+                <p><span>Contact</span></p>
+                <ul class="mb-5">
+                    <li>Ownit</li>
+                    <li> PXL - Kempische steenweg,</li>
+                    <li> Corda campus, 3500</li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contact.html">Contact formulier</a></li>
+                </ul>
+
+                <!--        SOCIAL MEDIA-->
+                <p><span>Social media</span></p>
+                <div class="social-media-footer d-flex flex-wrap align-items-center justify-content-start mx-2 col-10">
+                    <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-facebook fs-2"></i></a>
+                    <a href="https://www.instagram.com/ownit.website/" target="_blank" rel="noreferrer"><i class="bi bi-instagram fs-2"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-linkedin fs-2"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-github fs-2"></i></a>
+                    <a href="#" target="_blank" rel="noreferrer"><i class="bi bi-youtube fs-2"></i></a>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <!--    OVER ONS-->
+
+                <p><span>Over ons</span></p>
+                <ul class="my-2">
+                    <li><a href="over_ons.html">Misie en visie</a></li>
+                    <li><a href="over_ons.html">Ons team</a></li>
+                    <li><a href="over_ons.html">Road map</a></li>
+                    <li><a href="over_ons.html">Ownit app</a></li>
+
+                </ul>
+                <div class="col-sm-6 col-md-4">
+                    <p><span>Community</span></p>
+                    <ul>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Bibliotheek</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4 d-none d-md-inline mb-4 ">
+                <iframe src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Corda%20Campus,%20Kempische%20Steenweg%20293/16,%203500%20Hasselt+(Ownit%20)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
+
+
+        <!--            Copyright-->
+        <div class="row mt-3 p-2 bg-light mb-0">
+            <p class="text-center mt-auto">Copyright © Ownit, 2023 all right reserved </p>
+        </div>
+    </div></footer>
+<script>
+    // Function to update the total price
+    function updateTotalPrice() {
+        let total = 0;
+
+        // Get all the product elements
+        const products = document.querySelectorAll('.product');
+
+        // Loop through each product element
+        products.forEach(product => {
+            const quantityInput = product.querySelector('.quantity-input');
+            const priceElement = product.querySelector('.prijs');
+            const price = parseFloat(priceElement.getAttribute('data-price'));
+            const quantity = parseInt(quantityInput.value);
+            const productTotal = price * quantity;
+
+            // Update the price display
+            const priceDisplay = product.querySelector('.prijs strong');
+            priceDisplay.textContent = `€${productTotal.toFixed(2)}`;
+
+            // Add to the total
+            total += productTotal;
+        });
+
+        // Update the total price display
+        const totalPriceElement = document.getElementById('total-price');
+        totalPriceElement.textContent = `€${total.toFixed(2)}`;
+    }
+
+    // Add event listeners to quantity inputs
+    const quantityInputs = document.querySelectorAll('.quantity-input');
+    quantityInputs.forEach(input => {
+        input.addEventListener('input', updateTotalPrice);
+    });
+
+    // Remove item
+    const trashCans = document.querySelectorAll('.trashcan');
+    trashCans.forEach(trashCan => {
+        trashCan.addEventListener('click', () => {
+            const product = trashCan.closest('.product');
+            product.remove();
+            updateTotalPrice();
+        });
+    });
+
+    // Initial update of the total price
+    updateTotalPrice();
+</script>
+
+
 
 </body>
-</html>
